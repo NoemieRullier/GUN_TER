@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix ex: <http://example.org/> .
 @prefix parking_availability: <http://example.org/Parking_availability/> .
-@prefix parking_status: <http://example.org/Parking_status/>
+@prefix parking_status: <http://example.org/Parking_status/>.
 @prefix parking: <http://example.org/Parking/> .
 
 
