@@ -7,23 +7,36 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "20dabe87cec0aa7adb30979868253ea9c1dffdcf",
-    "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
-    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/rt.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
     "jarFileFingerprint": "70e3f9e76e3d5884415516c0cee0855295bcb571",
     "jarFileModificationDate": "2012-08-29T01:26:15+02:00",
     "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/jce.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "xml-apis-1.4.01",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3789d9fada2d3d458c4ba2de349d48780f381ee3",
+    "jarFileModificationDate": "2012-10-19T17:11:23+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/xml-apis-1.4.01.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7999a63bfccbc7c247a9aea10d83d4272bd492c6",
+    "jarFileModificationDate": "2012-10-19T17:10:18+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/log4j-1.2.16.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jdom-2.0.4-sources",
@@ -39,17 +52,17 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "jcl.over.slf4j",
     "version": {
       "major": 1,
-      "minor": 0,
-      "micro": 0,
+      "minor": 6,
+      "micro": 4,
       "qualifier": ""
     },
-    "jarFileFingerprint": "542112979f5b346cb3c6c6c5dade340cf082656a",
-    "jarFileModificationDate": "2012-08-29T01:54:45+02:00",
-    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/dnsns.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "aad8e9df65ebb68e3ba6f269e3312707f7f1065f",
+    "jarFileModificationDate": "2012-10-19T17:11:34+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/jcl-over-slf4j-1.6.4.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -65,6 +78,19 @@
     "javaRuntime": true
   },
   {
+    "symbolicName": "org.apache.jena.jena-arq",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a0fdd16fca97d2e5f7e464fd6ef28a760514288d",
+    "jarFileModificationDate": "2012-10-20T18:05:51+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/jena-arq-2.9.4.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -76,19 +102,6 @@
     "jarFileModificationDate": "2012-08-29T02:30:17+02:00",
     "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/resources.jar",
     "javaRuntime": true
-  },
-  {
-    "symbolicName": "jdom-2.0.4-contrib",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "2fc7c19e36a31643e14f52e941628bf1b45bbe00",
-    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
-    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-contrib.jar",
-    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -117,16 +130,42 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "jdom-2.0.4-junit",
+    "symbolicName": "org.apache.jena.jena-iri",
+    "version": {
+      "major": 0,
+      "minor": 9,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bcc96c399531a201832a88b60613ff35bc7a74cb",
+    "jarFileModificationDate": "2012-10-20T18:03:44+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/jena-iri-0.9.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xercesImpl-2.10.0",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "df8c345834094b1879ca7d743407d62e5b6a43f1",
-    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
-    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-junit.jar",
+    "jarFileFingerprint": "9161654d2afe7f9063455f02ccca8e4ec2787222",
+    "jarFileModificationDate": "2012-10-19T17:11:23+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/xercesImpl-2.10.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-2.0.4-javadoc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bbc0bed63cce1de2bf18e0b4aa2e7d12bc7f3cd8",
+    "jarFileModificationDate": "2012-11-08T19:18:12+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-javadoc.jar",
     "javaRuntime": false
   },
   {
@@ -143,16 +182,16 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jdom-2.0.4-javadoc",
+    "symbolicName": "org.apache.commons.codec",
     "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
+      "major": 1,
+      "minor": 5,
+      "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "bbc0bed63cce1de2bf18e0b4aa2e7d12bc7f3cd8",
-    "jarFileModificationDate": "2012-11-08T19:18:12+01:00",
-    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-javadoc.jar",
+    "jarFileFingerprint": "cf993e250ff71804754ec2734a16f23c0be99f70",
+    "jarFileModificationDate": "2012-10-19T17:11:34+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/commons-codec-1.5.jar",
     "javaRuntime": false
   },
   {
@@ -180,5 +219,135 @@
     "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
     "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/charsets.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9003011c1b6d28a7331f04251a25e7ccf63c98f8",
+    "jarFileModificationDate": "2012-10-19T17:11:34+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/httpclient-4.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "20dabe87cec0aa7adb30979868253ea9c1dffdcf",
+    "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "slf4j.log4j12",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6b4973e0320e220ec6534478d60233fd1cc51c9b",
+    "jarFileModificationDate": "2012-10-19T17:10:18+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/slf4j-log4j12-1.6.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.jena.jena-tdb",
+    "version": {
+      "major": 0,
+      "minor": 9,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "258b454c0a6eebaeb616a9f48111bfadd31d7924",
+    "jarFileModificationDate": "2012-10-20T18:08:25+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/jena-tdb-0.9.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "542112979f5b346cb3c6c6c5dade340cf082656a",
+    "jarFileModificationDate": "2012-08-29T01:54:45+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "da661877d4736e4c98c155b734ebeaa103bff5b2",
+    "jarFileModificationDate": "2012-10-19T17:11:34+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/httpcore-4.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-2.0.4-contrib",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2fc7c19e36a31643e14f52e941628bf1b45bbe00",
+    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-contrib.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-2.0.4-junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df8c345834094b1879ca7d743407d62e5b6a43f1",
+    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.api",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2396d74b12b905f780ed7966738bb78438e8371a",
+    "jarFileModificationDate": "2012-10-19T17:10:18+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/slf4j-api-1.6.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.jena.jena-core",
+    "version": {
+      "major": 2,
+      "minor": 7,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "329aaba0bee79717e7aa3d04d7fa4a7bc2a679e0",
+    "jarFileModificationDate": "2012-10-20T18:04:41+02:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/apache-jena-2.7.4/jena-core-2.7.4.jar",
+    "javaRuntime": false
   }
 ]

@@ -4,5 +4,15 @@
 <fullyQualifiedTypeName name="org.jdom2.Document"/>
 <fullyQualifiedTypeName name="org.jdom2.Element"/>
 <fullyQualifiedTypeName name="org.jdom2.Content"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.ModelFactoryBase"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.ModelFactory"/>
+<fullyQualifiedTypeName name="DisponibiliteeParking"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.jdom2.filter.ElementFilter"/>
+<fullyQualifiedTypeName name="org.jdom2.util.IteratorIterable"/>
+<fullyQualifiedTypeName name="org.jdom2.JDOMException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Resource"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Property"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
