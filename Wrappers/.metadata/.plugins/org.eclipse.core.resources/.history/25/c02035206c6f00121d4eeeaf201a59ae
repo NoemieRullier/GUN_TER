@@ -43,7 +43,7 @@ public class CsvToRdf {
 		propertyParking.add(m.createProperty(parkingP + "libType" ));
 		propertyParking.add(m.createProperty(parkingP + "address" ));
 		propertyParking.add(m.createProperty(parkingP + "townCode" ));
-		propertyParking.add(m.createProperty(parkingP + "telephone" ));
+		propertyParking.add(m.createProperty(parkingP + "phone" ));
 		propertyParking.add(m.createProperty(parkingP + "webSite" ));
 		propertyParking.add(m.createProperty(parkingP + "geo" ));
 		propertyParking.add(m.createProperty(parkingP + "presentation" ));
@@ -156,7 +156,6 @@ public class CsvToRdf {
 							m.add(resource, propertyParking.get(4), address);
 						}
 					}
-					// All the other property
 					else {
 						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
 					}

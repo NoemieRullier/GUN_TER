@@ -43,7 +43,7 @@ public class CsvToRdf {
 		propertyParking.add(m.createProperty(parkingP + "libType" ));
 		propertyParking.add(m.createProperty(parkingP + "address" ));
 		propertyParking.add(m.createProperty(parkingP + "townCode" ));
-		propertyParking.add(m.createProperty(parkingP + "telephone" ));
+		propertyParking.add(m.createProperty(parkingP + "phone" ));
 		propertyParking.add(m.createProperty(parkingP + "webSite" ));
 		propertyParking.add(m.createProperty(parkingP + "geo" ));
 		propertyParking.add(m.createProperty(parkingP + "presentation" ));
@@ -109,6 +109,8 @@ public class CsvToRdf {
 			nbProperty = row.split(",").length+1;
 		}
 
+		// TODO: A revoir si on laisse ou pas!!!
+		String[] donnees = new String[nbProperty];
 		int nbRow = 1;
 		while ((row = br.readLine()) != null)
 		{
@@ -117,7 +119,7 @@ public class CsvToRdf {
 						
 			// Create the resource correspond to the row
 			Resource resource = m.createResource(parkingP+data[0].substring(1, data[0].length()-1));
-			Resource address = null;
+			
 			int i = 0;
 			for (String val : data){
 				// If the column is the [latitude, longitude]
@@ -136,32 +138,33 @@ public class CsvToRdf {
 					m.add(resource, relation.get(i), coord);
 				}
 				// If the column is the payment accepted
-				else if (i % nbProperty == 19){
-					// TODO: revoir multiligne
+				if (i % nbProperty == 19){
+					donnees[i] = val.substring(1, val.length()-1);		
 					// TODO: A revoir pour le formattage des moyen de paiements car c'est du n'importe quoi !!! 
 					// Carte Bancaire ou CB Majuscule ou non --> Pb Rspèce
 					// Separateur --> Ils sont différents !!!!!
-					for(String pa: val.substring(1, val.length()-1).replace(" ","").split("[.,\\-]")){
+					for(String pa: donnees[i].replace(" ","").split("[.,\\-]")){
 						m.add(resource, relation.get(i), pa.toUpperCase());
 					}
 				}
 				else {
-					// If the column is a property of address
 					if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
-						if (address == null){
-							address = m.createResource(postalAddressP+nbRow);
-						}
-						m.add(address, relation.get(i), val.substring(1, val.length()-1));
-						if (i % nbProperty == 9){
-							m.add(resource, propertyParking.get(4), address);
-						}
+						Resource r = m.createResource(postalAddressP+nbRow);
+						m.add(r, relation.get(i), val.substring(1, val.length()-1));
 					}
-					// All the other property
-					else {
-						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
+					if (nbPropAddress == 3){
+						m.add(resource, propertyParking.get(4), r);
 					}
+					// TODO: ici ajouter les autres propriétés mais faire attention pour l'address
+					donnees[i] = val.substring(1, val.length()-1);
+					//m.add(resource, relation.get(i), val.substring(1, val.length()-1));
 				}
 				i++;
+			}
+			
+			// Ajouter dans le RDF-Graph
+			for (int j=0; j<donnees.length; j++){
+				System.out.println(donnees[j]);
 			}
 			nbRow++;
 		}

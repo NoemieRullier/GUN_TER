@@ -3,12 +3,16 @@
 # et qui sont proches d'un parking proposant un service vélo
 
 prefix sc: <http://schema.org/>
-prefix ex: <http://example.org/>
 prefix ex2: <http://www.example.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix dcterms:  <http://purl.org/dc/terms/>
 prefix dbpedia:  <http://dbpedia.org/resource/>
 prefix ical: <http://www.w3.org/2002/12/cal/icaltzd#>
+
+prefix schema:  <http://example.org/>
+prefix parking:  <http://example.org/Parking/>
+prefix geo:     <http://example.org/GeoCoordinates/>
+prefix postalAddress:  <http://example.org/PostalAddress/>
 
 SELECT distinct ?nomEquip ?days ?nomPark
 WHERE {
@@ -22,8 +26,8 @@ WHERE {
      ?rule ical:byday ?days
      FILTER(contains(?days, "TH"))
 
-     ?parking sc:name ?nomPark .
-     ?parking ex2:servicevelo ?velo
-     FILTER(contains(?velo, "Oui"))
+     ?parking parking:name ?nomPark ;
+     		  parking:serviceBike ?velo .
+     FILTER regex(?velo, "Oui")
 }
 ORDER BY ?nomEquip

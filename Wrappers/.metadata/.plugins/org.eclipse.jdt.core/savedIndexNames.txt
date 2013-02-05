@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.126+/home/guillaume/Documents/projet git/GUN_TER/Wrappers/.metadata/.plugins/org.eclipse.jdt.core
 2444780712.index
 2195473183.index
@@ -9,6 +10,33 @@ INDEX VERSION 1.126+/home/guillaume/Documents/projet git/GUN_TER/Wrappers/.metad
 1462128014.index
 2214389102.index
 348326238.index
+=======
+INDEX VERSION 1.126+/Users/Nomyx/Public/Partage_U/2012-2013_M1/2eme_Semestre/Initiation ˆ la recherche/GUN_TER/Wrappers/.metadata/.plugins/org.eclipse.jdt.core
+508766689.index
+3321539481.index
+826031039.index
+3266567714.index
+156905802.index
+3635692997.index
+84777399.index
+4173724491.index
+1783721159.index
+3000285004.index
+770573466.index
+3004609673.index
+3963898989.index
+272178059.index
+4249315662.index
+3954040986.index
+3094649760.index
+4238209716.index
+3712507179.index
+1819685514.index
+2122150068.index
+765977872.index
+3302703152.index
+1833648217.index
+>>>>>>> a73ec8179829b1adf39c7a34cf5d0181002b485a
 1964194861.index
 669778082.index
 1194122951.index

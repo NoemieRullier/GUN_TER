@@ -1,0 +1,17 @@
+# Requête 2 :
+# Les équipements publics culturels qui ouvrent le jeudi
+# et qui sont proches d'un parking possédant au moins 5 places
+# encore disponibles et qui accepte le système de paiement Moneo
+
+prefix schema:  <http://example.org/>
+prefix parking:  <http://example.org/Parking/>
+prefix geo:     <http://example.org/GeoCoordinates/>
+prefix postalAddress:  <http://example.org/PostalAddress/>
+
+SELECT distinct ?name
+WHERE {
+    ?parking parking:name ?name;
+    		 parking:paymentAccepted ?payment.
+
+	FILTER regex(?payment, "MONEO")
+}

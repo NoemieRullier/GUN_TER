@@ -4,13 +4,17 @@
 # encore disponibles et qui accepte le système de paiement Moneo
 
 prefix sc: <http://schema.org/>
-prefix ex: <http://example.org/>
 prefix ex2: <http://www.example.org/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix dcterms:  <http://purl.org/dc/terms/>
 prefix dbpedia:  <http://dbpedia.org/resource/>
 prefix ical: <http://www.w3.org/2002/12/cal/icaltzd#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>"
+
+prefix schema:  <http://example.org/>
+prefix parking:  <http://example.org/Parking/>
+prefix geo:     <http://example.org/GeoCoordinates/>
+prefix postalAddress:  <http://example.org/PostalAddress/>
 
 SELECT distinct ?nomEquipement ?adrEquipement
     ?nomParking ?adrParking
@@ -29,12 +33,12 @@ WHERE {
      ?rule ical:byday ?days
      FILTER(contains(?days, "TH"))
 
-     ?parking sc:name ?nomParking ;
-              sc:address ?addrP ;
-              sc:paymentAccepted ?payment ;
+     ?parking parking:name ?nomParking ;
+              parking:address ?addrP ;
+              parking:paymentAccepted ?payment ;
               ex2:dispo ?dispo ;
               ex2:complet ?complet
-     FILTER(contains(?payment, "Moneo"))
+     FILTER regex(?payment, "MONEO")
      FILTER(xsd:integer(?dispo) - xsd:integer(?complet) > 5)
 
      ?addrP sc:streetAddress ?adrParking .

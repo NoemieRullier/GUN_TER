@@ -43,7 +43,7 @@ public class CsvToRdf {
 		propertyParking.add(m.createProperty(parkingP + "libType" ));
 		propertyParking.add(m.createProperty(parkingP + "address" ));
 		propertyParking.add(m.createProperty(parkingP + "townCode" ));
-		propertyParking.add(m.createProperty(parkingP + "telephone" ));
+		propertyParking.add(m.createProperty(parkingP + "phone" ));
 		propertyParking.add(m.createProperty(parkingP + "webSite" ));
 		propertyParking.add(m.createProperty(parkingP + "geo" ));
 		propertyParking.add(m.createProperty(parkingP + "presentation" ));
@@ -122,6 +122,7 @@ public class CsvToRdf {
 			for (String val : data){
 				// If the column is the [latitude, longitude]
 				if(i % nbProperty == 10){
+					// TODO: revoir problème
 					// Create the resource coordinate
 					Resource coord = m.createResource(geoP+nbRow);
 					
@@ -136,7 +137,7 @@ public class CsvToRdf {
 					m.add(resource, relation.get(i), coord);
 				}
 				// If the column is the payment accepted
-				else if (i % nbProperty == 19){
+				if (i % nbProperty == 19){
 					// TODO: revoir multiligne
 					// TODO: A revoir pour le formattage des moyen de paiements car c'est du n'importe quoi !!! 
 					// Carte Bancaire ou CB Majuscule ou non --> Pb Rspèce
@@ -146,7 +147,6 @@ public class CsvToRdf {
 					}
 				}
 				else {
-					// If the column is a property of address
 					if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
 						if (address == null){
 							address = m.createResource(postalAddressP+nbRow);
@@ -156,8 +156,8 @@ public class CsvToRdf {
 							m.add(resource, propertyParking.get(4), address);
 						}
 					}
-					// All the other property
 					else {
+						// TODO: ici ajouter les autres propriétés mais faire attention pour l'address
 						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
 					}
 				}
