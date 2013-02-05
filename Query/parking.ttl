@@ -1,0 +1,906 @@
+@prefix schema:  <http://example.org/> .
+@prefix parking:  <http://example.org/Parking/> .
+@prefix geo:     <http://example.org/GeoCoordinates/> .
+@prefix postalAddress:  <http://example.org/PostalAddress/> .
+
+<http://example.org/GeoCoordinates/11>
+      geo:latitude " 47.2110570860299 " ;
+      geo:longitude " -1.55198311230427" .
+
+<http://example.org/Parking/288>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/4> ;
+      parking:capacityBike
+              "27" ;
+      parking:capacityCar "515" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "6" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/4> ;
+      parking:id "288" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Elévation" ;
+      parking:name "Parking ouvrage Graslin" ;
+      parking:otherMobilityProximityService
+              "Station bicloo n°33 \"\"Racine\"\".Station Marguerite \"\"Graslin\"\" (Véhicule en libre service).Arrêt de bus \"\"Graslin\"\" Lignes 22-21-23-24-42-51-56." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCE" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Téléjalonnement, Carte de paiement à décompte, kit dépannage batterie, prêt de parapluie, prêt de cabas et de poussettes, isothermes, toilettes publiques, infocirculation Nantes métropole, vidéosurveillance. " ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/Parking/3651>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/18> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "148" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "3" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/18> ;
+      parking:id "3651" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos CHU" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 2-3 \"\"Aimé Delrue\"\" et Ligne 1 \"\"Commerce\"\".Station Bicloo n°39 \"\"Quai Moncousu\"\"." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7.Possibilité d'abonnements pour les commerçants du marché de la Petite Hollande." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie, Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/16>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Quai Malakoff" .
+
+<http://example.org/Parking/1043>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/7> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "307" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "9" ;
+      parking:exploiting "VINCI PARK" ;
+      parking:geo <http://example.org/GeoCoordinates/7> ;
+      parking:id "1043" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Souterrain" ;
+      parking:name "Parking ouvrage Aristide Briand" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Ligne 3 \"\"Jean-Jaurès\"\".Station Bicloo n°15 \"\"Place Aristide Briand\"\"." ;
+      parking:paymentAccepted
+              "CHÈQUE" , "ESPÈCES" , "T" , "CARTEBANCAIRE" , "CARTEÀDÉCOMPTE" , "BADGELIBER" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement bancaire en borne de sortie, Prêt d'un kit de dépannage, Vidéo surveillance, Zone motos, Prêt de parapluie, Prêt de vélos, Service d'accompagnement des clients à leur véhicule, Informations trafic" ;
+      parking:telephone "08 10 26 30 00" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.vincipark.com" .
+
+<http://example.org/GeoCoordinates/9>
+      geo:latitude " 47.2202559810468 " ;
+      geo:longitude " -1.55835729990237" .
+
+<http://example.org/GeoCoordinates/21>
+      geo:latitude " 47.2152099260756 " ;
+      geo:longitude " -1.53754504260148" .
+
+<http://example.org/PostalAddress/12>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Allée Baco" .
+
+<http://example.org/PostalAddress/1>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Neuve des Capucins" .
+
+<http://example.org/Parking/284>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/3> ;
+      parking:capacityBike
+              "68" ;
+      parking:capacityCar "555" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "2" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/3> ;
+      parking:id "284" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Mixte" ;
+      parking:name "Parking ouvrage Decré-Bouffay" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 1-2-3 \"\"Commerce\"\".Station Bicloo n°4 \"\"Moulin\"\".Station Marguerite \"\"Hôtel de Ville\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Téléjalonnement, Carte de paiement à décompte, kit dépannage batterie, prêt de parapluie, prêt de cabas et de poussettes, isothermes, toilettes publiques, infocirculation Nantes Métropole, vidéosurveillance" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/22>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44200" ;
+      postalAddress:streetAddress
+              "Rue René Viviani" .
+
+<http://example.org/GeoCoordinates/4>
+      geo:latitude " 47.2143102105068 " ;
+      geo:longitude " -1.56257181621741" .
+
+<http://example.org/Parking/280>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/2> ;
+      parking:capacityBike
+              "131" ;
+      parking:capacityCar "597" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "10" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/2> ;
+      parking:id "280" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Elévation" ;
+      parking:name "Parking ouvrage Gare Nord" ;
+      parking:otherMobilityProximityService
+              "Gare de Nantes.Station Bicloo 62 \"\"Gare Nord\"\" (équipée CB).Station Tramway Ligne 1 \"\"Gare Nord\"\"." ;
+      parking:paymentAccepted
+              "ESPÈCES" , "MONÉO" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Parking de Gare.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Oui" ;
+      parking:services "Location vélo classique ou électrique de la 1/2 journée à l'année.Vidéosurveillance, Interphonie, Téléjalonnement" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.resaplace.com/" .
+
+<http://example.org/PostalAddress/9>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Le Nôtre" .
+
+<http://example.org/GeoCoordinates/19>
+      geo:latitude " 47.2208133510721 " ;
+      geo:longitude " -1.55105616832611" .
+
+<http://example.org/GeoCoordinates/15>
+      geo:latitude " 47.2142340366163 " ;
+      geo:longitude " -1.54134337584288" .
+
+<http://example.org/PostalAddress/5>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "4 Place de Bretagne" .
+
+<http://example.org/GeoCoordinates/10>
+      geo:latitude " 47.2111796553233 " ;
+      geo:longitude " -1.55843872950464" .
+
+<http://example.org/Parking/3650>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/17> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "78" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "2" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/17> ;
+      parking:id "3650" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Bellamy" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 2 \"\"50 Otages\"\".Station Bicloo n°21 \"\"Marché Talensac Sud\"\".Station Marguerite \"\"50 Otages\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7.Possibilité d'abonnements pour les commerçants du marché de Talensac." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkigns-nantes.fr" .
+
+<http://example.org/Parking/3551>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/12> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "242" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "6" ;
+      parking:exploiting " NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/12> ;
+      parking:id "3551" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Baco-LU" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 2-3 \"\"Hôtel Dieu\"\".Station Bicloo n°52 \"\"Baco\"\".Station Marguerite \"\"Baco\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/15>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Quai Malakoff" .
+
+<http://example.org/Parking/299>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/5> ;
+      parking:capacityBike
+              "85" ;
+      parking:capacityCar "645" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "27" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/5> ;
+      parking:id "299" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Mixte" ;
+      parking:name "Parking ouvrage Tour Bretagne" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 3 \"\"Bretagne\"\".Station Bicloo n°14 \"\"Bretagne Nord\"\".Station Marguerite \"\"Place Bretagne\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Téléjalonnement, Carte de paiement à décompte, kit dépannage batterie, prêt de parapluie, prêt de cabas et de poussettes, isothermes, toilettes publiques, infocirculation Nantes Métropole, vidéosurveillance." ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/Parking/3590>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/16> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "33" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "1" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/16> ;
+      parking:id "3590" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Gare Sud 2 limité 1h" ;
+      parking:otherMobilityProximityService
+              "" ;
+      parking:paymentAccepted
+              "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Parc en enclos pour le stationnement de courte durée en lien avec la Gare SNCF (maximum 1h, au delà, 2 par 1/2 heure supplémentaire)" ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB libre service (borne de sortie)" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/19>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Sully" .
+
+<http://example.org/Parking/1046>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/9> ;
+      parking:capacityBike
+              "43" ;
+      parking:capacityCar "365" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "9" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/9> ;
+      parking:id "1046" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Elévation" ;
+      parking:name "Parking ouvrage Talensac" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 3 \"\"50 Otages\"\".Station Bicloo n°1 \"\"Préfecture\"\" (équipée CB).Station Marguerite \"\"50 Otages\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Téléjalonnement, Carte de paiement à décompte, kit dépannage batterie, prêt de parapluie, prêt de cabas et de poussettes, isothermes, toilettes publiques, infocirculation Nantes Métropole, vidéosurveillance." ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/Parking/3589>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/15> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "279" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "5" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/15> ;
+      parking:id "3589" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Gare Sud 2" ;
+      parking:otherMobilityProximityService
+              "" ;
+      parking:paymentAccepted
+              "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Parc en enclos de Gare, accessible 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB libre service (borne de sortie)" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/GeoCoordinates/20>
+      geo:latitude " 47.2059006220645 " ;
+      geo:longitude " -1.56272779236372" .
+
+<http://example.org/PostalAddress/11>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Chaussée de la Madeleine" .
+
+<http://example.org/PostalAddress/2>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Boulevard de Stalingrad" .
+
+<http://example.org/Parking/3555>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/14> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "468" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "9" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/14> ;
+      parking:id "3555" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Gare Sud 3" ;
+      parking:otherMobilityProximityService
+              "" ;
+      parking:paymentAccepted
+              "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Parc en enclos de Gare accessible 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB libre service (borne de sortie)" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parking-nantes.fr" .
+
+<http://example.org/GeoCoordinates/3>
+      geo:latitude " 47.2166626199643 " ;
+      geo:longitude " -1.55400463227177" .
+
+<http://example.org/PostalAddress/21>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "24 Mail Pablo Picasso" .
+
+<http://example.org/GeoCoordinates/18>
+      geo:latitude " 47.2093619715999 " ;
+      geo:longitude " -1.55725023399242" .
+
+<http://example.org/GeoCoordinates/14>
+      geo:latitude " 47.216135859474 " ;
+      geo:longitude " -1.53789482834948" .
+
+<http://example.org/PostalAddress/6>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Place du Commerce" .
+
+<http://example.org/Parking/3550>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/11> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "122" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "4" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/11> ;
+      parking:id "3550" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Hôtel Dieu" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 2-3 \"\"Hôtel Dieu\"\".Station Bicloo n°38 \"\"Place Ricordeau\"\".Station Marguerite \"\"Baco\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/18>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Quai de Tourville" .
+
+<http://example.org/GeoCoordinates/6>
+      geo:latitude " 47.2131202858024 " ;
+      geo:longitude " -1.55771321969051" .
+
+<http://example.org/GeoCoordinates/7>
+      geo:latitude " 47.2170936048579 " ;
+      geo:longitude " -1.56293641808053" .
+
+<http://example.org/Parking/3951>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/20> ;
+      parking:capacityBike
+              "64" ;
+      parking:capacityCar "621" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "21" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/20> ;
+      parking:id "3951" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Elévation" ;
+      parking:name "Parking ouvrage Les Machines" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Lignes 1 \"\"Chantiers Navals\"\".Station Bicloo n°43 \"\"Machines de l'Ile\"\".Station Marguerite \"\"Ecole d'Archi\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CB" ;
+      parking:presentation
+              "Parking Ile de Nantes.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "https://www.resaplace.com/" .
+
+<http://example.org/PostalAddress/20>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44200" ;
+      postalAddress:streetAddress
+              "Rue Arthur III" .
+
+<http://example.org/Parking/677>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/6> ;
+      parking:capacityBike
+              "100" ;
+      parking:capacityCar "534" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "2" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/6> ;
+      parking:id "677" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Souterrain" ;
+      parking:name "Parking ouvrage Commerce" ;
+      parking:otherMobilityProximityService
+              "Station bicloo n°30 - Commerce.Station Marguerite : Square Jean Baptiste Daviais (Service véhicule en libre service).Tramway Ligne 1-2-3 station \"\"Commerce\"\"." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Oui" ;
+      parking:services "Téléjalonnement, Carte de paiement à décompte, kit dépannage batterie, prêt de parapluie, prêt de cabas et de poussettes, isothermes, toilettes publiques, infocirculation Nantes Métropole.Location de vélos classiques et électriques de la 1/2 journée à l'année." ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/3>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "18 Rue du Moulin" .
+
+<http://example.org/Parking/3554>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/13> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "118" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "4" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/13> ;
+      parking:id "3554" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Château" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Ligne 1 \"\"Duchesse Anne\"\".Station Bicloo n°49 \"\"Duchesse Anne\"\".Station Marguerite \"\"Duchesse Anne\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/14>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Marcel Paul" .
+
+<http://example.org/GeoCoordinates/2>
+      geo:latitude " 47.2166890401729 " ;
+      geo:longitude " -1.54498433411572" .
+
+<http://example.org/GeoCoordinates/13>
+      geo:latitude " 47.2169899609793 " ;
+      geo:longitude " -1.54785044968527" .
+
+<http://example.org/PostalAddress/7>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Place Aristide Briand" .
+
+<http://example.org/GeoCoordinates/17>
+      geo:latitude " 47.2223604161017 " ;
+      geo:longitude " -1.55769369256355" .
+
+<http://example.org/Parking/3989>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/21> ;
+      parking:capacityBike
+              "50" ;
+      parking:capacityCar "435" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "9" ;
+      parking:exploiting "EFFIA" ;
+      parking:geo <http://example.org/GeoCoordinates/21> ;
+      parking:id "3989" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Souterrain" ;
+      parking:name "Parking ouvrage Gare Sud 4" ;
+      parking:otherMobilityProximityService
+              "Station Bicloo n°59 \"\"Stade Saupin\"\".Station Marguerite \"\"Gare Sud\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "ESPÈCES" , "MONÉO" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Parking de Gare.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie, Téléjalonnement" ;
+      parking:telephone "08 25 88 88 26" ;
+      parking:townCode "440109" ;
+      parking:webSite "https://www.resaplace.com/" .
+
+<http://example.org/Parking/134>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/1> ;
+      parking:capacityBike
+              "82" ;
+      parking:capacityCar "447" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "4" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/1> ;
+      parking:id "134" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Mixte" ;
+      parking:name "Parking ouvrage Médiathèque" ;
+      parking:otherMobilityProximityService
+              "Station Tramway \"\"Médiathèque\"\" Ligne 1.Station Bicloo n°34 équipée d'un lecteur de cartes bancaires." ;
+      parking:paymentAccepted
+              "CHÈQUES" , "ESPÈCES" , "MONÉO" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Vidéosurveillance, Interphonie, Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/PostalAddress/10>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Allée de l'Ile Gloriette" .
+
+<http://example.org/PostalAddress/17>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Impasse de la Courtine" .
+
+<http://example.org/Parking/3652>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/19> ;
+      parking:capacityBike
+              "67" ;
+      parking:capacityCar "398" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "9" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/19> ;
+      parking:id "3652" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Souterrain" ;
+      parking:name "Parking ouvrage Cathédrale" ;
+      parking:otherMobilityProximityService
+              "Station Busway Ligne 4 \"\"Foch Cathédrale\"\".Station Bicloo n°70 \"\"Foch Cathédrale\"\".Station Marguerite \"\"Duchesse Anne\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr/" .
+
+<http://example.org/PostalAddress/8>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Avenue Jean Claude Bonduelle" .
+
+<http://example.org/Parking/1044>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/8> ;
+      parking:capacityBike
+              "29" ;
+      parking:capacityCar "430" ;
+      parking:capacityElectricCar
+              "2" ;
+      parking:capacityPmr "10" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/8> ;
+      parking:id "1044" ;
+      parking:libCategorie
+              "Parking Ouvrage" ;
+      parking:libType "Souterrain" ;
+      parking:name "Parking ouvrage Cité des Congrès" ;
+      parking:otherMobilityProximityService
+              "Station Busway Ligne 4 \"\"Cité Internationale des Congrès\"\".Station Bicloo n°54 \"\"Cité Internationale des Congrès\"\" (équipée CB).Station Marguerite \"\"Cité des Congrès\"\" (Véhicule en libre service)." ;
+      parking:paymentAccepted
+              "MONEO" , "ESPÈCES" , "CARTEÀDÉCOMPTE" , "CB" ;
+      parking:presentation
+              "Parking de Centre-ville.Parking Accessible 24h/24 et 7j/7 pour les abonnés." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/GeoCoordinates/22>
+      geo:latitude " 47.2087756042897 " ;
+      geo:longitude " -1.53619706978924" .
+
+<http://example.org/GeoCoordinates/8>
+      geo:latitude " 47.2129016709023 " ;
+      geo:longitude " -1.54397127716684" .
+
+<http://example.org/GeoCoordinates/5>
+      geo:latitude " 47.2177394198201 " ;
+      geo:longitude " -1.55820163936291" .
+
+<http://example.org/PostalAddress/4>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Scribe" .
+
+<http://example.org/Parking/3990>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/22> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "121" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "3" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/22> ;
+      parking:id "3990" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Pac en enclos Viviani" ;
+      parking:otherMobilityProximityService
+              "Station Busway Lignes 4 \"\"Ile de Nantes\"\".Station Bicloo n°58 \"\"Palais des Sports\"\"." ;
+      parking:paymentAccepted
+              "MONEO" , "CARTEBANCAIRE" , "RSPÈCES" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/Parking/3549>
+      parking:accessConditions
+              "Payant" ;
+      parking:address <http://example.org/PostalAddress/10> ;
+      parking:capacityBike
+              "0" ;
+      parking:capacityCar "172" ;
+      parking:capacityElectricCar
+              "0" ;
+      parking:capacityPmr "2" ;
+      parking:exploiting "NGE" ;
+      parking:geo <http://example.org/GeoCoordinates/10> ;
+      parking:id "3549" ;
+      parking:libCategorie
+              "Parc en Enclos" ;
+      parking:libType "" ;
+      parking:name "Parc en enclos Gloriette 1" ;
+      parking:otherMobilityProximityService
+              "Station Tramway Ligne 1 \"\"Commerce\"\".Station Marguerite \"\"Delorme\"\" (Véhicules en libre service).Station Bicloo n°37 \"\"Feydeau." ;
+      parking:paymentAccepted
+              "ESPÉCES" , "MONEO" , "CARTEBANCAIRE" ;
+      parking:presentation
+              "Les parcs en enclos du centre-ville de Nantes proposent une offre de stationnement privilégiant le stationnement inférieur à 2 heures. Ils sont accessibles 24h/24 et 7j/7." ;
+      parking:serviceBike "Non" ;
+      parking:services "Paiement CB en borne de sortie, Vidéosurveillance, Interphonie , Téléjalonnement" ;
+      parking:telephone "02 51 84 94 51" ;
+      parking:townCode "440109" ;
+      parking:webSite "http://www.parkings-nantes.fr" .
+
+<http://example.org/GeoCoordinates/12>
+      geo:latitude " 47.2138552490303 " ;
+      geo:longitude " -1.54987288302294" .
+
+<http://example.org/GeoCoordinates/1>
+      geo:latitude " 47.2108708271003 " ;
+      geo:longitude " -1.5623381759623" .
+
+<http://example.org/PostalAddress/13>
+      postalAddress:addressLocality
+              "NANTES" ;
+      postalAddress:postalCode
+              "44000" ;
+      postalAddress:streetAddress
+              "Rue Henri IV" .
+
+<http://example.org/GeoCoordinates/16>
+      geo:latitude " 47.2152021232956 " ;
+      geo:longitude " -1.54267513884661" .

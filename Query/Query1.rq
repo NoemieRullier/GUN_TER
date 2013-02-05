@@ -1,0 +1,33 @@
+# Requête 1
+# Les équipements publics culturels qui ouvrent le jeudi
+# et qui sont proches d'un parking proposant un service vélo
+
+prefix sc: <http://schema.org/>
+prefix ex2: <http://www.example.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dcterms:  <http://purl.org/dc/terms/>
+prefix dbpedia:  <http://dbpedia.org/resource/>
+prefix ical: <http://www.w3.org/2002/12/cal/icaltzd#>
+
+prefix schema:  <http://example.org/>
+prefix parking:  <http://example.org/Parking/>
+prefix geo:     <http://example.org/GeoCoordinates/>
+prefix postalAddress:  <http://example.org/PostalAddress/>
+
+SELECT distinct ?nomEquip ?days ?nomPark
+WHERE {
+     ?equip dcterms:subject dbpedia:Culture .
+     ?equip sc:name ?nomEquip .
+     ?equip ical:Vcalendar ?cal .
+     ?equip ex:parkingClose ?parking .
+
+     ?cal ical:Vevent ?event .
+     ?event ical:rrule ?rule .
+     ?rule ical:byday ?days
+     FILTER(contains(?days, "TH"))
+
+     ?parking parking:name ?nomPark ;
+     		  parking:serviceBike ?velo .
+     FILTER regex(?velo, "Oui")
+}
+ORDER BY ?nomEquip

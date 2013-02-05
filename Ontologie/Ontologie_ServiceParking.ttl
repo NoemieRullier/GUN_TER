@@ -62,7 +62,7 @@ parking:townCode	rdf:type owl:DatatypeProperty;
 					rdfs:range rdfs:Literal;
 					rdfs:domain schema:Parking .
 			
-parking:phone	rdf:type owl:DatatypeProperty;
+parking:telephone	rdf:type owl:DatatypeProperty;
 				rdfs:range rdfs:Literal;
 				rdfs:domain schema:Parking .
 
