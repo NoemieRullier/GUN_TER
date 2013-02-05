@@ -1,0 +1,184 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "20dabe87cec0aa7adb30979868253ea9c1dffdcf",
+    "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "70e3f9e76e3d5884415516c0cee0855295bcb571",
+    "jarFileModificationDate": "2012-08-29T01:26:15+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jdom-2.0.4-sources",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4c83993a65f25aeaa433d3591fbc3cf34edccfbe",
+    "jarFileModificationDate": "2012-11-08T19:18:12+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-sources.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "542112979f5b346cb3c6c6c5dade340cf082656a",
+    "jarFileModificationDate": "2012-08-29T01:54:45+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c059d3ce7902fe37b9fe4a24fb5d85fd9f014ce0",
+    "jarFileModificationDate": "2012-08-29T01:53:37+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "420fb1d48640a526de2baf382af9b4d9fa4cb6fc",
+    "jarFileModificationDate": "2012-08-29T02:30:17+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jdom-2.0.4-contrib",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2fc7c19e36a31643e14f52e941628bf1b45bbe00",
+    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-contrib.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a5d536e0b36baaed0e128cc78ba7d9ea70b06256",
+    "jarFileModificationDate": "2012-10-20T23:40:12+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bd89e40dd2f58f3b9dc44d696ce9cfac3b90c707",
+    "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jdom-2.0.4-junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df8c345834094b1879ca7d743407d62e5b6a43f1",
+    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-2.0.4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b65e55cc61b34bc634b25f0359d1242e4c519de",
+    "jarFileModificationDate": "2012-11-08T19:18:08+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-2.0.4-javadoc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bbc0bed63cce1de2bf18e0b4aa2e7d12bc7f3cd8",
+    "jarFileModificationDate": "2012-11-08T19:18:12+01:00",
+    "location": "/home/guillaume/Documents/projet git/GUN_TER/wrapper1/wrapperDisponibiliteeParking/libs/jdom-2.0.4/jdom-2.0.4-javadoc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2357317d1e1f14937b3bda942c58791ee1dba581",
+    "jarFileModificationDate": "2012-08-29T01:26:15+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ad9a9461a09025df82ec835933f7192f88908719",
+    "jarFileModificationDate": "2012-10-20T23:40:11+02:00",
+    "location": "/usr/lib/jvm/jdk1.6.0_35/jre/lib/charsets.jar",
+    "javaRuntime": true
+  }
+]

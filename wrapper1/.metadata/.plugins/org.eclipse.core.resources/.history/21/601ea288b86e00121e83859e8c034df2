@@ -1,0 +1,18 @@
+import org.jdom2.input.SAXBuilder;
+
+
+public class DisponibiliteeParking {
+
+	private static final String file = "../../DataSets/disponibilite-dans-les-parkings-publics-de-nantes-metropole.xml";
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		SAXBuilder builder = new SAXBuilder();
+		
+		Document document = builder.build(file);
+	}
+
+}
