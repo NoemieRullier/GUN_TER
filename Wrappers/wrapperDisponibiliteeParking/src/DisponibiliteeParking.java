@@ -23,7 +23,8 @@ public class DisponibiliteeParking {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+//TODO: revoir algorithme pour prendre n balises
+		
 		//entête du fichier RDF Turtle
 		Model DispoParkingModel = ModelFactory.createDefaultModel();
 		String nsA = "http://example.org/";
@@ -54,8 +55,19 @@ public class DisponibiliteeParking {
 		
 		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "id"), "0");
 		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "description"), "Invalide (comptage hors service)");
-		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "pjdPrint"), "0");
-
+		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "pjdPrint"), "Neutre (affichage au noir)");
+		
+		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "id"), "1");
+		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé pour tous clients ");
+		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "pjdPrint"), "FERME");
+		
+		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "id"), "2");
+		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé au client horaires et ouvert pour les abonnés (exemple : un parking fermé aux clients horaires la nuit ou le dimanche)");
+		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "pjdPrint"), "ABONNES");
+		
+		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "id"), "5");
+		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking ouvert à tous les clients. Le nombre de places correspond au nombre de places destinées aux clients horaires");
+		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "pjdPrint"), "#Nombre de places# ou COMPLET");
 
 
 		
@@ -75,8 +87,36 @@ public class DisponibiliteeParking {
 					DispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
 					DispoParkingModel.add(r, properties_available.get("Grp_nom"), encours.getChild("Grp_nom").getValue());
 					DispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
-
+					
+					Resource status = null;
+					switch (Integer.valueOf(encours.getChild("Grp_statut").getValue())) {
+					case 0:
+						status = status0;
+						break;
 						
+					case 1:
+						status = status1;
+						break;
+						
+					case 2:
+						status = status2;
+						break;
+						
+					case 5:
+						status = status5;
+						break;
+
+					default:
+						break;
+					}
+					
+					DispoParkingModel.add(r, properties_available.get("Grp_statut"), status);
+					DispoParkingModel.add(r, properties_available.get("Grp_pri_aut"), encours.getChild("Grp_pri_aut").getValue());
+					DispoParkingModel.add(r, properties_available.get("Grp_disponible"), encours.getChild("Grp_disponible").getValue());
+					DispoParkingModel.add(r, properties_available.get("Grp_complet"), encours.getChild("Grp_complet").getValue());
+					DispoParkingModel.add(r, properties_available.get("Grp_exploitation"), encours.getChild("Grp_exploitation").getValue());
+					DispoParkingModel.add(r, properties_available.get("Grp_horodatage"), encours.getChild("Grp_horodatage").getValue());
+					DispoParkingModel.add(r, properties_available.get("IdObj"), encours.getChild("IdObj").getValue());
 					//creer une ressource pour chaque valeur
 						//pour le status faire une ressource sur un status qui utilise les propriétées pour accéder à ses éléments
 				}
@@ -90,12 +130,12 @@ public class DisponibiliteeParking {
 //				
 //			}
 			
-			for(Element e : rootNode.getChildren("Groupe_Parking")){
-				System.out.println(e.getName());
-				for(Element f : e.getChildren()){
-					System.out.println(f.getName() + " : " + f.getText());
-				}
-			}
+//			for(Element e : rootNode.getChildren("Groupe_Parking")){
+//				System.out.println(e.getName());
+//				for(Element f : e.getChildren()){
+//					System.out.println(f.getName() + " : " + f.getText());
+//				}
+//			}
 		} catch (JDOMException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
