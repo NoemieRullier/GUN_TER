@@ -2,7 +2,7 @@
 # Retourne le Nom , adresse, code postal et commune + le type (resto, cave, activité)
 
 
-SELECT ?type, ?name, ?address, ?postalCode, ?town, ?webSite, ?mail
+SELECT ?type ?name ?address ?postalCode ?town ?webSite ?mail
 WHERE 
 {
 				
@@ -39,7 +39,7 @@ onto:acceptVisualImpairment
 onto:acceptHearingImpairment
 
 V1Restaurant(x, ad, pc, town):- Address(x, ad) ^ PostalCode(x, pc) ^ Town(x, town)
-SELECT ?x, ?ad, ?pc, ?town
+SELECT ?x ?ad ?pc ?town
 WHERE
 {
 	?x	onto:hasAdrress ?ad;
