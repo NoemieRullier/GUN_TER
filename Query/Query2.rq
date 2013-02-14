@@ -9,7 +9,7 @@ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix dcterms:  <http://purl.org/dc/terms/>
 prefix dbpedia:  <http://dbpedia.org/resource/>
 prefix ical: <http://www.w3.org/2002/12/cal/icaltzd#>
-prefix xsd: <http://www.w3.org/2001/XMLSchema#>"
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 prefix schema:  <http://example.org/>
 prefix parking:  <http://example.org/Parking/>

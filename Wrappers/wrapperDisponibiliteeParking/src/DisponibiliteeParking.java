@@ -17,132 +17,117 @@ import com.hp.hpl.jena.rdf.model.Resource;
 
 public class DisponibiliteeParking {
 
-	private static final String file = "../../DataSets/disponibilite-dans-les-parkings-publics-de-nantes-metropole.xml";
+	private String xmlFile;
+	private String onthologyFile;
 	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-//TODO: revoir algorithme pour prendre n balises
-		
+	private Model dispoParkingModel;
+	
+	private Map<String, Property> properties_available;
+	private Map<String, Resource> mapStatus;
+	
+	
+	//lire l'onthologie, en déduire l'entête, les propriétées à utiliser
+	public void readOnthology(){
 		//entête du fichier RDF Turtle
-		Model DispoParkingModel = ModelFactory.createDefaultModel();
 		String nsA = "http://example.org/";
 		String nsB = "http://example.org/Parking_availability/";
 		String nsC = "http://example.org/Parking_status/";
 		String nsD = "http://example.org/Parking/";
 		
-		DispoParkingModel.setNsPrefix("schema", nsA);
-		DispoParkingModel.setNsPrefix("parking_availability", nsB);
-		DispoParkingModel.setNsPrefix("parking_status", nsC);
-		DispoParkingModel.setNsPrefix("parking", nsD);
+		dispoParkingModel.setNsPrefix("schema", nsA);
+		dispoParkingModel.setNsPrefix("parking_availability", nsB);
+		dispoParkingModel.setNsPrefix("parking_status", nsC);
+		dispoParkingModel.setNsPrefix("parking", nsD);
 		
-		Map<String, Property> properties_available = new HashMap<String, Property>();
-		properties_available.put("Grp_identifiant", DispoParkingModel.createProperty(nsB + "id"));
-		properties_available.put("Grp_nom", DispoParkingModel.createProperty(nsB + "name"));
-		properties_available.put("Grp_statut", DispoParkingModel.createProperty(nsB + "statut"));
-		properties_available.put("Grp_pri_aut", DispoParkingModel.createProperty(nsB + "priority"));
-		properties_available.put("Grp_disponible", DispoParkingModel.createProperty(nsB + "space"));
-		properties_available.put("Grp_complet", DispoParkingModel.createProperty(nsB + "complete"));
-		properties_available.put("Grp_exploitation", DispoParkingModel.createProperty(nsB + "exploitation"));
-		properties_available.put("Grp_horodatage", DispoParkingModel.createProperty(nsB + "timestamp"));
-		properties_available.put("IdObj", DispoParkingModel.createProperty(nsB + "IdObj"));
+		//création des propriété pour les parkings
+		properties_available.put("Grp_identifiant", dispoParkingModel.createProperty(nsB + "id"));
+		properties_available.put("Grp_nom", dispoParkingModel.createProperty(nsB + "name"));
+		properties_available.put("Grp_statut", dispoParkingModel.createProperty(nsB + "statut"));
+		properties_available.put("Grp_pri_aut", dispoParkingModel.createProperty(nsB + "priority"));
+		properties_available.put("Grp_disponible", dispoParkingModel.createProperty(nsB + "space"));
+		properties_available.put("Grp_complet", dispoParkingModel.createProperty(nsB + "complete"));
+		properties_available.put("Grp_exploitation", dispoParkingModel.createProperty(nsB + "exploitation"));
+		properties_available.put("Grp_horodatage", dispoParkingModel.createProperty(nsB + "timestamp"));
+		properties_available.put("IdObj", dispoParkingModel.createProperty(nsB + "IdObj"));
 		
-		Resource status0 = DispoParkingModel.createResource(nsC + "0");
-		Resource status1 = DispoParkingModel.createResource(nsC + "1");
-		Resource status2 = DispoParkingModel.createResource(nsC + "2");
-		Resource status5 = DispoParkingModel.createResource(nsC + "5");
+		mapStatus.put("0", dispoParkingModel.createResource(nsC + "0"));
+		mapStatus.put("1", dispoParkingModel.createResource(nsC + "1"));
+		mapStatus.put("2", dispoParkingModel.createResource(nsC + "2"));
+		mapStatus.put("5", dispoParkingModel.createResource(nsC + "5"));
 		
-		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "id"), "0");
-		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "description"), "Invalide (comptage hors service)");
-		DispoParkingModel.add(status0, DispoParkingModel.createProperty(nsC + "pjdPrint"), "Neutre (affichage au noir)");
+		dispoParkingModel.add(mapStatus.get("0"), dispoParkingModel.createProperty(nsC + "id"), "0");
+		dispoParkingModel.add(mapStatus.get("0"), dispoParkingModel.createProperty(nsC + "description"), "Invalide (comptage hors service)");
+		dispoParkingModel.add(mapStatus.get("0"), dispoParkingModel.createProperty(nsC + "pjdPrint"), "Neutre (affichage au noir)");
 		
-		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "id"), "1");
-		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé pour tous clients ");
-		DispoParkingModel.add(status1, DispoParkingModel.createProperty(nsC + "pjdPrint"), "FERME");
+		dispoParkingModel.add(mapStatus.get("1"), dispoParkingModel.createProperty(nsC + "id"), "1");
+		dispoParkingModel.add(mapStatus.get("1"), dispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé pour tous clients ");
+		dispoParkingModel.add(mapStatus.get("1"), dispoParkingModel.createProperty(nsC + "pjdPrint"), "FERME");
 		
-		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "id"), "2");
-		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé au client horaires et ouvert pour les abonnés (exemple : un parking fermé aux clients horaires la nuit ou le dimanche)");
-		DispoParkingModel.add(status2, DispoParkingModel.createProperty(nsC + "pjdPrint"), "ABONNES");
+		dispoParkingModel.add(mapStatus.get("2"), dispoParkingModel.createProperty(nsC + "id"), "2");
+		dispoParkingModel.add(mapStatus.get("2"), dispoParkingModel.createProperty(nsC + "description"), "Groupe parking fermé au client horaires et ouvert pour les abonnés (exemple : un parking fermé aux clients horaires la nuit ou le dimanche)");
+		dispoParkingModel.add(mapStatus.get("2"), dispoParkingModel.createProperty(nsC + "pjdPrint"), "ABONNES");
 		
-		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "id"), "5");
-		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "description"), "Groupe parking ouvert à tous les clients. Le nombre de places correspond au nombre de places destinées aux clients horaires");
-		DispoParkingModel.add(status5, DispoParkingModel.createProperty(nsC + "pjdPrint"), "#Nombre de places# ou COMPLET");
+		dispoParkingModel.add(mapStatus.get("5"), dispoParkingModel.createProperty(nsC + "id"), "5");
+		dispoParkingModel.add(mapStatus.get("5"), dispoParkingModel.createProperty(nsC + "description"), "Groupe parking ouvert à tous les clients. Le nombre de places correspond au nombre de places destinées aux clients horaires");
+		dispoParkingModel.add(mapStatus.get("5"), dispoParkingModel.createProperty(nsC + "pjdPrint"), "#Nombre de places# ou COMPLET");
+	}
+	
+	public void xmlToRDF(){
 
-
-		
-		//Parsing xml file
-		
-		SAXBuilder builder = new SAXBuilder();
-		
-		try {
-			Document document = builder.build(file);
-			Element rootNode = document.getRootElement();
-			IteratorIterable<Element> grpParkingIterator = rootNode.getDescendants(new ElementFilter("Groupe_Parking"));
-			Element encours = grpParkingIterator.next();
-			while(grpParkingIterator.hasNext()){
-				if(encours.getChild("Groupe_Parking") == null){
-					Resource r = DispoParkingModel.createResource(nsB + encours.getChild("Grp_identifiant").getValue());
-					
-					DispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_nom"), encours.getChild("Grp_nom").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
-					
-					Resource status = null;
-					switch (Integer.valueOf(encours.getChild("Grp_statut").getValue())) {
-					case 0:
-						status = status0;
-						break;
-						
-					case 1:
-						status = status1;
-						break;
-						
-					case 2:
-						status = status2;
-						break;
-						
-					case 5:
-						status = status5;
-						break;
-
-					default:
-						break;
+				//Parsing xml file
+				
+				SAXBuilder builder = new SAXBuilder();
+				
+				try {
+					Document document = builder.build(xmlFile);
+					Element rootNode = document.getRootElement();
+					IteratorIterable<Element> grpParkingIterator = rootNode.getDescendants(new ElementFilter("Groupe_Parking"));
+					Element encours = grpParkingIterator.next();
+					while(grpParkingIterator.hasNext()){
+						if(encours.getChild("Groupe_Parking") == null){
+							Resource r = dispoParkingModel.createResource(dispoParkingModel.getNsPrefixURI("parking_availability") + encours.getChild("Grp_identifiant").getValue());
+							
+							dispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_nom"), encours.getChild("Grp_nom").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_identifiant"), encours.getChild("Grp_identifiant").getValue());
+							
+							dispoParkingModel.add(r, properties_available.get("Grp_statut"), mapStatus.get(encours.getChild("Grp_statut").getValue()));
+							dispoParkingModel.add(r, properties_available.get("Grp_pri_aut"), encours.getChild("Grp_pri_aut").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_disponible"), encours.getChild("Grp_disponible").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_complet"), encours.getChild("Grp_complet").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_exploitation"), encours.getChild("Grp_exploitation").getValue());
+							dispoParkingModel.add(r, properties_available.get("Grp_horodatage"), encours.getChild("Grp_horodatage").getValue());
+							dispoParkingModel.add(r, properties_available.get("IdObj"), encours.getChild("IdObj").getValue());
+						}
+						encours = grpParkingIterator.next();
 					}
 					
-					DispoParkingModel.add(r, properties_available.get("Grp_statut"), status);
-					DispoParkingModel.add(r, properties_available.get("Grp_pri_aut"), encours.getChild("Grp_pri_aut").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_disponible"), encours.getChild("Grp_disponible").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_complet"), encours.getChild("Grp_complet").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_exploitation"), encours.getChild("Grp_exploitation").getValue());
-					DispoParkingModel.add(r, properties_available.get("Grp_horodatage"), encours.getChild("Grp_horodatage").getValue());
-					DispoParkingModel.add(r, properties_available.get("IdObj"), encours.getChild("IdObj").getValue());
-					//creer une ressource pour chaque valeur
-						//pour le status faire une ressource sur un status qui utilise les propriétées pour accéder à ses éléments
+				} catch (JDOMException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
-				encours = grpParkingIterator.next();
-			}
-			
-			//			Element grpParkingElement = rootNode.get;
-//			boolean find = false;
-//			while(!find && true/*remplacer par fin de fichier*/){
-//				//parcourir le fichier jusqu'a obtenir le premier group parking
-//				
-//			}
-			
-//			for(Element e : rootNode.getChildren("Groupe_Parking")){
-//				System.out.println(e.getName());
-//				for(Element f : e.getChildren()){
-//					System.out.println(f.getName() + " : " + f.getText());
-//				}
-//			}
-		} catch (JDOMException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		DispoParkingModel.write(System.out, "TURTLE");
+				dispoParkingModel.write(System.out, "TURTLE");
+	}
+	
+	public DisponibiliteeParking(String xmlFile, String onthologyFile){
+		this.xmlFile = xmlFile;
+		this.onthologyFile = onthologyFile;
+		dispoParkingModel = ModelFactory.createDefaultModel();
+		properties_available = new HashMap<String, Property>();
+		mapStatus = new HashMap<String, Resource>();
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+//TODO: revoir algorithme pour prendre n balises pour cela lire l'onthologie pour récupérer les propriétées
+		
+		DisponibiliteeParking d = new DisponibiliteeParking("../../DataSets/disponibilite-dans-les-parkings-publics-de-nantes-metropole.xml", "../../Ontologie/Onthologie_DisponobiliteeParking.ttl");
+		d.readOnthology();
+		d.xmlToRDF();
 	}
 }
