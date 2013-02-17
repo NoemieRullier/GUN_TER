@@ -1,0 +1,147 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:onto="http://example.org/" > 
+  <rdf:Description rdf:about="http://example.org/LAMBERT_SCULPTEUR">
+    <onto:hasPostalCode>44850</onto:hasPostalCode>
+    <onto:hasAddress>La Petite Fournerie</onto:hasAddress>
+    <onto:hasWebSite>www.lambert-sculpteur.fr</onto:hasWebSite>
+    <onto:hasMail>art.lambert@wanadoo.fr</onto:hasMail>
+    <onto:hasTown>MOUZEIL</onto:hasTown>
+    <onto:hasName>LAMBERT SCULPTEUR</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/GAEC_LES_CHAMPS_MARINS">
+    <onto:hasPostalCode>44350</onto:hasPostalCode>
+    <onto:hasAddress>Pend Hué</onto:hasAddress>
+    <onto:hasTown>SAINT-MOLF</onto:hasTown>
+    <onto:hasName>GAEC LES CHAMPS MARINS</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/LA_MAISON_DU_PATRIMOINE">
+    <onto:hasPostalCode>44410</onto:hasPostalCode>
+    <onto:hasAddress>Mairie</onto:hasAddress>
+    <onto:hasMail>patrimoine@herbignac.com</onto:hasMail>
+    <onto:hasTown>HERBIGNAC</onto:hasTown>
+    <onto:hasName>LA MAISON DU PATRIMOINE</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DE_MONSIEUR_HULOT">
+    <onto:hasPostalCode>44600</onto:hasPostalCode>
+    <onto:hasAddress>Rue du Commandant Charcot</onto:hasAddress>
+    <onto:hasTown>SAINT-NAZAIRE</onto:hasTown>
+    <onto:hasName>PLAGE DE MONSIEUR HULOT</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DE_MONTBEAU">
+    <onto:hasPostalCode>44210</onto:hasPostalCode>
+    <onto:hasAddress>Allée François Renaud</onto:hasAddress>
+    <onto:hasTown>PORNIC</onto:hasTown>
+    <onto:hasName>PLAGE DE MONTBEAU</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/LES_SALINES_DE_BEAUREGARD">
+    <onto:hasPostalCode>44410</onto:hasPostalCode>
+    <onto:hasAddress>Ques Couic</onto:hasAddress>
+    <onto:hasMail>laurentretailleau@club-internet.fr</onto:hasMail>
+    <onto:hasTown>ASSERAC</onto:hasTown>
+    <onto:hasName>LES SALINES DE BEAUREGARD</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAN_D_EAU_SALEE">
+    <onto:hasPostalCode>44760</onto:hasPostalCode>
+    <onto:hasAddress>Rue de la Mer</onto:hasAddress>
+    <onto:hasTown>LA BERNERIE-EN-RETZ</onto:hasTown>
+    <onto:hasName>PLAN D'EAU SALEE</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PASSION_FAIENCE">
+    <onto:hasPostalCode>44590</onto:hasPostalCode>
+    <onto:hasAddress>1 rue de Nantes</onto:hasAddress>
+    <onto:hasWebSite>www.manoirdebellevue-derval.fr</onto:hasWebSite>
+    <onto:hasMail>anniehabay@wanadoo.fr</onto:hasMail>
+    <onto:hasTown>DERVAL</onto:hasTown>
+    <onto:hasName>PASSION FAIENCE</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/BATEAU_HABITABLE_PÉNICHE_CAP_VERT">
+    <onto:hasPostalCode>44200</onto:hasPostalCode>
+    <onto:hasAddress>Association CAP VERT</onto:hasAddress>
+    <onto:hasWebSite>penichecapvert.com</onto:hasWebSite>
+    <onto:hasMail>asso.capvert@orange.fr</onto:hasMail>
+    <onto:acceptHearingImpairment>oui</onto:acceptHearingImpairment>
+    <onto:hasTown>NANTES</onto:hasTown>
+    <onto:acceptVisualImpairment>oui</onto:acceptVisualImpairment>
+    <onto:hasName>BATEAU HABITABLE PÉNICHE CAP VERT</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DE_VILLES_MARTIN">
+    <onto:hasPostalCode>44600</onto:hasPostalCode>
+    <onto:hasAddress>Rue Ferdinand Buisson</onto:hasAddress>
+    <onto:hasTown>SAINT-NAZAIRE</onto:hasTown>
+    <onto:hasName>PLAGE DE VILLES MARTIN</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGES_DES_BRETONS_ET_DE_LA_CROIX_DE_L_ANSE">
+    <onto:hasPostalCode>44420</onto:hasPostalCode>
+    <onto:hasAddress>Avenue Cassard</onto:hasAddress>
+    <onto:hasTown>LA TURBALLE</onto:hasTown>
+    <onto:hasName>PLAGES DES BRETONS ET DE LA CROIX DE L'ANSE</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/DOMAINE_DES_CROIX">
+    <onto:hasPostalCode>44690</onto:hasPostalCode>
+    <onto:hasAddress>23 Les Croix</onto:hasAddress>
+    <onto:hasWebSite>www.domainedescroix.fr</onto:hasWebSite>
+    <onto:hasMail>batard.joseph@wanadoo.fr</onto:hasMail>
+    <onto:acceptHearingImpairment>oui</onto:acceptHearingImpairment>
+    <onto:hasTown>MAISDON-SUR-SEVRE</onto:hasTown>
+    <onto:acceptVisualImpairment>oui</onto:acceptVisualImpairment>
+    <onto:hasName>DOMAINE DES CROIX</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DE_MOUTON">
+    <onto:hasPostalCode>44770</onto:hasPostalCode>
+    <onto:hasAddress>Boulevard de la Tara</onto:hasAddress>
+    <onto:hasTown>LA PLAINE-SUR-MER</onto:hasTown>
+    <onto:hasName>PLAGE DE MOUTON</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/CHATEAU_DEPARTEMENTAL_DE_CLISSON">
+    <onto:hasPostalCode>44190</onto:hasPostalCode>
+    <onto:hasAddress>Rue du Château</onto:hasAddress>
+    <onto:hasWebSite>http://cultureloire-atlantique.fr/culture/jcms/c_7195/forteresse-des-marches-de-bretagne</onto:hasWebSite>
+    <onto:hasMail>garennelemot@cg44.fr</onto:hasMail>
+    <onto:acceptHearingImpairment>oui</onto:acceptHearingImpairment>
+    <onto:hasTown>CLISSON</onto:hasTown>
+    <onto:acceptVisualImpairment>oui</onto:acceptVisualImpairment>
+    <onto:hasName>CHATEAU DEPARTEMENTAL DE CLISSON</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/SWIN-GOLF">
+    <onto:hasPostalCode>44310</onto:hasPostalCode>
+    <onto:hasAddress>"Parc de loisirs ""La Boulogne"""</onto:hasAddress>
+    <onto:hasMail>ch2c@wanadoo.fr</onto:hasMail>
+    <onto:hasTown>SAINT-PHILBERT-DE-GRAND-LIEU</onto:hasTown>
+    <onto:hasName>SWIN-GOLF</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ATELIERS_LE_MAUFF">
+    <onto:hasPostalCode>44160</onto:hasPostalCode>
+    <onto:hasAddress>La Harrois</onto:hasAddress>
+    <onto:hasWebSite>www.lemauffsa.com</onto:hasWebSite>
+    <onto:hasMail>lemauffsa@wanadoo.fr</onto:hasMail>
+    <onto:hasTown>BESNE</onto:hasTown>
+    <onto:hasName>ATELIERS LE MAUFF</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/LA_FERME_MARINE_DE_PEN_BE">
+    <onto:hasPostalCode>44410</onto:hasPostalCode>
+    <onto:hasAddress>Route de l'Estran</onto:hasAddress>
+    <onto:hasTown>ASSERAC</onto:hasTown>
+    <onto:hasName>LA FERME MARINE DE PEN BE</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/LA_CARRIERE_DES_FUSILLES">
+    <onto:hasPostalCode>44110</onto:hasPostalCode>
+    <onto:hasAddress>La Sablière</onto:hasAddress>
+    <onto:hasWebSite>www.tourisme-chateaubriant.fr</onto:hasWebSite>
+    <onto:hasMail>accueil@tourisme-chateaubrian.tfr</onto:hasMail>
+    <onto:hasTown>CHATEAUBRIANT</onto:hasTown>
+    <onto:hasName>LA CARRIERE DES FUSILLES</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DES_LIBRAIRES">
+    <onto:hasPostalCode>44380</onto:hasPostalCode>
+    <onto:hasAddress>Boulevard des Océanides</onto:hasAddress>
+    <onto:hasTown>PORNICHET</onto:hasTown>
+    <onto:hasName>PLAGE DES LIBRAIRES</onto:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/PLAGE_DE_GOHAUD">
+    <onto:hasPostalCode>44730</onto:hasPostalCode>
+    <onto:hasAddress>Route de Gohaud</onto:hasAddress>
+    <onto:hasTown>SAINT-MICHEL-CHEF-CHEF</onto:hasTown>
+    <onto:hasName>PLAGE DE GOHAUD</onto:hasName>
+  </rdf:Description>
+</rdf:RDF>
