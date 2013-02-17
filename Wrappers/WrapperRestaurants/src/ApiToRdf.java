@@ -16,33 +16,34 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
+import com.hp.hpl.jena.rdf.model.Resource;
 
 
 public class ApiToRdf {
-	
+
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
 	public String fichierMapping = "src/fichierMapping.txt";
 	public Query reqVue;
 	public String vue;
-	
+
 	public ApiToRdf(String v) {
 		vue = v;
 		reqVue = QueryFactory.create(vue);
 	}
-	
+
 	public void parsingFile() throws MalformedURLException, IOException{
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
-		
+
 		// Create the URI
 		String ontoP = "http://example.org/";
 		String restaurantP = "http://example.org/Restaurant/";
-		
+
 		// Define prefix
 		m.setNsPrefix("onto", ontoP);
-		m.setNsPrefix("geo", restaurantP);
-		
+		m.setNsPrefix("res", restaurantP);
+
 		// Define property
 		ArrayList<Property> propertyOntologieGlobale = new ArrayList<Property>();
 		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasName" ));
@@ -53,33 +54,43 @@ public class ApiToRdf {
 		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasMail" ));
 		propertyOntologieGlobale.add(m.createProperty(ontoP + "acceptVisualImpairment" ));
 		propertyOntologieGlobale.add(m.createProperty(ontoP + "acceptHearingImpairment" ));
-		
+
 		// Loading of mapping
-		HashMap<Integer, Property> mapping = new HashMap<Integer, Property>();
+
 		Properties map = new Properties();
 		map.load(new FileReader(fichierMapping));
+		HashMap<Property, Integer> mapping = new HashMap<Property, Integer>();
+		HashMap<Integer, Property> mappingI = new HashMap<Integer, Property>();
 		for (Property p : propertyOntologieGlobale){
 			for (Object o : map.keySet()){
 				if (o.toString().equals(p.getLocalName())){
-					mapping.put(Integer.parseInt(map.getProperty(o.toString()))-1, p);
+					mapping.put(p, Integer.parseInt(map.getProperty(o.toString()))-1);
+					mappingI.put(Integer.parseInt(map.getProperty(o.toString()))-1, p);
 				}
 			}
 		}
-		
+
 		/*FileInputStream file = new FileInputStream(api);
 		Reader reader = new InputStreamReader(file, "utf-8");
 		BufferedReader br = new BufferedReader(reader);*/
-		
+
 		URL url = new URL(api);
 		InputStream file = url.openStream();
 		Reader reader = new InputStreamReader(file, "utf-8");
 		BufferedReader br = new BufferedReader(reader);
-		
-		// TODO Réfléchir à comment on va faire
-		
-		// Number of property in the file
-		// TODO A voir si on en a encore besoin
-		int nbProperty = 0;
+
+		// Loading the columns we need and the value they must respect
+		HashMap<Integer, String> req = new HashMap<Integer, String>();
+		// Pas très propre --> A revoir si on peut pas récupérer les propriétés de la query un peu mieux
+		for(String s: reqVue.getQueryPattern().toString().replace("{", " ").replace("}", "").replace("\n", "").split(" \\.")){
+			req.put(mapping.get(m.getProperty(s.split(" ")[3].replace("<","").replace(">", ""))), s.split(" ")[4]);
+		}
+
+		// Ligne interressante de la Query
+		//System.out.println(reqVue.getPrefixMapping());
+		//System.out.println(reqVue.getProjectVars());
+		//System.out.println(reqVue.getResultVars());
+		//System.out.println(reqVue.getQueryPattern());
 
 		String row = null;
 		String[] data = {};
@@ -87,40 +98,49 @@ public class ApiToRdf {
 		// Separator
 		Pattern p = Pattern.compile(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
 
-		// The first row with property
-		if((row = br.readLine()) != null) {
-			// TODO A voir si on garde le +1
-			nbProperty = row.split(",").length+1;
-		}
-
-/*		int nbRow = 1;
+		row = br.readLine();
 		while ((row = br.readLine()) != null)
 		{
 			// We put the row in the tab
 			data = p.split(row);
-		
+
 			// Create the resource correspond to the row
-			Resource resource = m.createResource(restaurantP+data[0].substring(1, data[0].length()-1));
-			Resource address = null;
-			int i = 0;
-			for (String val : data){
-				// If the column is the [latitude, longitude]
-				if(i % nbProperty == 10){
+			Resource resource = null;
+
+			// Add the different traitement of the special column --> Mais ça marche pour le moment
+
+			// The number of the column
+			boolean ajouter = true;
+			for(Integer i : req.keySet()){
+				if ((req.get(i).contains("?") && data[i].equals("\"\"")) || (data[i] == req.get(i)) ){
+					ajouter = false;
+				}
+			}
+			for(Integer i : req.keySet()){
+				if (ajouter){
+					resource = m.createResource(restaurantP+data[0].substring(1, data[0].length()-1));
+					m.add(resource, mappingI.get(i), data[i].substring(1, data[i].length()-1));
+				}
+			}
+		}
+
+		// If the column is the [latitude, longitude]
+		/*if(i % nbProperty == 10){
 					// Create the resource coordinate
 					Resource coord = m.createResource(geoP+nbRow);
-					
+
 					// We get the latitude and longitude
 					val = val.split("]")[0].substring(2);
 					// Add the property to the latitude
 					m.add(coord, propertyGeoCoordinates.get(0), val.split(",")[0]);
 					// Add the property to the longitude
 					m.add(coord, propertyGeoCoordinates.get(1), val.split(",")[1]);
-					
+
 					// Add the property of coordinates
 					m.add(resource, relation.get(i), coord);
-				}
-				// If the column is the payment accepted
-				else if (i % nbProperty == 19){
+				}*/
+		// If the column is the payment accepted
+		/*else if (i % nbProperty == 19){
 					// TODO: revoir multiligne
 					// TODO: A revoir pour le formattage des moyen de paiements car c'est du n'importe quoi !!! 
 					// Carte Bancaire ou CB Majuscule ou non --> Pb Rspèce
@@ -128,10 +148,10 @@ public class ApiToRdf {
 					for(String pa: val.substring(1, val.length()-1).replace(" ","").split("[.,\\-]")){
 						m.add(resource, relation.get(i), pa.toUpperCase());
 					}
-				}
-				else {
-					// If the column is a property of address
-					if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
+				}*/
+		//else {
+		// If the column is a property of address
+		/*	if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
 						if (address == null){
 							address = m.createResource(postalAddressP+nbRow);
 						}
@@ -143,26 +163,28 @@ public class ApiToRdf {
 					// All the other property
 					else {
 						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
-					}
-				}
-				i++;
-			}
-			nbRow++;
-		}
-		br.close();*/
+					}*/
+		//}
+		//				i++;
+		//			}
+		//nbRow++;
+		//		}
+		br.close();
 		m.write(System.out,"TURTLE");
 	}
-	
-	
+
+
 	public static void main(String[] args) {
-		ApiToRdf v1 = new ApiToRdf("SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAdrress ?ad; onto:hasPostalCode ?pc; onto;hasTown ?town.}");
+		ApiToRdf v1 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAddress ?ad; onto:hasPostalCode ?pc; onto:hasTown ?town.}");
+		ApiToRdf v2 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?mail ?ws WHERE{ ?x onto:hasMail ?mail; onto:hasWebSite ?ws.}");
+		ApiToRdf v3 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi ?town WHERE{ ?x onto:acceptVisualImpairment ?vi; onto:acceptHearingImpairment ?hi.}");
 		try {
 			v1.parsingFile();
+//			v2.parsingFile();
+//			v3.parsingFile();
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

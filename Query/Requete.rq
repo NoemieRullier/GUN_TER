@@ -13,8 +13,8 @@ WHERE
 			onto:hasTown ?town;
 			onto:hasWebSite ?webSite;
 			onto:hasMail ?mail;
-			onto:acceptVisualImpairment "Oui";
-			onto:acceptHearingImpairment "Oui".
+			onto:acceptVisualImpairment "oui";
+			onto:acceptHearingImpairment "oui".
 }
 
 # Est-ce qu'on a le droit d'ajouter une information Type ? --> Si non on l'affiche pas
@@ -42,9 +42,9 @@ V1Restaurant(x, ad, pc, town):- Address(x, ad) ^ PostalCode(x, pc) ^ Town(x, tow
 SELECT ?x ?ad ?pc ?town
 WHERE
 {
-	?x	onto:hasAdrress ?ad;
+	?x	onto:hasAddress ?ad;
 		onto:hasPostalCode ?pc;
-		onto;hasTown ?town.	
+		onto:hasTown ?town.	
 }
 
 V2Restaurant(x, mail, wb):- Mail(x, mail) ^ WebSite(x, wb)
