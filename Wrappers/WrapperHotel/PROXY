@@ -189,3 +189,5 @@ function FindProxyForURL(url,host) {
  git config --global http.proxy "http://cache.etu.univ-nantes.fr:3128"
  
  (changer le proxy en fonction de l'endroit: à la fac, ça ne devrait pas changer).
+ 
+ De retour chez soi: git config --global --unset-all http.proxy
