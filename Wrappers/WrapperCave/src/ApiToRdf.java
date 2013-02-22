@@ -1,13 +1,13 @@
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -17,15 +17,12 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.sparql.syntax.Element;
-import com.hp.hpl.jena.sparql.syntax.ElementGroup;
-import com.hp.hpl.jena.sparql.syntax.ElementTriplesBlock;
 
 
 public class ApiToRdf {
 
-	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
-	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
+	public String api = "http://data.paysdelaloire.fr/api/publication/22440002800011_CG44_TOU_04804/caves_STBL/content/?format=csv";
+	public String csv = "../../DataSets/22440002800011_CG44_TOU_04804_caves_STBL.csv";
 	public String fichierMapping = "src/fichierMapping.txt";
 	public Query reqVue;
 	public String vue;
@@ -39,14 +36,14 @@ public class ApiToRdf {
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
-		
+
 		// Create the URI
 		String ontoP = "http://example.org/";
-		String restaurantP = "http://example.org/Restaurant/";
+		String caveP = "http://example.org/cave/";
 
 		// Define prefix
 		m.setNsPrefix("onto", ontoP);
-		m.setNsPrefix("res", restaurantP);
+		m.setNsPrefix("res", caveP);
 
 		// Define property
 		ArrayList<Property> propertyOntologieGlobale = new ArrayList<Property>();
@@ -74,11 +71,14 @@ public class ApiToRdf {
 			}
 		}
 
-		FileInputStream file = new FileInputStream(apiFile);
+		/*FileInputStream file = new FileInputStream(api);
+		Reader reader = new InputStreamReader(file, "utf-8");
+		BufferedReader br = new BufferedReader(reader);*/
 
 //		URL url = new URL(api);
 //		InputStream file = url.openStream();
-		Reader reader = new InputStreamReader(file, "utf-8");
+//		Reader reader = new InputStreamReader(file, "utf-8");
+		Reader reader = new FileReader(csv);
 		BufferedReader br = new BufferedReader(reader);
 
 		// Loading the columns we need and the value they must respect
@@ -120,14 +120,16 @@ public class ApiToRdf {
 			}
 			for(Integer i : req.keySet()){
 				if (ajouter){
-					resource = m.createResource(restaurantP+data[0].substring(1, data[0].length()-1));
+					resource = m.createResource(caveP+data[0].substring(1, data[0].length()-1));
 					m.add(resource, mappingI.get(i), data[i].substring(1, data[i].length()-1));
 				}
 			}
 		}
 
 		// If the column is the [latitude, longitude]
-		/*if(i == 33){
+		/*if(i % nbProperty == 10){
+					// Create the resource coordinate
+					Resource coord = m.createResource(geoP+nbRow);
 
 					// We get the latitude and longitude
 					val = val.split("]")[0].substring(2);
@@ -149,14 +151,35 @@ public class ApiToRdf {
 						m.add(resource, relation.get(i), pa.toUpperCase());
 					}
 				}*/
+		//else {
+		// If the column is a property of address
+		/*	if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
+						if (address == null){
+							address = m.createResource(postalAddressP+nbRow);
+						}
+						m.add(address, relation.get(i), val.substring(1, val.length()-1));
+						if (i % nbProperty == 9){
+							m.add(resource, propertyOntologieGlobale.get(4), address);
+						}
+					}
+					// All the other property
+					else {
+						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
+					}*/
+		//}
+		//				i++;
+		//			}
+		//nbRow++;
+		//		}
 		br.close();
 		m.write(System.out,"TURTLE");
 	}
 
+
 	public static void main(String[] args) {
 		ApiToRdf v1 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAddress ?ad; onto:hasPostalCode ?pc; onto:hasTown ?town.}");
-		ApiToRdf v2 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?mail ?ws WHERE{ ?x onto:hasMail ?mail; onto:hasWebSite ?ws.}");
-		ApiToRdf v3 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi ?town WHERE{ ?x onto:acceptVisualImpairment ?vi; onto:acceptHearingImpairment ?hi.}");
+//		ApiToRdf v2 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?mail ?ws WHERE{ ?x onto:hasMail ?mail; onto:hasWebSite ?ws.}");
+//		ApiToRdf v3 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi ?town WHERE{ ?x onto:acceptVisualImpairment ?vi; onto:acceptHearingImpairment ?hi.}");
 		try {
 			v1.parsingFile();
 //			v2.parsingFile();

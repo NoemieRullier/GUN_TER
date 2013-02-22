@@ -35,7 +35,7 @@ onto:hasPostalCode
 onto:hasTown
 onto:hasWebSite
 onto:hasMail
-onto:acceptVisualImpairment
+onto:acceptVisualImpairment   #Je propose visualImpairmentSupport
 onto:acceptHearingImpairment
 
 V1Restaurant(x, ad, pc, town):- Address(x, ad) ^ PostalCode(x, pc) ^ Town(x, town)

@@ -1,0 +1,721 @@
+@prefix ex: <http://lalalalala>.
+@prefix sc: <http://lalalalala>.
+
+ex:1 sc:name "LE BRETAGNE".
+ex:1 sc:postalCode "44410".
+ex:1 sc:address "ASSERAC".
+ex:1 sc:telephone "02 40 01 71 03".
+ex:2 sc:name "LE LICHEN DE LA MER".
+ex:2 sc:postalCode "44740".
+ex:2 sc:address "BATZ-SUR-MER".
+ex:2 sc:telephone "02 40 23 91 92".
+ex:2 sc:isAnimalAccepted "oui".
+ex:3 sc:name "LES EMBRUNS".
+ex:3 sc:postalCode "44740".
+ex:3 sc:address "BATZ-SUR-MER".
+ex:3 sc:telephone "02 40 23 83 33".
+ex:3 sc:isAnimalAccepted "oui".
+ex:4 sc:name "B&B HÔTEL NANTES AEROPORT".
+ex:4 sc:postalCode "44346".
+ex:4 sc:address "BOUGUENAIS".
+ex:4 sc:telephone "08 92 78 80 68".
+ex:4 sc:isAnimalAccepted "oui".
+ex:5 sc:name "HOTEL F1 - BOUGUENAIS".
+ex:5 sc:postalCode "44340".
+ex:5 sc:address "BOUGUENAIS".
+ex:5 sc:telephone "08 91 70 53 38".
+ex:5 sc:isAnimalAccepted "oui".
+ex:6 sc:name "ESCALE OCEANIA".
+ex:6 sc:postalCode "44340".
+ex:6 sc:address "BOUGUENAIS".
+ex:6 sc:telephone "02 40 32 14 14".
+ex:6 sc:isAnimalAccepted "oui".
+ex:7 sc:name "HOTEL F1 - CARQUEFOU LA BELLE ETOILE".
+ex:7 sc:postalCode "44470".
+ex:7 sc:address "CARQUEFOU".
+ex:7 sc:telephone "08 91 70 53 36".
+ex:7 sc:isAnimalAccepted "oui".
+ex:8 sc:name "LE CHATEAUBRIANT".
+ex:8 sc:postalCode "44110".
+ex:8 sc:address "CHATEAUBRIANT".
+ex:8 sc:telephone "02 40 28 14 14".
+ex:8 sc:isAnimalAccepted "oui".
+ex:9 sc:name "ETAP HOTEL".
+ex:9 sc:postalCode "44110".
+ex:9 sc:address "CHATEAUBRIANT".
+ex:9 sc:telephone "08 92 70 12 57".
+ex:9 sc:isAnimalAccepted "oui".
+ex:10 sc:name "LA GARE".
+ex:10 sc:postalCode "44190".
+ex:10 sc:address "CLISSON".
+ex:10 sc:telephone "02 40 36 16 55".
+ex:10 sc:isAnimalAccepted "oui".
+ex:11 sc:name "AUBERGE DE LA CASCADE".
+ex:11 sc:postalCode "44190".
+ex:11 sc:address "CLISSON".
+ex:11 sc:telephone "02 40 54 02 41".
+ex:11 sc:isAnimalAccepted "oui".
+ex:12 sc:name "BEST WESTERN VILLA SAINT ANTOINE".
+ex:12 sc:postalCode "44190".
+ex:12 sc:address "CLISSON".
+ex:12 sc:telephone "02 40 85 46 46".
+ex:12 sc:isAnimalAccepted "oui".
+ex:13 sc:name "ETAP HOTEL NANTES OUEST".
+ex:13 sc:postalCode "44220".
+ex:13 sc:address "COUERON".
+ex:13 sc:telephone "08 92 68 32 73".
+ex:13 sc:isAnimalAccepted "oui".
+ex:14 sc:name "EUROCEAN".
+ex:14 sc:postalCode "44350".
+ex:14 sc:address "GUERANDE".
+ex:14 sc:telephone "02 40 42 90 42".
+ex:14 sc:isAnimalAccepted "oui".
+ex:15 sc:name "LES REMP'ARTS".
+ex:15 sc:postalCode "44350".
+ex:15 sc:address "GUERANDE".
+ex:15 sc:telephone "02 40 24 90 69".
+ex:15 sc:isAnimalAccepted "oui".
+ex:16 sc:name "HOTEL DE LA CITE".
+ex:16 sc:postalCode "44350".
+ex:16 sc:address "GUERANDE".
+ex:16 sc:telephone "02 40 22 02 20".
+ex:16 sc:isAnimalAccepted "oui".
+ex:17 sc:name "LA LOUEE".
+ex:17 sc:postalCode "44115".
+ex:17 sc:address "HAUTE-GOULAINE".
+ex:17 sc:telephone "02 40 54 90 25".
+ex:17 sc:isAnimalAccepted "oui".
+ex:18 sc:name "HERMITAGE BARRIERE".
+ex:18 sc:postalCode "44500".
+ex:18 sc:address "LA BAULE".
+ex:18 sc:telephone "02 40 11 46 46".
+ex:18 sc:isAnimalAccepted "oui".
+ex:19 sc:name "ROYAL-THALASSO-BARRIERE".
+ex:19 sc:postalCode "44500".
+ex:19 sc:address "LA BAULE".
+ex:19 sc:telephone "02 40 11 48 48".
+ex:19 sc:isAnimalAccepted "oui".
+ex:20 sc:name "ALCYON".
+ex:20 sc:postalCode "44500".
+ex:20 sc:address "LA BAULE".
+ex:20 sc:telephone "02 40 60 19 37".
+ex:20 sc:isAnimalAccepted "oui".
+ex:21 sc:name "BELLEVUE PLAGE".
+ex:21 sc:postalCode "44500".
+ex:21 sc:address "LA BAULE".
+ex:21 sc:telephone "02 40 60 28 55".
+ex:21 sc:isAnimalAccepted "oui".
+ex:22 sc:name "MERCURE LA BAULE MAJESTIC".
+ex:22 sc:postalCode "44500".
+ex:22 sc:address "LA BAULE".
+ex:22 sc:telephone "02 40 60 24 86".
+ex:22 sc:isAnimalAccepted "oui".
+ex:23 sc:name "LA VILLA CAROLINE".
+ex:23 sc:postalCode "44500".
+ex:23 sc:address "LA BAULE".
+ex:23 sc:telephone "02 40 11 54 54".
+ex:23 sc:isAnimalAccepted "oui".
+ex:24 sc:name "BRITTANY BEST WESTERN".
+ex:24 sc:postalCode "44500".
+ex:24 sc:address "LA BAULE".
+ex:24 sc:telephone "02 40 60 30 25".
+ex:24 sc:isAnimalAccepted "oui".
+ex:25 sc:name "VILLA CAP D'AIL".
+ex:25 sc:postalCode "44500".
+ex:25 sc:address "LA BAULE".
+ex:25 sc:telephone "02 40 60 29 30".
+ex:25 sc:isAnimalAccepted "oui".
+ex:26 sc:name "HOSTELLERIE DU BOIS".
+ex:26 sc:postalCode "44500".
+ex:26 sc:address "LA BAULE".
+ex:26 sc:telephone "02 40 60 24 78".
+ex:26 sc:isAnimalAccepted "oui".
+ex:27 sc:name "LUTETIA".
+ex:27 sc:postalCode "44500".
+ex:27 sc:address "LA BAULE".
+ex:27 sc:telephone "02 40 60 25 81".
+ex:27 sc:isAnimalAccepted "oui".
+ex:28 sc:name "LA MASCOTTE".
+ex:28 sc:postalCode "44500".
+ex:28 sc:address "LA BAULE".
+ex:28 sc:telephone "02 40 60 26 55".
+ex:28 sc:isAnimalAccepted "oui".
+ex:29 sc:name "SAINT CHRISTOPHE".
+ex:29 sc:postalCode "44500".
+ex:29 sc:address "LA BAULE".
+ex:29 sc:telephone "02 40 62 40 00".
+ex:29 sc:isAnimalAccepted "oui".
+ex:30 sc:name "LE SAINT PIERRE".
+ex:30 sc:postalCode "44500".
+ex:30 sc:address "LA BAULE".
+ex:30 sc:telephone "02 40 24 05 41".
+ex:30 sc:isAnimalAccepted "oui".
+ex:31 sc:name "RELAIS&CHATEAUX CASTEL MARIE-LOUISE".
+ex:31 sc:postalCode "44500".
+ex:31 sc:address "LA BAULE".
+ex:31 sc:telephone "02 40 11 48 38".
+ex:31 sc:isAnimalAccepted "oui".
+ex:32 sc:name "LE CHRISTINA".
+ex:32 sc:postalCode "44500".
+ex:32 sc:address "LA BAULE".
+ex:32 sc:telephone "02 40 60 22 44".
+ex:32 sc:isAnimalAccepted "oui".
+ex:33 sc:name "CONCORDE".
+ex:33 sc:postalCode "44500".
+ex:33 sc:address "LA BAULE".
+ex:33 sc:telephone "02 40 60 23 09".
+ex:34 sc:name "ASTROLABE".
+ex:34 sc:postalCode "44500".
+ex:34 sc:address "LA BAULE".
+ex:34 sc:telephone "02 40 60 21 75".
+ex:34 sc:isAnimalAccepted "oui".
+ex:35 sc:name "MONA LISA".
+ex:35 sc:postalCode "44500".
+ex:35 sc:address "LA BAULE".
+ex:35 sc:telephone "02 40 60 21 33".
+ex:35 sc:isAnimalAccepted "oui".
+ex:36 sc:name "LA CLOSERIE".
+ex:36 sc:postalCode "44500".
+ex:36 sc:address "LA BAULE".
+ex:36 sc:telephone "02 51 75 17 00".
+ex:36 sc:isAnimalAccepted "oui".
+ex:37 sc:name "DUNES".
+ex:37 sc:postalCode "44500".
+ex:37 sc:address "LA BAULE".
+ex:37 sc:telephone "02 51 75 07 10".
+ex:37 sc:isAnimalAccepted "oui".
+ex:38 sc:name "MARINI".
+ex:38 sc:postalCode "44500".
+ex:38 sc:address "LA BAULE".
+ex:38 sc:telephone "02 40 60 23 29".
+ex:38 sc:isAnimalAccepted "oui".
+ex:39 sc:name "LA PALMERAIE".
+ex:39 sc:postalCode "44500".
+ex:39 sc:address "LA BAULE".
+ex:39 sc:telephone "02 40 60 24 41".
+ex:39 sc:isAnimalAccepted "oui".
+ex:40 sc:name "LE PARIS".
+ex:40 sc:postalCode "44500".
+ex:40 sc:address "LA BAULE".
+ex:40 sc:telephone "02 40 70 09 01".
+ex:40 sc:isAnimalAccepted "oui".
+ex:41 sc:name "PLEIADES".
+ex:41 sc:postalCode "44500".
+ex:41 sc:address "LA BAULE".
+ex:41 sc:telephone "02 51 75 06 06".
+ex:42 sc:name "LES TENNIS MEN".
+ex:42 sc:postalCode "44500".
+ex:42 sc:address "LA BAULE".
+ex:42 sc:telephone "02 40 60 24 04".
+ex:43 sc:name "TY GWENN".
+ex:43 sc:postalCode "44500".
+ex:43 sc:address "LA BAULE".
+ex:43 sc:telephone "02 40 60 37 07".
+ex:44 sc:name "LE CORALLI".
+ex:44 sc:postalCode "44500".
+ex:44 sc:address "LA BAULE".
+ex:44 sc:telephone "02 40 60 29 82".
+ex:44 sc:isAnimalAccepted "oui".
+ex:45 sc:name "B&B HÔTEL NANTES LA CHAPELLE".
+ex:45 sc:postalCode "44240".
+ex:45 sc:address "LA CHAPELLE-SUR-ERDRE".
+ex:45 sc:telephone "08 92 78 80 70".
+ex:45 sc:isAnimalAccepted "oui".
+ex:46 sc:name "DELMAR HOTEL".
+ex:46 sc:postalCode "44118".
+ex:46 sc:address "LA CHEVROLIERE".
+ex:46 sc:telephone "02 40 65 22 22".
+ex:46 sc:isAnimalAccepted "oui".
+ex:47 sc:name "LES CHANTS D'AILES".
+ex:47 sc:postalCode "44420".
+ex:47 sc:address "LA TURBALLE".
+ex:47 sc:telephone "02 40 23 47 28".
+ex:47 sc:isAnimalAccepted "oui".
+ex:48 sc:name "LES VIKINGS".
+ex:48 sc:postalCode "44490".
+ex:48 sc:address "LE CROISIC".
+ex:48 sc:telephone "02 40 62 90 03".
+ex:48 sc:isAnimalAccepted "oui".
+ex:49 sc:name "LES NIDS".
+ex:49 sc:postalCode "44490".
+ex:49 sc:address "LE CROISIC".
+ex:49 sc:telephone "02 40 23 00 63".
+ex:49 sc:isAnimalAccepted "oui".
+ex:50 sc:name "LE MONDÈS".
+ex:50 sc:postalCode "44510".
+ex:50 sc:address "LE POULIGUEN".
+ex:50 sc:telephone "02 40 42 31 03".
+ex:51 sc:name "LES FARFADETS".
+ex:51 sc:postalCode "44510".
+ex:51 sc:address "LE POULIGUEN".
+ex:51 sc:telephone "02 40 42 32 61".
+ex:52 sc:name "A L'OREE DU BOIS".
+ex:52 sc:postalCode "44510".
+ex:52 sc:address "LE POULIGUEN".
+ex:52 sc:telephone "02 40 42 32 18".
+ex:52 sc:isAnimalAccepted "oui".
+ex:53 sc:name "ETAP HOTEL ANCENIS".
+ex:53 sc:postalCode "44522".
+ex:53 sc:address "MESANGER".
+ex:53 sc:telephone "08 92 70 12 48".
+ex:53 sc:isAnimalAccepted "oui".
+ex:54 sc:name "AMIRAL".
+ex:54 sc:postalCode "44000".
+ex:54 sc:address "NANTES".
+ex:54 sc:telephone "02 40 69 20 21".
+ex:54 sc:isAnimalAccepted "oui".
+ex:55 sc:name "STARS".
+ex:55 sc:postalCode "44303".
+ex:55 sc:address "NANTES".
+ex:55 sc:telephone "02 40 93 23 73".
+ex:55 sc:isAnimalAccepted "oui".
+ex:56 sc:name "B&B HÔTEL NANTES CENTRE".
+ex:56 sc:postalCode "44000".
+ex:56 sc:address "NANTES".
+ex:56 sc:telephone "08 92 78 80 72".
+ex:56 sc:isAnimalAccepted "oui".
+ex:57 sc:name "HOTEL F1 - NANTES EST PORTE DE SAINTE LUCE".
+ex:57 sc:postalCode "44303".
+ex:57 sc:address "NANTES".
+ex:57 sc:telephone "08 91 70 53 35".
+ex:57 sc:isAnimalAccepted "oui".
+ex:58 sc:name "HOTEL (L')".
+ex:58 sc:postalCode "44000".
+ex:58 sc:address "NANTES".
+ex:58 sc:telephone "02 40 29 30 31".
+ex:58 sc:isAnimalAccepted "oui".
+ex:59 sc:name "KYRIAD NANTES GARE".
+ex:59 sc:postalCode "44000".
+ex:59 sc:address "NANTES".
+ex:59 sc:telephone "02 40 74 14 54".
+ex:59 sc:isAnimalAccepted "oui".
+ex:60 sc:name "LA PEROUSE".
+ex:60 sc:postalCode "44000".
+ex:60 sc:address "NANTES".
+ex:60 sc:telephone "02 40 89 75 00".
+ex:60 sc:isAnimalAccepted "oui".
+ex:61 sc:name "DUQUESNE".
+ex:61 sc:postalCode "44000".
+ex:61 sc:address "NANTES".
+ex:61 sc:telephone "02 40 47 57 24".
+ex:61 sc:isAnimalAccepted "oui".
+ex:62 sc:name "LONGCHAMP (LE)".
+ex:62 sc:postalCode "44100".
+ex:62 sc:address "NANTES".
+ex:62 sc:telephone "02 40 76 96 88".
+ex:62 sc:isAnimalAccepted "oui".
+ex:63 sc:name "TRIANON".
+ex:63 sc:postalCode "44200".
+ex:63 sc:address "NANTES".
+ex:63 sc:telephone "02 40 47 82 00".
+ex:64 sc:name "B&B HÔTEL NANTES LA BEAUJOIRE".
+ex:64 sc:postalCode "44300".
+ex:64 sc:address "NANTES".
+ex:64 sc:telephone "08 92 78 80 69".
+ex:64 sc:isAnimalAccepted "oui".
+ex:65 sc:name "HOTEL DU COMMERCE".
+ex:65 sc:postalCode "44000".
+ex:65 sc:address "NANTES".
+ex:65 sc:telephone "02 40 48 77 81".
+ex:66 sc:name "SAINT PATRICK".
+ex:66 sc:postalCode "44000".
+ex:66 sc:address "NANTES".
+ex:66 sc:telephone "02 40 48 48 80".
+ex:67 sc:name "HOTEL MERCURE NANTES CENTRAL".
+ex:67 sc:postalCode "44000".
+ex:67 sc:address "NANTES".
+ex:67 sc:telephone "02 51 82 10 00".
+ex:67 sc:isAnimalAccepted "oui".
+ex:68 sc:name "BOURGOGNE (DE)".
+ex:68 sc:postalCode "44000".
+ex:68 sc:address "NANTES".
+ex:68 sc:telephone "02 40 74 03 34".
+ex:68 sc:isAnimalAccepted "oui".
+ex:69 sc:name "GRASLIN (LE)".
+ex:69 sc:postalCode "44000".
+ex:69 sc:address "NANTES".
+ex:69 sc:telephone "02 40 69 72 91".
+ex:69 sc:isAnimalAccepted "oui".
+ex:70 sc:name "ALL SEASONS NANTES CENTRE".
+ex:70 sc:postalCode "44000".
+ex:70 sc:address "NANTES".
+ex:70 sc:telephone "02 40 35 74 50".
+ex:70 sc:isAnimalAccepted "oui".
+ex:71 sc:name "COMFORT HOTEL NANTES ASTORIA".
+ex:71 sc:postalCode "44000".
+ex:71 sc:address "NANTES".
+ex:71 sc:telephone "02 40 74 39 90".
+ex:71 sc:isAnimalAccepted "oui".
+ex:72 sc:name "CHATEAUBRIAND".
+ex:72 sc:postalCode "44000".
+ex:72 sc:address "NANTES".
+ex:72 sc:telephone "02 40 20 22 38".
+ex:72 sc:isAnimalAccepted "oui".
+ex:73 sc:name "CHOLET (LE)".
+ex:73 sc:postalCode "44000".
+ex:73 sc:address "NANTES".
+ex:73 sc:telephone "02 40 73 31 04".
+ex:74 sc:name "COEUR DE LOIRE".
+ex:74 sc:postalCode "44000".
+ex:74 sc:address "NANTES".
+ex:74 sc:telephone "02 40 74 35 61".
+ex:75 sc:name "IBIS STYLE NANTES PLACE GRASLIN ".
+ex:75 sc:postalCode "44000".
+ex:75 sc:address "NANTES".
+ex:75 sc:telephone "02 40 48 79 76".
+ex:76 sc:name "HOTEL DE LA GARE - CITOTEL".
+ex:76 sc:postalCode "44000".
+ex:76 sc:address "NANTES".
+ex:76 sc:telephone "02 40 74 37 25".
+ex:76 sc:isAnimalAccepted "oui".
+ex:77 sc:name "GRAND HOTEL DE NANTES".
+ex:77 sc:postalCode "44000".
+ex:77 sc:address "NANTES".
+ex:77 sc:telephone "02 40 73 46 68".
+ex:77 sc:isAnimalAccepted "oui".
+ex:78 sc:name "POMMERAYE".
+ex:78 sc:postalCode "44000".
+ex:78 sc:address "NANTES".
+ex:78 sc:telephone "02 40 48 78 79".
+ex:78 sc:isAnimalAccepted "oui".
+ex:79 sc:name "SURCOUF (LE)".
+ex:79 sc:postalCode "44000".
+ex:79 sc:address "NANTES".
+ex:79 sc:telephone "02 40 74 17 25".
+ex:79 sc:isAnimalAccepted "oui".
+ex:80 sc:name "TERMINUS".
+ex:80 sc:postalCode "44000".
+ex:80 sc:address "NANTES".
+ex:80 sc:telephone "02 40 74 24 51".
+ex:80 sc:isAnimalAccepted "oui".
+ex:81 sc:name "ABAT JOUR".
+ex:81 sc:postalCode "44000".
+ex:81 sc:address "NANTES".
+ex:81 sc:telephone "02 40 74 35 95".
+ex:82 sc:name "BOURSE (DE LA)".
+ex:82 sc:postalCode "44000".
+ex:82 sc:address "NANTES".
+ex:82 sc:telephone "02 40 69 51 55".
+ex:82 sc:isAnimalAccepted "oui".
+ex:83 sc:name "CHATEAU (DU)".
+ex:83 sc:postalCode "44000".
+ex:83 sc:address "NANTES".
+ex:83 sc:telephone "02 40 74 17 16".
+ex:84 sc:name "GRAND MONARQUE (DU)".
+ex:84 sc:postalCode "44000".
+ex:84 sc:address "NANTES".
+ex:84 sc:telephone "02 40 74 02 40".
+ex:85 sc:name "OCEAN (L')".
+ex:85 sc:postalCode "44000".
+ex:85 sc:address "NANTES".
+ex:85 sc:telephone "02 40 69 73 51".
+ex:85 sc:isAnimalAccepted "oui".
+ex:86 sc:name "ORLEANS (D')".
+ex:86 sc:postalCode "44000".
+ex:86 sc:address "NANTES".
+ex:86 sc:telephone "02 40 47 69 32".
+ex:87 sc:name "RENOVA".
+ex:87 sc:postalCode "44000".
+ex:87 sc:address "NANTES".
+ex:87 sc:telephone "02 40 47 57 03".
+ex:87 sc:isAnimalAccepted "oui".
+ex:88 sc:name "SAINT DANIEL".
+ex:88 sc:postalCode "44000".
+ex:88 sc:address "NANTES".
+ex:88 sc:telephone "02 40 47 41 25".
+ex:89 sc:name "TOURISME (DU)".
+ex:89 sc:postalCode "44000".
+ex:89 sc:address "NANTES".
+ex:89 sc:telephone "02 40 47 90 26".
+ex:90 sc:name "SAINT YVES".
+ex:90 sc:postalCode "44000".
+ex:90 sc:address "NANTES".
+ex:90 sc:telephone "02 40 74 48 42".
+ex:90 sc:isAnimalAccepted "oui".
+ex:91 sc:name "LE RELAIS DE LA GRANGE".
+ex:91 sc:postalCode "44390".
+ex:91 sc:address "NORT-SUR-ERDRE".
+ex:91 sc:telephone "02 51 12 60 57".
+ex:91 sc:isAnimalAccepted "oui".
+ex:92 sc:name "INTER HOTEL AGORA".
+ex:92 sc:postalCode "44700".
+ex:92 sc:address "ORVAULT".
+ex:92 sc:telephone "02 51 78 53 58".
+ex:92 sc:isAnimalAccepted "oui".
+ex:93 sc:name "CITOTEL ALBERT".
+ex:93 sc:postalCode "44700".
+ex:93 sc:address "ORVAULT".
+ex:93 sc:telephone "02 40 76 76 08".
+ex:94 sc:name "BEAU SOLEIL".
+ex:94 sc:postalCode "44210".
+ex:94 sc:address "PORNIC".
+ex:94 sc:telephone "02 40 82 34 58".
+ex:94 sc:isAnimalAccepted "oui".
+ex:95 sc:name "BRIT HOTEL LES ALIZES".
+ex:95 sc:postalCode "44210".
+ex:95 sc:address "PORNIC".
+ex:95 sc:telephone "02 40 82 00 51".
+ex:95 sc:isAnimalAccepted "oui".
+ex:96 sc:name "ARC EN CIEL".
+ex:96 sc:postalCode "44210".
+ex:96 sc:address "PORNIC".
+ex:96 sc:telephone "02 28 53 00 22".
+ex:96 sc:isAnimalAccepted "oui".
+ex:97 sc:name "NUIT DE RETZ".
+ex:97 sc:postalCode "44710".
+ex:97 sc:address "PORT-SAINT-PERE".
+ex:97 sc:telephone "02 40 57 91 14".
+ex:98 sc:name "PREMIERE CLASSE - REZE".
+ex:98 sc:postalCode "44406".
+ex:98 sc:address "REZE".
+ex:98 sc:telephone "08 92 70 72 40".
+ex:98 sc:isAnimalAccepted "oui".
+ex:99 sc:name "CHEVAL BLANC (DU)".
+ex:99 sc:postalCode "44400".
+ex:99 sc:address "REZE".
+ex:99 sc:telephone "02 40 75 65 07".
+ex:99 sc:isAnimalAccepted "oui".
+ex:100 sc:name "L'ESTUAIRE".
+ex:100 sc:postalCode "44250".
+ex:100 sc:address "SAINT-BREVIN".
+ex:100 sc:telephone "02 40 27 39 40".
+ex:100 sc:isAnimalAccepted "oui".
+ex:101 sc:name "B&B HOTEL NANTES SAINT HERBLAIN".
+ex:101 sc:postalCode "44800".
+ex:101 sc:address "SAINT-HERBLAIN".
+ex:101 sc:telephone "08 92 78 01 11".
+ex:101 sc:isAnimalAccepted "oui".
+ex:102 sc:name "HOTEL F1 - SAINT HERBLAIN".
+ex:102 sc:postalCode "44800".
+ex:102 sc:address "SAINT-HERBLAIN".
+ex:102 sc:telephone "08 91 70 53 37".
+ex:102 sc:isAnimalAccepted "oui".
+ex:103 sc:name "PREMIERE CLASSE - SAINT HERBLAIN".
+ex:103 sc:postalCode "44800".
+ex:103 sc:address "SAINT-HERBLAIN".
+ex:103 sc:telephone "08 92 70 70 24".
+ex:103 sc:isAnimalAccepted "oui".
+ex:104 sc:name "ETAP HOTEL NANTES NORD SAINT HERBLAIN".
+ex:104 sc:postalCode "44800".
+ex:104 sc:address "SAINT-HERBLAIN".
+ex:104 sc:telephone "02 28 01 74 37".
+ex:104 sc:isAnimalAccepted "oui".
+ex:105 sc:name "AGIL".
+ex:105 sc:postalCode "44800".
+ex:105 sc:address "SAINT-HERBLAIN".
+ex:105 sc:telephone "02 40 92 04 10".
+ex:105 sc:isAnimalAccepted "oui".
+ex:106 sc:name "ATLANTYS HOTEL".
+ex:106 sc:postalCode "44800".
+ex:106 sc:address "SAINT-HERBLAIN".
+ex:106 sc:telephone "02 40 63 99 63".
+ex:106 sc:isAnimalAccepted "oui".
+ex:107 sc:name "BALLADINS NANTES SAINT HERBLAIN".
+ex:107 sc:postalCode "44800".
+ex:107 sc:address "SAINT-HERBLAIN".
+ex:107 sc:telephone "02 40 63 95 63".
+ex:107 sc:isAnimalAccepted "oui".
+ex:108 sc:name "KYRIAD SAINT-HERBLAIN".
+ex:108 sc:postalCode "44800".
+ex:108 sc:address "SAINT-HERBLAIN".
+ex:108 sc:telephone "02 72 01 00 00".
+ex:108 sc:isAnimalAccepted "oui".
+ex:109 sc:name "LA COTE DE JADE".
+ex:109 sc:postalCode "44730".
+ex:109 sc:address "SAINT-MICHEL-CHEF-CHEF".
+ex:109 sc:telephone "02 40 27 82 31".
+ex:109 sc:isAnimalAccepted "oui".
+ex:110 sc:name "BRIT HOTEL LE KORALI".
+ex:110 sc:postalCode "44600".
+ex:110 sc:address "SAINT-NAZAIRE".
+ex:110 sc:telephone "02 40 01 89 89".
+ex:110 sc:isAnimalAccepted "oui".
+ex:111 sc:name "HOLIDAY INN EXPRESS".
+ex:111 sc:postalCode "44600".
+ex:111 sc:address "SAINT-NAZAIRE".
+ex:111 sc:telephone "02 40 19 01 01".
+ex:111 sc:isAnimalAccepted "oui".
+ex:112 sc:name "LA BELLE EPEE".
+ex:112 sc:postalCode "44600".
+ex:112 sc:address "SAINT-NAZAIRE".
+ex:112 sc:telephone "02 40 22 55 93".
+ex:113 sc:name "LE BRETAGNE".
+ex:113 sc:postalCode "44600".
+ex:113 sc:address "SAINT-NAZAIRE".
+ex:113 sc:telephone "02 51 76 30 00".
+ex:113 sc:isAnimalAccepted "oui".
+ex:114 sc:name "LE DAUPHIN".
+ex:114 sc:postalCode "44600".
+ex:114 sc:address "SAINT-NAZAIRE".
+ex:114 sc:telephone "02 40 66 59 61".
+ex:114 sc:isAnimalAccepted "oui".
+ex:115 sc:name "L'EUROPE".
+ex:115 sc:postalCode "44600".
+ex:115 sc:address "SAINT-NAZAIRE".
+ex:115 sc:telephone "02 40 22 49 87".
+ex:115 sc:isAnimalAccepted "oui".
+ex:116 sc:name "LE SAINT LOUIS".
+ex:116 sc:postalCode "44600".
+ex:116 sc:address "SAINT-NAZAIRE".
+ex:116 sc:telephone "02 40 22 40 34".
+ex:116 sc:isAnimalAccepted "oui".
+ex:117 sc:name "LE TOURAINE".
+ex:117 sc:postalCode "44600".
+ex:117 sc:address "SAINT-NAZAIRE".
+ex:117 sc:telephone "02 40 22 47 56".
+ex:117 sc:isAnimalAccepted "oui".
+ex:118 sc:name "HOTEL ANAIADE".
+ex:118 sc:postalCode "44600".
+ex:118 sc:address "SAINT-NAZAIRE".
+ex:118 sc:telephone "02 40 19 52 52".
+ex:119 sc:name "BEL HOTEL".
+ex:119 sc:postalCode "44460".
+ex:119 sc:address "SAINT-NICOLAS-DE-REDON".
+ex:119 sc:telephone "02 99 71 10 10".
+ex:119 sc:isAnimalAccepted "oui".
+ex:120 sc:name "B&B HÔTEL NANTES SAINT SEBASTIEN".
+ex:120 sc:postalCode "44230".
+ex:120 sc:address "SAINT-SEBASTIEN-SUR-LOIRE".
+ex:120 sc:telephone "08 92 70 75 48".
+ex:120 sc:isAnimalAccepted "oui".
+ex:121 sc:name "PREMIERE CLASSE - SAINT SEBASTIEN SUR LOIRE".
+ex:121 sc:postalCode "44230".
+ex:121 sc:address "SAINT-SEBASTIEN-SUR-LOIRE".
+ex:121 sc:telephone "02 40 80 79 80".
+ex:121 sc:isAnimalAccepted "oui".
+ex:122 sc:name "LE RELAIS DE NANTES - PREMIER PRIX HOTEL".
+ex:122 sc:postalCode "44980".
+ex:122 sc:address "SAINTE-LUCE-SUR-LOIRE".
+ex:122 sc:telephone "02 40 25 99 19".
+ex:122 sc:isAnimalAccepted "oui".
+ex:123 sc:name "PREMIERE CLASSE - SAINTE LUCE SUR LOIRE".
+ex:123 sc:postalCode "44980".
+ex:123 sc:address "SAINTE-LUCE-SUR-LOIRE".
+ex:123 sc:telephone "02 28 01 41 90".
+ex:123 sc:isAnimalAccepted "oui".
+ex:124 sc:name "APARTE (L')".
+ex:124 sc:postalCode "44980".
+ex:124 sc:address "SAINTE-LUCE-SUR-LOIRE".
+ex:124 sc:telephone "02 28 01 46 66".
+ex:124 sc:isAnimalAccepted "oui".
+ex:125 sc:name "ETAP HOTEL - SAINTE LUCE SUR LOIRE".
+ex:125 sc:postalCode "44980".
+ex:125 sc:address "SAINTE-LUCE-SUR-LOIRE".
+ex:125 sc:telephone "08 92 68 08 89".
+ex:125 sc:isAnimalAccepted "oui".
+ex:126 sc:name "HOTEL PREMIERE CLASSE".
+ex:126 sc:postalCode "44570".
+ex:126 sc:address "TRIGNAC".
+ex:126 sc:telephone "02 40 90 27 78".
+ex:126 sc:isAnimalAccepted "oui".
+ex:127 sc:name "HOTEL F1".
+ex:127 sc:postalCode "44570".
+ex:127 sc:address "TRIGNAC".
+ex:127 sc:telephone "08 91 70 53 86".
+ex:127 sc:isAnimalAccepted "oui".
+ex:128 sc:name "IBIS ".
+ex:128 sc:postalCode "44570".
+ex:128 sc:address "TRIGNAC".
+ex:128 sc:telephone "02 40 90 39 39".
+ex:128 sc:isAnimalAccepted "oui".
+ex:129 sc:name "HOTEL B&B".
+ex:129 sc:postalCode "44570".
+ex:129 sc:address "TRIGNAC".
+ex:129 sc:telephone "08 92 78 80 96".
+ex:129 sc:isAnimalAccepted "oui".
+ex:130 sc:name "CLAIR DE LIE".
+ex:130 sc:postalCode "44330".
+ex:130 sc:address "VALLET".
+ex:130 sc:telephone "02 40 33 92 55".
+ex:130 sc:isAnimalAccepted "oui".
+ex:131 sc:name "LE DON QUICHOTTE".
+ex:131 sc:postalCode "44330".
+ex:131 sc:address "VALLET".
+ex:131 sc:telephone "02 40 33 99 67".
+ex:131 sc:isAnimalAccepted "oui".
+ex:132 sc:name "LA HAUTE FORET".
+ex:132 sc:postalCode "44120".
+ex:132 sc:address "VERTOU".
+ex:132 sc:telephone "02 40 34 01 74".
+ex:133 sc:name "LE LAURIER FLEURI".
+ex:133 sc:postalCode "44120".
+ex:133 sc:address "VERTOU".
+ex:133 sc:telephone "02 51 79 01 01".
+ex:134 sc:name "LE BEAUTOUR".
+ex:134 sc:postalCode "44120".
+ex:134 sc:address "VERTOU".
+ex:134 sc:telephone "02 40 34 59 11".
+ex:134 sc:isAnimalAccepted "oui".
+ex:135 sc:name "HOTEL TEST".
+ex:135 sc:postalCode "44300".
+ex:135 sc:address "NANTES".
+ex:135 sc:telephone "02 51 72 95 30".
+ex:135 sc:isAnimalAccepted "oui".
+ex:136 sc:name "ALL SEASONS NANTES SUD REZE".
+ex:136 sc:postalCode "44400".
+ex:136 sc:address "REZE".
+ex:136 sc:telephone "02 28 07 17 91".
+ex:137 sc:name "BALLADINS".
+ex:137 sc:postalCode "44470".
+ex:137 sc:address "CARQUEFOU".
+ex:137 sc:telephone "02 40 30 12 12".
+ex:137 sc:isAnimalAccepted "oui".
+ex:138 sc:name "BEST HOTEL NANTES CENTRE".
+ex:138 sc:postalCode "44000".
+ex:138 sc:address "NANTES".
+ex:138 sc:telephone "02 40 73 85 33".
+ex:138 sc:isAnimalAccepted "oui".
+ex:139 sc:name "BEST WESTERN GARDEN AND SPA".
+ex:139 sc:postalCode "44500".
+ex:139 sc:address "LA BAULE".
+ex:139 sc:telephone "02 40 60 77 12".
+ex:139 sc:isAnimalAccepted "oui".
+ex:140 sc:name "BEST WESTERN PLUS LE COLISEE".
+ex:140 sc:postalCode "44800".
+ex:140 sc:address "SAINT-HERBLAIN".
+ex:140 sc:telephone "02 28 270 700".
+ex:140 sc:isAnimalAccepted "oui".
+ex:141 sc:name "BRIT HOTEL BELFORT".
+ex:141 sc:postalCode "44000".
+ex:141 sc:address "NANTES".
+ex:141 sc:telephone "02 40 47 05 57".
+ex:141 sc:isAnimalAccepted "oui".
+ex:142 sc:name "CAMBRONNE (LE)".
+ex:142 sc:postalCode "44000".
+ex:142 sc:address "NANTES".
+ex:142 sc:telephone "02 40 44 68 00".
+ex:142 sc:isAnimalAccepted "oui".
+ex:143 sc:name "CAMPANILE NANTES CENTRE SAINT JACQUES".
+ex:143 sc:postalCode "44200".
+ex:143 sc:address "NANTES".
+ex:143 sc:telephone "02 72 65 65 65".
+ex:143 sc:isAnimalAccepted "oui".
+ex:144 sc:name "ESCALE OCEANIA".
+ex:144 sc:postalCode "44380".
+ex:144 sc:address "PORNICHET".
+ex:144 sc:telephone "02 40 11 26 26".
+ex:144 sc:isAnimalAccepted "oui".
+ex:145 sc:name "HOTEL ECO NUIT".
+ex:145 sc:postalCode "44350".
+ex:145 sc:address "GUERANDE".
+ex:145 sc:telephone "02 40 45 85 47".
+ex:145 sc:isAnimalAccepted "oui".
+ex:146 sc:name "LE CHEVAL BLANC".
+ex:146 sc:postalCode "44430".
+ex:146 sc:address "LE LOROUX-BOTTEREAU".
+ex:146 sc:telephone "02 40 33 80 34".
+ex:146 sc:isAnimalAccepted "oui".
+ex:147 sc:name "NOVELLA NANTES CARQUEFOU".
+ex:147 sc:postalCode "44470".
+ex:147 sc:address "CARQUEFOU".
+ex:147 sc:telephone "02 28 23 09 59".
+ex:147 sc:isAnimalAccepted "oui".
+ex:148 sc:name "QUICK PALACE".
+ex:148 sc:postalCode "44300".
+ex:148 sc:address "NANTES".
+ex:148 sc:telephone "02 40 49 14 15".
+ex:148 sc:isAnimalAccepted "oui".
+ex:149 sc:name "SOZO HOTEL".
+ex:149 sc:postalCode "44000".
+ex:149 sc:address "NANTES".
+ex:149 sc:telephone "02 51 82 40 00".
