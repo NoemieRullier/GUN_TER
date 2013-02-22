@@ -1,13 +1,13 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -17,11 +17,15 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.sparql.syntax.Element;
+import com.hp.hpl.jena.sparql.syntax.ElementGroup;
+import com.hp.hpl.jena.sparql.syntax.ElementTriplesBlock;
 
 
 public class ApiToRdf {
 
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
+	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
 	public String fichierMapping = "src/fichierMapping.txt";
 	public Query reqVue;
 	public String vue;
@@ -35,7 +39,7 @@ public class ApiToRdf {
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
-
+		
 		// Create the URI
 		String ontoP = "http://example.org/";
 		String restaurantP = "http://example.org/Restaurant/";
@@ -70,12 +74,10 @@ public class ApiToRdf {
 			}
 		}
 
-		/*FileInputStream file = new FileInputStream(api);
-		Reader reader = new InputStreamReader(file, "utf-8");
-		BufferedReader br = new BufferedReader(reader);*/
+		FileInputStream file = new FileInputStream(apiFile);
 
-		URL url = new URL(api);
-		InputStream file = url.openStream();
+//		URL url = new URL(api);
+//		InputStream file = url.openStream();
 		Reader reader = new InputStreamReader(file, "utf-8");
 		BufferedReader br = new BufferedReader(reader);
 
@@ -125,9 +127,7 @@ public class ApiToRdf {
 		}
 
 		// If the column is the [latitude, longitude]
-		/*if(i % nbProperty == 10){
-					// Create the resource coordinate
-					Resource coord = m.createResource(geoP+nbRow);
+		/*if(i == 33){
 
 					// We get the latitude and longitude
 					val = val.split("]")[0].substring(2);
@@ -149,30 +149,9 @@ public class ApiToRdf {
 						m.add(resource, relation.get(i), pa.toUpperCase());
 					}
 				}*/
-		//else {
-		// If the column is a property of address
-		/*	if ((i % nbProperty == 4) || (i % nbProperty == 6) || (i % nbProperty == 9)){
-						if (address == null){
-							address = m.createResource(postalAddressP+nbRow);
-						}
-						m.add(address, relation.get(i), val.substring(1, val.length()-1));
-						if (i % nbProperty == 9){
-							m.add(resource, propertyOntologieGlobale.get(4), address);
-						}
-					}
-					// All the other property
-					else {
-						m.add(resource, relation.get(i), val.substring(1, val.length()-1));
-					}*/
-		//}
-		//				i++;
-		//			}
-		//nbRow++;
-		//		}
 		br.close();
 		m.write(System.out,"TURTLE");
 	}
-
 
 	public static void main(String[] args) {
 		ApiToRdf v1 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAddress ?ad; onto:hasPostalCode ?pc; onto:hasTown ?town.}");
