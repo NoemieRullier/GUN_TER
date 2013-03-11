@@ -1,0 +1,153 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ex="http://example.org/" > 
+  <rdf:Description rdf:about="http://example.org/13">
+    <ex:hasPostalCode>44160</ex:hasPostalCode>
+    <ex:hasAddress>La Harrois</ex:hasAddress>
+    <ex:hasWebSite>www.lemauffsa.com</ex:hasWebSite>
+    <ex:hasMail>lemauffsa@wanadoo.fr</ex:hasMail>
+    <ex:hasTown>BESNE</ex:hasTown>
+    <ex:hasName>ATELIERS LE MAUFF</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/16">
+    <ex:hasPostalCode>44850</ex:hasPostalCode>
+    <ex:hasAddress>La Petite Fournerie</ex:hasAddress>
+    <ex:hasWebSite>www.lambert-sculpteur.fr</ex:hasWebSite>
+    <ex:hasMail>art.lambert@wanadoo.fr</ex:hasMail>
+    <ex:hasTown>MOUZEIL</ex:hasTown>
+    <ex:hasName>LAMBERT SCULPTEUR</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/15">
+    <ex:hasPostalCode>44410</ex:hasPostalCode>
+    <ex:hasAddress>Ques Couic</ex:hasAddress>
+    <ex:hasMail>laurentretailleau@club-internet.fr</ex:hasMail>
+    <ex:hasTown>ASSERAC</ex:hasTown>
+    <ex:hasName>LES SALINES DE BEAUREGARD</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/14">
+    <ex:hasPostalCode>44410</ex:hasPostalCode>
+    <ex:hasAddress>Route de l'Estran</ex:hasAddress>
+    <ex:hasTown>ASSERAC</ex:hasTown>
+    <ex:hasName>LA FERME MARINE DE PEN BE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/20">
+    <ex:hasPostalCode>44110</ex:hasPostalCode>
+    <ex:hasAddress>La SabliÃ¨re</ex:hasAddress>
+    <ex:hasWebSite>www.tourisme-chateaubriant.fr</ex:hasWebSite>
+    <ex:hasMail>accueil@tourisme-chateaubrian.tfr</ex:hasMail>
+    <ex:hasTown>CHATEAUBRIANT</ex:hasTown>
+    <ex:hasName>LA CARRIERE DES FUSILLES</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/19">
+    <ex:hasPostalCode>44310</ex:hasPostalCode>
+    <ex:hasAddress>"Parc de loisirs ""La Boulogne"""</ex:hasAddress>
+    <ex:hasMail>ch2c@wanadoo.fr</ex:hasMail>
+    <ex:hasTown>SAINT-PHILBERT-DE-GRAND-LIEU</ex:hasTown>
+    <ex:hasName>SWIN-GOLF</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/4">
+    <ex:hasPostalCode>44770</ex:hasPostalCode>
+    <ex:hasAddress>Boulevard de la Tara</ex:hasAddress>
+    <ex:hasTown>LA PLAINE-SUR-MER</ex:hasTown>
+    <ex:hasName>PLAGE DE MOUTON</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3">
+    <ex:hasPostalCode>44730</ex:hasPostalCode>
+    <ex:hasAddress>Route de Gohaud</ex:hasAddress>
+    <ex:hasTown>SAINT-MICHEL-CHEF-CHEF</ex:hasTown>
+    <ex:hasName>PLAGE DE GOHAUD</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2">
+    <ex:hasPostalCode>44760</ex:hasPostalCode>
+    <ex:hasAddress>Rue de la Mer</ex:hasAddress>
+    <ex:hasTown>LA BERNERIE-EN-RETZ</ex:hasTown>
+    <ex:hasName>PLAN D'EAU SALEE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/12">
+    <ex:hasPostalCode>44350</ex:hasPostalCode>
+    <ex:hasAddress>Pend HuÃ©</ex:hasAddress>
+    <ex:hasTown>SAINT-MOLF</ex:hasTown>
+    <ex:hasName>GAEC LES CHAMPS MARINS</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/17">
+    <ex:hasPostalCode>44410</ex:hasPostalCode>
+    <ex:hasAddress>Mairie</ex:hasAddress>
+    <ex:hasMail>patrimoine@herbignac.com</ex:hasMail>
+    <ex:hasTown>HERBIGNAC</ex:hasTown>
+    <ex:hasName>LA MAISON DU PATRIMOINE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/18">
+    <ex:hasPostalCode>44590</ex:hasPostalCode>
+    <ex:hasAddress>1 rue de Nantes</ex:hasAddress>
+    <ex:hasWebSite>www.manoirdebellevue-derval.fr</ex:hasWebSite>
+    <ex:hasMail>anniehabay@wanadoo.fr</ex:hasMail>
+    <ex:hasTown>DERVAL</ex:hasTown>
+    <ex:hasName>PASSION FAIENCE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/11">
+    <ex:hasPostalCode>44200</ex:hasPostalCode>
+    <ex:hasAddress>Association CAP VERT</ex:hasAddress>
+    <ex:hasWebSite>penichecapvert.com</ex:hasWebSite>
+    <ex:hasMail>asso.capvert@orange.fr</ex:hasMail>
+    <ex:acceptHearingImpairment>oui</ex:acceptHearingImpairment>
+    <ex:hasTown>NANTES</ex:hasTown>
+    <ex:acceptVisualImpairment>oui</ex:acceptVisualImpairment>
+    <ex:hasName>BATEAU HABITABLE PÃ‰NICHE CAP VERT</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1">
+    <ex:hasPostalCode>44760</ex:hasPostalCode>
+    <ex:hasAddress>Rue de la Mer</ex:hasAddress>
+    <ex:hasTown>LA BERNERIE-EN-RETZ</ex:hasTown>
+    <ex:hasName>PLAN D'EAU SALEE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/10">
+    <ex:hasPostalCode>44690</ex:hasPostalCode>
+    <ex:hasAddress>23 Les Croix</ex:hasAddress>
+    <ex:hasWebSite>www.domainedescroix.fr</ex:hasWebSite>
+    <ex:hasMail>batard.joseph@wanadoo.fr</ex:hasMail>
+    <ex:acceptHearingImpairment>oui</ex:acceptHearingImpairment>
+    <ex:hasTown>MAISDON-SUR-SEVRE</ex:hasTown>
+    <ex:acceptVisualImpairment>oui</ex:acceptVisualImpairment>
+    <ex:hasName>DOMAINE DES CROIX</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/6">
+    <ex:hasPostalCode>44600</ex:hasPostalCode>
+    <ex:hasAddress>Rue du Commandant Charcot</ex:hasAddress>
+    <ex:hasTown>SAINT-NAZAIRE</ex:hasTown>
+    <ex:hasName>PLAGE DE MONSIEUR HULOT</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/7">
+    <ex:hasPostalCode>44420</ex:hasPostalCode>
+    <ex:hasAddress>Avenue Cassard</ex:hasAddress>
+    <ex:hasTown>LA TURBALLE</ex:hasTown>
+    <ex:hasName>PLAGES DES BRETONS ET DE LA CROIX DE L'ANSE</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8">
+    <ex:hasPostalCode>44210</ex:hasPostalCode>
+    <ex:hasAddress>AllÃ©e FranÃ§ois Renaud</ex:hasAddress>
+    <ex:hasTown>PORNIC</ex:hasTown>
+    <ex:hasName>PLAGE DE MONTBEAU</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5">
+    <ex:hasPostalCode>44600</ex:hasPostalCode>
+    <ex:hasAddress>Rue Ferdinand Buisson</ex:hasAddress>
+    <ex:hasTown>SAINT-NAZAIRE</ex:hasTown>
+    <ex:hasName>PLAGE DE VILLES MARTIN</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/9">
+    <ex:hasPostalCode>44190</ex:hasPostalCode>
+    <ex:hasAddress>Rue du ChÃ¢teau</ex:hasAddress>
+    <ex:hasWebSite>http://cultureloire-atlantique.fr/culture/jcms/c_7195/forteresse-des-marches-de-bretagne</ex:hasWebSite>
+    <ex:hasMail>garennelemot@cg44.fr</ex:hasMail>
+    <ex:acceptHearingImpairment>oui</ex:acceptHearingImpairment>
+    <ex:hasTown>CLISSON</ex:hasTown>
+    <ex:acceptVisualImpairment>oui</ex:acceptVisualImpairment>
+    <ex:hasName>CHATEAU DEPARTEMENTAL DE CLISSON</ex:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/0">
+    <ex:hasPostalCode>44380</ex:hasPostalCode>
+    <ex:hasAddress>Boulevard des OcÃ©anides</ex:hasAddress>
+    <ex:hasTown>PORNICHET</ex:hasTown>
+    <ex:hasName>PLAGE DES LIBRAIRES</ex:hasName>
+  </rdf:Description>
+</rdf:RDF>
