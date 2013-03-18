@@ -1,13 +1,13 @@
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
@@ -17,9 +17,6 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.sparql.syntax.Element;
-import com.hp.hpl.jena.sparql.syntax.ElementGroup;
-import com.hp.hpl.jena.sparql.syntax.ElementTriplesBlock;
 
 
 public class ApiToRdf {
@@ -74,10 +71,10 @@ public class ApiToRdf {
 			}
 		}
 
-		FileInputStream file = new FileInputStream(apiFile);
+//		FileInputStream file = new FileInputStream(apiFile);
 
-//		URL url = new URL(api);
-//		InputStream file = url.openStream();
+		URL url = new URL(api);
+		InputStream file = url.openStream();
 		Reader reader = new InputStreamReader(file, "utf-8");
 		BufferedReader br = new BufferedReader(reader);
 
@@ -150,7 +147,7 @@ public class ApiToRdf {
 					}
 				}*/
 		br.close();
-		m.write(System.out,"TURTLE");
+		m.write(System.out,"N-TRIPLE");
 	}
 
 	public static void main(String[] args) {
