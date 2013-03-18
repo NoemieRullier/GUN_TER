@@ -15,5 +15,10 @@
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/slf4j-log4j12-1.6.4.jar"/>
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/xercesImpl-2.10.0.jar"/>
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="../libs/jdom-2.0.4/jdom-2.0.4.jar"/>
+	<classpathentry kind="lib" path="../libs/jdom-2.0.4/jdom-2.0.4-contrib.jar"/>
+	<classpathentry kind="lib" path="../libs/jdom-2.0.4/jdom-2.0.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="../libs/jdom-2.0.4/jdom-2.0.4-junit.jar"/>
+	<classpathentry kind="lib" path="../libs/jdom-2.0.4/jdom-2.0.4-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
