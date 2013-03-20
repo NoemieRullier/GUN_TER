@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,9 +31,11 @@ public class ApiToRdf {
 	public ApiToRdf(String v) {
 		vue = v;
 		reqVue = QueryFactory.create(vue);
+		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
+		System.setProperty("http.proxyPort", "3128");
 	}
 
-	public void parsingFile() throws MalformedURLException, IOException{
+	public void parsingFile(String fileResult) throws MalformedURLException, IOException{
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
@@ -147,17 +150,19 @@ public class ApiToRdf {
 					}
 				}*/
 		br.close();
-		m.write(System.out,"N-TRIPLE");
+		m.write(new FileOutputStream(fileResult),"N-TRIPLE");
 	}
 
 	public static void main(String[] args) {
 		ApiToRdf v1 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAddress ?ad; onto:hasPostalCode ?pc; onto:hasTown ?town.}");
 		ApiToRdf v2 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?mail ?ws WHERE{ ?x onto:hasMail ?mail; onto:hasWebSite ?ws.}");
 		ApiToRdf v3 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi ?town WHERE{ ?x onto:acceptVisualImpairment ?vi; onto:acceptHearingImpairment ?hi.}");
+		ApiToRdf v4 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?name WHERE{ ?x onto:hasAddress ?ad; onto:hasName ?name. }");
+
 		try {
-			v1.parsingFile();
+//			v4.parsingFile("view4.n3");
 //			v2.parsingFile();
-//			v3.parsingFile();
+			v3.parsingFile("view3.n3");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
