@@ -1,0 +1,6 @@
+--> Plusieurs étapes:
+	* Essayer de tester le tout avec .n3 fait à la mano --> Utiliser les views faites à la mano puis idem avec la génération de vue automatique
+	* Ajouter un script qui va chercher les vues générée pour créer les .n3 avec nos wrappers
+	* Voir pour les conjonctives queries
+
+"oui" ne fonctionne pas avec le littéral non plus !
