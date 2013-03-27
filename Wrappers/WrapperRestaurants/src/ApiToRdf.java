@@ -1,10 +1,14 @@
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -24,15 +28,37 @@ public class ApiToRdf {
 
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
 	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
-	public String fichierMapping = "src/fichierMapping.txt";
+	public String fichierMapping = "src/fileMappingRestaurant.txt";
+	public String pathFileResult;
 	public Query reqVue;
-	public String vue;
+	public String vue = "";
 
-	public ApiToRdf(String v) {
-		vue = v;
-		reqVue = QueryFactory.create(vue);
+	public ApiToRdf(String pathFileView, String pathFileResult){
 		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
 		System.setProperty("http.proxyPort", "3128");
+		InputStream file;
+		try {
+			file = new FileInputStream(pathFileView);
+			Reader reader = new InputStreamReader(file, "utf-8");
+			BufferedReader readView = new BufferedReader(reader);
+			String ligne;
+			while ((ligne=readView.readLine())!=null){
+				System.out.println(ligne);
+				vue+=ligne/*+"\n"*/;
+			}
+			reader.close(); 
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		reqVue = QueryFactory.create(vue);
+		this.pathFileResult = pathFileResult;  
 	}
 
 	public void parsingFile(String fileResult) throws MalformedURLException, IOException{
@@ -83,7 +109,7 @@ public class ApiToRdf {
 
 		// Loading the columns we need and the value they must respect
 		HashMap<Integer, String> req = new HashMap<Integer, String>();
-		// Pas tr�s propre --> A revoir si on peut pas r�cup�rer les propri�t�s de la query un peu mieux
+		// Pas tres propre --> A revoir si on peut pas recuperer les proprietes de la query un peu mieux
 		for(String s: reqVue.getQueryPattern().toString().replace("{", " ").replace("}", "").replace("\n", "").split(" \\.")){
 			req.put(mapping.get(m.getProperty(s.split(" ")[3].replace("<","").replace(">", ""))), s.split(" ")[4]);
 		}
@@ -150,24 +176,24 @@ public class ApiToRdf {
 					}
 				}*/
 		br.close();
-		m.write(new FileOutputStream(fileResult),"N-TRIPLE");
+		m.write(new FileOutputStream(pathFileResult+fileResult),"N-TRIPLE");
 	}
 
 	public static void main(String[] args) {
-		ApiToRdf v1 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?town WHERE{ ?x onto:hasAddress ?ad; onto:hasPostalCode ?pc; onto:hasTown ?town.}");
-		ApiToRdf v2 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?mail ?ws WHERE{ ?x onto:hasMail ?mail; onto:hasWebSite ?ws.}");
-		ApiToRdf v3 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi ?town WHERE{ ?x onto:acceptVisualImpairment ?vi; onto:acceptHearingImpairment ?hi.}");
-		ApiToRdf v4 = new ApiToRdf("prefix onto: <http://example.org/> SELECT ?x ?ad ?name WHERE{ ?x onto:hasAddress ?ad; onto:hasName ?name. }");
+		ApiToRdf v1 = new ApiToRdf("src/view1.sparql","src/");
+		ApiToRdf v2 = new ApiToRdf("src/view2.sparql","src/");
+		ApiToRdf v3 = new ApiToRdf("src/view3.sparql","src/");
+		ApiToRdf v4 = new ApiToRdf("src/view4.sparql","src/");
 
 		try {
-//			v4.parsingFile("view4.n3");
-//			v2.parsingFile();
+			v1.parsingFile("view1.n3");
+			v2.parsingFile("view2.n3");
 			v3.parsingFile("view3.n3");
+			v4.parsingFile("view4.n3");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
 }
