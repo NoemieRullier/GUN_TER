@@ -61,7 +61,7 @@ public class WrapperRestaurantApiToRdf {
 		this.pathFileResult = pathFileResult;  
 	}
 
-	public void parsingFile(String fileResult) throws MalformedURLException, IOException{
+	public void parsingFile() throws MalformedURLException, IOException{
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
@@ -176,20 +176,20 @@ public class WrapperRestaurantApiToRdf {
 					}
 				}*/
 		br.close();
-		m.write(new FileOutputStream(pathFileResult+fileResult),"N-TRIPLE");
+		m.write(new FileOutputStream(pathFileResult),"N-TRIPLE");
 	}
 
 	public static void main(String[] args) {
-		WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/");
-		WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/");
-		WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/");
-		WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/");
+		WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/view1.n3");
+		WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/view2.n3");
+		WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/view3.n3");
+		WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/view4.n3");
 
 		try {
-			v1.parsingFile("view1.n3");
-			v2.parsingFile("view2.n3");
-			v3.parsingFile("view3.n3");
-			v4.parsingFile("view4.n3");
+			v1.parsingFile();
+			v2.parsingFile();
+			v3.parsingFile();
+			v4.parsingFile();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
