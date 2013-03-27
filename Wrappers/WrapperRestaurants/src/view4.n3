@@ -1,0 +1,414 @@
+<http://example.org/Restaurant/138> <http://example.org/hasAddress> "10 Place de l'H\u00F4tel de ville" .
+<http://example.org/Restaurant/138> <http://example.org/hasName> "LE CHENE VERT" .
+<http://example.org/Restaurant/66> <http://example.org/hasAddress> "13 boulevard Babin Chevaye" .
+<http://example.org/Restaurant/66> <http://example.org/hasName> "Le P\u2019tite Ardoise" .
+<http://example.org/Restaurant/117> <http://example.org/hasAddress> "21, Quai des Antilles" .
+<http://example.org/Restaurant/117> <http://example.org/hasName> "RESTAURANT TEO" .
+<http://example.org/Restaurant/45> <http://example.org/hasAddress> "125 boulevard des poilus" .
+<http://example.org/Restaurant/45> <http://example.org/hasName> "ABELIA (L')" .
+<http://example.org/Restaurant/24> <http://example.org/hasAddress> "91 Lev\u00E9e de la Divatte" .
+<http://example.org/Restaurant/24> <http://example.org/hasName> "RESTAURANT CLEMENCE" .
+<http://example.org/Restaurant/188> <http://example.org/hasAddress> "1, avenue Andrieu" .
+<http://example.org/Restaurant/188> <http://example.org/hasName> "RELAIS & CHATEAUX CASTEL MARIE-LOUISE" .
+<http://example.org/Restaurant/167> <http://example.org/hasAddress> "2, rue de la Bascule" .
+<http://example.org/Restaurant/167> <http://example.org/hasName> "LE COLIBRI" .
+<http://example.org/Restaurant/95> <http://example.org/hasAddress> "3 rue de Gu\u00E9rande" .
+<http://example.org/Restaurant/95> <http://example.org/hasName> "Cr\u00EAperie de Broc\u00E9liande" .
+<http://example.org/Restaurant/146> <http://example.org/hasAddress> "11 rue de Verdun" .
+<http://example.org/Restaurant/146> <http://example.org/hasName> "Le 11" .
+<http://example.org/Restaurant/74> <http://example.org/hasAddress> "4 rue F\u00E9nelon" .
+<http://example.org/Restaurant/74> <http://example.org/hasName> "Les Enfants Terribles" .
+<http://example.org/Restaurant/125> <http://example.org/hasAddress> "16 quai Ernest Renaud" .
+<http://example.org/Restaurant/125> <http://example.org/hasName> "ATLANTIDE (L')" .
+<http://example.org/Restaurant/53> <http://example.org/hasAddress> "29 rue Four\u00E9" .
+<http://example.org/Restaurant/53> <http://example.org/hasName> "Plan B" .
+<http://example.org/Restaurant/104> <http://example.org/hasAddress> "4, Place Graslin" .
+<http://example.org/Restaurant/104> <http://example.org/hasName> "BRASSERIE LA CIGALE" .
+<http://example.org/Restaurant/32> <http://example.org/hasAddress> "53 Boulevard de l'Europe" .
+<http://example.org/Restaurant/32> <http://example.org/hasName> "LA HAUTE FORET" .
+<http://example.org/Restaurant/11> <http://example.org/hasAddress> "20 Place Charles de Gaulle" .
+<http://example.org/Restaurant/11> <http://example.org/hasName> "Au fil des saisons" .
+<http://example.org/Restaurant/196> <http://example.org/hasAddress> "L\u00E9niphen-Saill\u00E9" .
+<http://example.org/Restaurant/196> <http://example.org/hasName> "La Cabane \u00E0 Jules" .
+<http://example.org/Restaurant/175> <http://example.org/hasAddress> "10, village de Kerhinet" .
+<http://example.org/Restaurant/175> <http://example.org/hasName> "AUBERGE DE KERHINET" .
+<http://example.org/Restaurant/154> <http://example.org/hasAddress> "Le Blanchot" .
+<http://example.org/Restaurant/154> <http://example.org/hasName> "LA FERME DU BLANCHOT" .
+<http://example.org/Restaurant/82> <http://example.org/hasAddress> "1 rue L\u00E9on Blum" .
+<http://example.org/Restaurant/82> <http://example.org/hasName> "CHEMINS D'ALEXANDRE (LES)" .
+<http://example.org/Restaurant/133> <http://example.org/hasAddress> "Les 4 Nations RN 165" .
+<http://example.org/Restaurant/133> <http://example.org/hasName> "RESTAURANT ATLANTEL" .
+<http://example.org/Restaurant/61> <http://example.org/hasAddress> "11 rue des Olivettes" .
+<http://example.org/Restaurant/61> <http://example.org/hasName> "Le P\u2019tit qu\u2019a fait" .
+<http://example.org/Restaurant/7> <http://example.org/hasAddress> "82 rue St Pierre" .
+<http://example.org/Restaurant/7> <http://example.org/hasName> "LA TOILE \u00C0 BEURRE" .
+<http://example.org/Restaurant/112> <http://example.org/hasAddress> "4 rue Kl\u00E9ber" .
+<http://example.org/Restaurant/112> <http://example.org/hasName> "Le Grapillon" .
+<http://example.org/Restaurant/40> <http://example.org/hasAddress> "45 Boulevard des Batignolles" .
+<http://example.org/Restaurant/40> <http://example.org/hasName> "Amandine Restaurant" .
+<http://example.org/Restaurant/19> <http://example.org/hasAddress> "177 lev\u00E9e de la Divate" .
+<http://example.org/Restaurant/19> <http://example.org/hasName> "LE FORMIDABLE" .
+<http://example.org/Restaurant/183> <http://example.org/hasAddress> "5, esplanade Lucien Barri\u00E8re" .
+<http://example.org/Restaurant/183> <http://example.org/hasName> "L'EDEN BEACH" .
+<http://example.org/Restaurant/162> <http://example.org/hasAddress> "162 \u00EEle de F\u00E9drun" .
+<http://example.org/Restaurant/162> <http://example.org/hasName> "LA MARE AUX OISEAUX" .
+<http://example.org/Restaurant/90> <http://example.org/hasAddress> "12 All\u00E9e Duquesne" .
+<http://example.org/Restaurant/90> <http://example.org/hasName> "DUQUESNE" .
+<http://example.org/Restaurant/141> <http://example.org/hasAddress> "La Ville en Pierre" .
+<http://example.org/Restaurant/141> <http://example.org/hasName> "RESTAURANT D'EDOUARD" .
+<http://example.org/Restaurant/69> <http://example.org/hasAddress> "4, Rue L\u00E9on Maitre" .
+<http://example.org/Restaurant/69> <http://example.org/hasName> "POISSONNERIE (LA)" .
+<http://example.org/Restaurant/120> <http://example.org/hasAddress> "Golf Nantes Erdre" .
+<http://example.org/Restaurant/120> <http://example.org/hasName> "L'ENDROIT" .
+<http://example.org/Restaurant/48> <http://example.org/hasAddress> "18 rue de Richebourg" .
+<http://example.org/Restaurant/48> <http://example.org/hasName> "La Tavola" .
+<http://example.org/Restaurant/27> <http://example.org/hasAddress> "La Gailloti\u00E8re" .
+<http://example.org/Restaurant/27> <http://example.org/hasName> "AUBERGE DE LA GAILLOTIERE" .
+<http://example.org/Restaurant/191> <http://example.org/hasAddress> "2 place du Vieux March\u00E9" .
+<http://example.org/Restaurant/191> <http://example.org/hasName> "LE BALZAC" .
+<http://example.org/Restaurant/170> <http://example.org/hasAddress> "Rue du Vignonnet" .
+<http://example.org/Restaurant/170> <http://example.org/hasName> "AUBERGE LES TYPHAS" .
+<http://example.org/Restaurant/98> <http://example.org/hasAddress> "5 rue de Santeuil" .
+<http://example.org/Restaurant/98> <http://example.org/hasName> "Song Saveurs & Sens " .
+<http://example.org/Restaurant/149> <http://example.org/hasAddress> "La Briandais" .
+<http://example.org/Restaurant/149> <http://example.org/hasName> "MANOIR DE LA BRIANDAIS" .
+<http://example.org/Restaurant/77> <http://example.org/hasAddress> "4 cours Olivier de Clisson" .
+<http://example.org/Restaurant/77> <http://example.org/hasName> "Le Nouveau Monde" .
+<http://example.org/Restaurant/128> <http://example.org/hasAddress> "La Croix Blanche" .
+<http://example.org/Restaurant/128> <http://example.org/hasName> "L'ABREUVOIR" .
+<http://example.org/Restaurant/2> <http://example.org/hasAddress> "455 la Haute Meillerais" .
+<http://example.org/Restaurant/2> <http://example.org/hasName> "LA CLOSERIE DES ROSES" .
+<http://example.org/Restaurant/56> <http://example.org/hasAddress> "54 rue Four\u00E9" .
+<http://example.org/Restaurant/56> <http://example.org/hasName> "La Raffinerie" .
+<http://example.org/Restaurant/107> <http://example.org/hasAddress> "1-3 rue Lekain" .
+<http://example.org/Restaurant/107> <http://example.org/hasName> "Laurence" .
+<http://example.org/Restaurant/35> <http://example.org/hasAddress> "11 quai de la Chauss\u00E9e des Moines" .
+<http://example.org/Restaurant/35> <http://example.org/hasName> "MONTE CRISTO" .
+<http://example.org/Restaurant/14> <http://example.org/hasAddress> "23 Rue Ferdinand Albert" .
+<http://example.org/Restaurant/14> <http://example.org/hasName> "DE LA GARE" .
+<http://example.org/Restaurant/207> <http://example.org/hasAddress> "Port Lin" .
+<http://example.org/Restaurant/207> <http://example.org/hasName> "L'OCEAN" .
+<http://example.org/Restaurant/199> <http://example.org/hasAddress> "32 rue d'Aha" .
+<http://example.org/Restaurant/199> <http://example.org/hasName> "LA VIEILLE FORGE" .
+<http://example.org/Restaurant/178> <http://example.org/hasAddress> "150, boulevard des Oc\u00E9anides" .
+<http://example.org/Restaurant/178> <http://example.org/hasName> "LE GRAIN DE FOLIE" .
+<http://example.org/Restaurant/157> <http://example.org/hasAddress> "119 Boulevard de l'Oc\u00E9an" .
+<http://example.org/Restaurant/157> <http://example.org/hasName> "L'EMPREINTE" .
+<http://example.org/Restaurant/85> <http://example.org/hasAddress> "11, All\u00E9e Turenne" .
+<http://example.org/Restaurant/85> <http://example.org/hasName> "PRESSOIR (LE)" .
+<http://example.org/Restaurant/136> <http://example.org/hasAddress> "La Maillardais" .
+<http://example.org/Restaurant/136> <http://example.org/hasName> "AUBERGE DE LA FORET" .
+<http://example.org/Restaurant/64> <http://example.org/hasAddress> "7 rue Saint-Denis" .
+<http://example.org/Restaurant/64> <http://example.org/hasName> "Bistrot l\u2019Alchimiste" .
+<http://example.org/Restaurant/115> <http://example.org/hasAddress> "17 rue Voltaire" .
+<http://example.org/Restaurant/115> <http://example.org/hasName> "Les Agapes" .
+<http://example.org/Restaurant/43> <http://example.org/hasAddress> "Le vieux gachet" .
+<http://example.org/Restaurant/43> <http://example.org/hasName> "AUBERGE DU VIEUX GACHET" .
+<http://example.org/Restaurant/22> <http://example.org/hasAddress> "Rue Winston Churchill" .
+<http://example.org/Restaurant/22> <http://example.org/hasName> "HOSTELLERIE DE LA FERRIERE" .
+<http://example.org/Restaurant/186> <http://example.org/hasAddress> "13 avenue Olivier Guichard" .
+<http://example.org/Restaurant/186> <http://example.org/hasName> "LUTETIA Rest. LE ROSSINI" .
+<http://example.org/Restaurant/165> <http://example.org/hasAddress> "37 rue du Commandant Charcot" .
+<http://example.org/Restaurant/165> <http://example.org/hasName> "LA PLAGE DE M. HULOT" .
+<http://example.org/Restaurant/93> <http://example.org/hasAddress> "6, rue Cacault" .
+<http://example.org/Restaurant/93> <http://example.org/hasName> "A la Belle Cocotte" .
+<http://example.org/Restaurant/144> <http://example.org/hasAddress> "1 le Poteau Vert" .
+<http://example.org/Restaurant/144> <http://example.org/hasName> "AUBERGE DU POTEAU VERT" .
+<http://example.org/Restaurant/72> <http://example.org/hasAddress> "22 quai de Versailles" .
+<http://example.org/Restaurant/72> <http://example.org/hasName> "Le Lait de Mai" .
+<http://example.org/Restaurant/123> <http://example.org/hasAddress> "Chemin des Marais du Cens" .
+<http://example.org/Restaurant/123> <http://example.org/hasName> "DOMAINE D'ORVAULT (LE)" .
+<http://example.org/Restaurant/51> <http://example.org/hasAddress> "34 rue de Richebourg" .
+<http://example.org/Restaurant/51> <http://example.org/hasName> "Le Vanola" .
+<http://example.org/Restaurant/102> <http://example.org/hasAddress> "15, Rue Jean-Jacques Rousseau" .
+<http://example.org/Restaurant/102> <http://example.org/hasName> "BISTROT DE L'ECRIVAIN (LE)" .
+<http://example.org/Restaurant/30> <http://example.org/hasAddress> "12 rue des Ponts" .
+<http://example.org/Restaurant/30> <http://example.org/hasName> "LA CHAUMIERE" .
+<http://example.org/Restaurant/202> <http://example.org/hasAddress> "Rte de la C\u00F4te Sauvage" .
+<http://example.org/Restaurant/202> <http://example.org/hasName> "Le Derwin" .
+<http://example.org/Restaurant/194> <http://example.org/hasAddress> "2 place de la Psalette" .
+<http://example.org/Restaurant/194> <http://example.org/hasName> "BRASSERIE DU CENTRE" .
+<http://example.org/Restaurant/173> <http://example.org/hasAddress> "Br\u00E9ca" .
+<http://example.org/Restaurant/173> <http://example.org/hasName> "AUBERGE DE BRECA" .
+<http://example.org/Restaurant/152> <http://example.org/hasAddress> "6 route de la Briere" .
+<http://example.org/Restaurant/152> <http://example.org/hasName> "AUBERGE DU CALVAIRE" .
+<http://example.org/Restaurant/80> <http://example.org/hasAddress> "5 rue Chateaubriand" .
+<http://example.org/Restaurant/80> <http://example.org/hasName> "Tontonpic" .
+<http://example.org/Restaurant/131> <http://example.org/hasAddress> "79, Rue de Bretagne" .
+<http://example.org/Restaurant/131> <http://example.org/hasName> "ROMARIN (LE)" .
+<http://example.org/Restaurant/5> <http://example.org/hasAddress> "\"\"Lieu dit \"\"\"\"Bel Air\"\"\"\"\"\"" .
+<http://example.org/Restaurant/5> <http://example.org/hasName> "LES TERRASSES DE BEL AIR" .
+<http://example.org/Restaurant/59> <http://example.org/hasAddress> "87 rue du Mar\u00E9chal Joffre" .
+<http://example.org/Restaurant/59> <http://example.org/hasName> "Le Bistroquet" .
+<http://example.org/Restaurant/110> <http://example.org/hasAddress> "2 rue Menou" .
+<http://example.org/Restaurant/110> <http://example.org/hasName> "L\u2019Alexandre" .
+<http://example.org/Restaurant/38> <http://example.org/hasAddress> "102, rue de la Mairie" .
+<http://example.org/Restaurant/38> <http://example.org/hasName> "LE CLOS ST-THOMAS" .
+<http://example.org/Restaurant/17> <http://example.org/hasAddress> "1 rue Olivier de Clisson" .
+<http://example.org/Restaurant/17> <http://example.org/hasName> "LA BONNE AUBERGE" .
+<http://example.org/Restaurant/210> <http://example.org/hasAddress> "26 rue de la Plage" .
+<http://example.org/Restaurant/210> <http://example.org/hasName> "DE LA POSTE Rest. LA TERRASSE FLEURIE" .
+<http://example.org/Restaurant/181> <http://example.org/hasAddress> "27, boulevard de l'Oc\u00E9an" .
+<http://example.org/Restaurant/181> <http://example.org/hasName> "LA VERANDA" .
+<http://example.org/Restaurant/160> <http://example.org/hasAddress> "Port de la Gravette" .
+<http://example.org/Restaurant/160> <http://example.org/hasName> "ANNE DE BRETAGNE" .
+<http://example.org/Restaurant/88> <http://example.org/hasAddress> "14, Rue Armand Brossard" .
+<http://example.org/Restaurant/88> <http://example.org/hasName> "EMBELLIE (L')" .
+<http://example.org/Restaurant/139> <http://example.org/hasAddress> "La Sicaudais" .
+<http://example.org/Restaurant/139> <http://example.org/hasName> "LE POICTOV" .
+<http://example.org/Restaurant/67> <http://example.org/hasAddress> "16, rue des petites \u00E9curies" .
+<http://example.org/Restaurant/67> <http://example.org/hasName> "La Mangeoire" .
+<http://example.org/Restaurant/118> <http://example.org/hasAddress> "33 rue du G\u00E9n\u00E9ral Leclerc" .
+<http://example.org/Restaurant/118> <http://example.org/hasName> "L\u2019Aquarelle" .
+<http://example.org/Restaurant/46> <http://example.org/hasAddress> "84, Rue du G\u00E9n\u00E9ral Buat" .
+<http://example.org/Restaurant/46> <http://example.org/hasName> "COU DE LA GIRAFE (LE)" .
+<http://example.org/Restaurant/25> <http://example.org/hasAddress> "33 rue de la Chapelle St Martin" .
+<http://example.org/Restaurant/25> <http://example.org/hasName> "MANOIR DE LA BOULAIE" .
+<http://example.org/Restaurant/189> <http://example.org/hasAddress> "1 avenue Andrieu" .
+<http://example.org/Restaurant/189> <http://example.org/hasName> "Castel Marie-Louise" .
+<http://example.org/Restaurant/168> <http://example.org/hasAddress> "Pointe Saint Gildas" .
+<http://example.org/Restaurant/168> <http://example.org/hasName> "LE CALLUNA" .
+<http://example.org/Restaurant/96> <http://example.org/hasAddress> "12, rue des vieilles douves" .
+<http://example.org/Restaurant/96> <http://example.org/hasName> "CREPERIE LA TETE NOIRE" .
+<http://example.org/Restaurant/147> <http://example.org/hasAddress> "6-8 route de Saint P\u00E8re en Retz" .
+<http://example.org/Restaurant/147> <http://example.org/hasName> "LES COLONNADES" .
+<http://example.org/Restaurant/75> <http://example.org/hasAddress> "17 rue de la Tour d\u2019Auvergne" .
+<http://example.org/Restaurant/75> <http://example.org/hasName> "Le Bistrot de l\u2019Ile" .
+<http://example.org/Restaurant/126> <http://example.org/hasAddress> "379 route de Vannes" .
+<http://example.org/Restaurant/126> <http://example.org/hasName> "PAVILLON (LE)" .
+<http://example.org/Restaurant/54> <http://example.org/hasAddress> "23 all\u00E9e du Commandant Charcot" .
+<http://example.org/Restaurant/54> <http://example.org/hasName> "LA TAVERNE DU CH\u00C2TEAU" .
+<http://example.org/Restaurant/105> <http://example.org/hasAddress> "1 place Aristide Briant" .
+<http://example.org/Restaurant/105> <http://example.org/hasName> "PALATIUM (LE)" .
+<http://example.org/Restaurant/33> <http://example.org/hasAddress> "Le Petit Plessis" .
+<http://example.org/Restaurant/33> <http://example.org/hasName> "Manoir du Petit Plessis" .
+<http://example.org/Restaurant/12> <http://example.org/hasAddress> "35, route de Clisson" .
+<http://example.org/Restaurant/12> <http://example.org/hasName> "LE DON QUICHOTTE" .
+<http://example.org/Restaurant/205> <http://example.org/hasAddress> "15 rue Pasteur" .
+<http://example.org/Restaurant/205> <http://example.org/hasName> "LES NIDS" .
+<http://example.org/Restaurant/197> <http://example.org/hasAddress> "26 quai Jules Sandeau" .
+<http://example.org/Restaurant/197> <http://example.org/hasName> "LE DUGUAY-TROUIN" .
+<http://example.org/Restaurant/176> <http://example.org/hasAddress> "Sur la Plage" .
+<http://example.org/Restaurant/176> <http://example.org/hasName> "LE SUNSET" .
+<http://example.org/Restaurant/155> <http://example.org/hasAddress> "67 bd de la R\u00E9publique" .
+<http://example.org/Restaurant/155> <http://example.org/hasName> "Le Bac \u00E0 Bl\u00E9" .
+<http://example.org/Restaurant/83> <http://example.org/hasAddress> "1 rue L\u00E9on Blum" .
+<http://example.org/Restaurant/83> <http://example.org/hasName> "Les Chemins d'Alexandre" .
+<http://example.org/Restaurant/134> <http://example.org/hasAddress> "La Fontaine Saint-P\u00E8re" .
+<http://example.org/Restaurant/134> <http://example.org/hasName> "NUIT DE RETZ" .
+<http://example.org/Restaurant/62> <http://example.org/hasAddress> "2 rue du Roi Albert" .
+<http://example.org/Restaurant/62> <http://example.org/hasName> "R\u00EAves marins..." .
+<http://example.org/Restaurant/8> <http://example.org/hasAddress> "Bd Docteur Moutel" .
+<http://example.org/Restaurant/8> <http://example.org/hasName> "LE BISTRO D'ANCENIS" .
+<http://example.org/Restaurant/113> <http://example.org/hasAddress> "11 bis Rue de la Bastille" .
+<http://example.org/Restaurant/113> <http://example.org/hasName> "CAPUCINES (LES)" .
+<http://example.org/Restaurant/41> <http://example.org/hasAddress> "16 Boulevard Georges Pompidou" .
+<http://example.org/Restaurant/41> <http://example.org/hasName> "B.A. Ba Restaurant" .
+<http://example.org/Restaurant/20> <http://example.org/hasAddress> "38 Lev\u00E9e de la Divatte" .
+<http://example.org/Restaurant/20> <http://example.org/hasName> "L'AUBERGE NANTAISE" .
+<http://example.org/Restaurant/184> <http://example.org/hasAddress> "6, avenue Pierre Loti" .
+<http://example.org/Restaurant/184> <http://example.org/hasName> "LA ROTONDE" .
+<http://example.org/Restaurant/163> <http://example.org/hasAddress> "181, Ile de F\u00E9drun" .
+<http://example.org/Restaurant/163> <http://example.org/hasName> "LA HUTTE BRIERONNE" .
+<http://example.org/Restaurant/91> <http://example.org/hasAddress> "3 all\u00E9e de l\u2019Ile Gloriette" .
+<http://example.org/Restaurant/91> <http://example.org/hasName> "Pommier-Laprugne" .
+<http://example.org/Restaurant/142> <http://example.org/hasAddress> "Le Cougou" .
+<http://example.org/Restaurant/142> <http://example.org/hasName> "LE PARADIS DES PECHEURS" .
+<http://example.org/Restaurant/70> <http://example.org/hasAddress> "1 place Saint-Vincent" .
+<http://example.org/Restaurant/70> <http://example.org/hasName> "Les Petits Saints" .
+<http://example.org/Restaurant/121> <http://example.org/hasAddress> "21 Quai Marcel Boissard" .
+<http://example.org/Restaurant/121> <http://example.org/hasName> "La Civelle" .
+<http://example.org/Restaurant/49> <http://example.org/hasAddress> "33, Rue de Rieux" .
+<http://example.org/Restaurant/49> <http://example.org/hasName> "MAISON BARON-LEFEVRE" .
+<http://example.org/Restaurant/100> <http://example.org/hasAddress> "18 quai Fran\u00E7ois Mitterrand" .
+<http://example.org/Restaurant/100> <http://example.org/hasName> "1 (LE)" .
+<http://example.org/Restaurant/28> <http://example.org/hasAddress> "28 lev\u00E9e de la Divatte" .
+<http://example.org/Restaurant/28> <http://example.org/hasName> "LA DIVATE" .
+<http://example.org/Restaurant/200> <http://example.org/hasAddress> "All\u00E9e du Derwin" .
+<http://example.org/Restaurant/200> <http://example.org/hasName> "CR\u00CAPERIE DU DERWIN" .
+<http://example.org/Restaurant/192> <http://example.org/hasAddress> "1 Promenade du port" .
+<http://example.org/Restaurant/192> <http://example.org/hasName> "LE GARDE-COTE" .
+<http://example.org/Restaurant/171> <http://example.org/hasAddress> "Route de F\u00E9rel" .
+<http://example.org/Restaurant/171> <http://example.org/hasName> "AUBERGE DE KER-ROLAND" .
+<http://example.org/Restaurant/99> <http://example.org/hasAddress> "8 rue Jean-Jacques-Rousseau" .
+<http://example.org/Restaurant/99> <http://example.org/hasName> "Le Bambou d'Or" .
+<http://example.org/Restaurant/150> <http://example.org/hasAddress> "1, route de la bri\u00E8re" .
+<http://example.org/Restaurant/150> <http://example.org/hasName> "LE CLOS DE MELANIE" .
+<http://example.org/Restaurant/78> <http://example.org/hasAddress> "1 rue Louis Blanc" .
+<http://example.org/Restaurant/78> <http://example.org/hasName> "Chez Lizette" .
+<http://example.org/Restaurant/129> <http://example.org/hasAddress> "8 Rue du Port" .
+<http://example.org/Restaurant/129> <http://example.org/hasName> "LA BOSSELLE" .
+<http://example.org/Restaurant/3> <http://example.org/hasAddress> "Le Jarier d'Ancenis - D723" .
+<http://example.org/Restaurant/3> <http://example.org/hasName> "DE LA LOIRE" .
+<http://example.org/Restaurant/57> <http://example.org/hasAddress> "45, Rue du Mar\u00E9chal Joffre" .
+<http://example.org/Restaurant/57> <http://example.org/hasName> "Aux d\u00E9lices bretons" .
+<http://example.org/Restaurant/108> <http://example.org/hasAddress> "28 place Viarme" .
+<http://example.org/Restaurant/108> <http://example.org/hasName> "Le Charette" .
+<http://example.org/Restaurant/36> <http://example.org/hasAddress> "460 route de Clisson" .
+<http://example.org/Restaurant/36> <http://example.org/hasName> "LE LAURIER FLEURI" .
+<http://example.org/Restaurant/15> <http://example.org/hasAddress> "170 rue Alphonse Fouschard" .
+<http://example.org/Restaurant/15> <http://example.org/hasName> "Villa Saint-Germain" .
+<http://example.org/Restaurant/208> <http://example.org/hasAddress> "La Pointe du Croisic" .
+<http://example.org/Restaurant/208> <http://example.org/hasName> "RESTAURANT FORT DE L'OCEAN" .
+<http://example.org/Restaurant/179> <http://example.org/hasAddress> "29, avenue Jean Boutroux" .
+<http://example.org/Restaurant/179> <http://example.org/hasName> "CARPE DIEM" .
+<http://example.org/Restaurant/86> <http://example.org/hasAddress> "18 rue Armand Brossard" .
+<http://example.org/Restaurant/86> <http://example.org/hasName> "Le P\u2019tit Bouillon" .
+<http://example.org/Restaurant/137> <http://example.org/hasAddress> "14 Route de Pornic" .
+<http://example.org/Restaurant/137> <http://example.org/hasName> "LE COLVERT" .
+<http://example.org/Restaurant/65> <http://example.org/hasAddress> "2 rue du Refuge" .
+<http://example.org/Restaurant/65> <http://example.org/hasName> "Resto-revues" .
+<http://example.org/Restaurant/116> <http://example.org/hasAddress> "25 rue Voltaire" .
+<http://example.org/Restaurant/116> <http://example.org/hasName> "La Gavotte" .
+<http://example.org/Restaurant/44> <http://example.org/hasAddress> "10, C\u00F4te Saint-S\u00E9bastien" .
+<http://example.org/Restaurant/44> <http://example.org/hasName> "RIVE GAUCHE (LE)" .
+<http://example.org/Restaurant/23> <http://example.org/hasAddress> "7 impasse Tournebride" .
+<http://example.org/Restaurant/23> <http://example.org/hasName> "RESTAURANT JEAN DE LA QUEUE" .
+<http://example.org/Restaurant/187> <http://example.org/hasAddress> "Place Notre Dame" .
+<http://example.org/Restaurant/187> <http://example.org/hasName> "SAINT CHRISTOPHE" .
+<http://example.org/Restaurant/166> <http://example.org/hasAddress> "60 boulevard Wilson" .
+<http://example.org/Restaurant/166> <http://example.org/hasName> "BRASSERIE LE TRANSAT" .
+<http://example.org/Restaurant/94> <http://example.org/hasAddress> "3 rue Gu\u00E9pin" .
+<http://example.org/Restaurant/94> <http://example.org/hasName> "Beckett\u2019s Canteen" .
+<http://example.org/Restaurant/145> <http://example.org/hasAddress> "Plage de la Biroch\u00E8re" .
+<http://example.org/Restaurant/145> <http://example.org/hasName> "BEAU RIVAGE" .
+<http://example.org/Restaurant/73> <http://example.org/hasAddress> "25 rue Adolphe Moiti\u00E9" .
+<http://example.org/Restaurant/73> <http://example.org/hasName> "Caf\u00E9 Grimault" .
+<http://example.org/Restaurant/124> <http://example.org/hasAddress> "229 Route de Vannes" .
+<http://example.org/Restaurant/124> <http://example.org/hasName> "LES CAUDALIES" .
+<http://example.org/Restaurant/52> <http://example.org/hasAddress> "11 rue Four\u00E9" .
+<http://example.org/Restaurant/52> <http://example.org/hasName> "A ma table" .
+<http://example.org/Restaurant/103> <http://example.org/hasAddress> "14 rue Jean-Jacques Rousseau" .
+<http://example.org/Restaurant/103> <http://example.org/hasName> "LE BOUCHE A OREILLE" .
+<http://example.org/Restaurant/31> <http://example.org/hasAddress> "Route des Bords de Loire" .
+<http://example.org/Restaurant/31> <http://example.org/hasName> "VILLA MON REVE" .
+<http://example.org/Restaurant/10> <http://example.org/hasAddress> "11, rue du Prieur\u00E9" .
+<http://example.org/Restaurant/10> <http://example.org/hasName> "LE PRIEURE DES GOURMANDS" .
+<http://example.org/Restaurant/203> <http://example.org/hasAddress> "276 Rue Centrale" .
+<http://example.org/Restaurant/203> <http://example.org/hasName> "LE RELAIS MARINE" .
+<http://example.org/Restaurant/195> <http://example.org/hasAddress> "12 boulevard de l'abreuvoir" .
+<http://example.org/Restaurant/195> <http://example.org/hasName> "LES VOYAGEURS" .
+<http://example.org/Restaurant/174> <http://example.org/hasAddress> "17, all\u00E9e des P\u00E9trels" .
+<http://example.org/Restaurant/174> <http://example.org/hasName> "LE BILLOT" .
+<http://example.org/Restaurant/153> <http://example.org/hasAddress> "49 La Tenni\u00E8re" .
+<http://example.org/Restaurant/153> <http://example.org/hasName> "AUBERGE DU CHALAND" .
+<http://example.org/Restaurant/81> <http://example.org/hasAddress> "11 rue L\u00E9on Blum" .
+<http://example.org/Restaurant/81> <http://example.org/hasName> "\u00C0 l\u2019Ardoise" .
+<http://example.org/Restaurant/132> <http://example.org/hasAddress> "5 place Aristide Briand" .
+<http://example.org/Restaurant/132> <http://example.org/hasName> "FRANCOIS II (LE)" .
+<http://example.org/Restaurant/60> <http://example.org/hasAddress> "24 rue des olivettes" .
+<http://example.org/Restaurant/60> <http://example.org/hasName> "L\u2019Atelier d\u2019Alain" .
+<http://example.org/Restaurant/6> <http://example.org/hasAddress> "11 Boulevard L\u00E9on S\u00E9ch\u00E9" .
+<http://example.org/Restaurant/6> <http://example.org/hasName> "LA TABLE DU P\u00CACHEUR" .
+<http://example.org/Restaurant/111> <http://example.org/hasAddress> "6 rue Racine" .
+<http://example.org/Restaurant/111> <http://example.org/hasName> "Cr\u00EAperie du Th\u00E9\u00E2tre" .
+<http://example.org/Restaurant/39> <http://example.org/hasAddress> "155, Route de Gachet" .
+<http://example.org/Restaurant/39> <http://example.org/hasName> "MANOIR DE LA REGATE (LE)" .
+<http://example.org/Restaurant/18> <http://example.org/hasAddress> "3 rue de la Navette" .
+<http://example.org/Restaurant/18> <http://example.org/hasName> "La G\u00E9tigni\u00E8re" .
+<http://example.org/Restaurant/182> <http://example.org/hasAddress> "138 avenue des Ondines" .
+<http://example.org/Restaurant/182> <http://example.org/hasName> "LE PARIS" .
+<http://example.org/Restaurant/161> <http://example.org/hasAddress> "1 pl Pierre-Semard" .
+<http://example.org/Restaurant/161> <http://example.org/hasName> "Le Berry" .
+<http://example.org/Restaurant/140> <http://example.org/hasAddress> "31, rue de l'Isac" .
+<http://example.org/Restaurant/140> <http://example.org/hasName> "LE RELAIS SAINT CLAIR" .
+<http://example.org/Restaurant/89> <http://example.org/hasAddress> "9 rue Alain Barbe Torte" .
+<http://example.org/Restaurant/89> <http://example.org/hasName> "Terroirs Bio" .
+<http://example.org/Restaurant/68> <http://example.org/hasAddress> "3 rue de la Tour d\u2019Auvergne" .
+<http://example.org/Restaurant/68> <http://example.org/hasName> "Le Gribiche" .
+<http://example.org/Restaurant/119> <http://example.org/hasAddress> "36 bd de Launay" .
+<http://example.org/Restaurant/119> <http://example.org/hasName> "La Cantine du G\u00E9n\u00E9ral" .
+<http://example.org/Restaurant/47> <http://example.org/hasAddress> "1, Rue rue Lef\u00E8vre-Utile" .
+<http://example.org/Restaurant/47> <http://example.org/hasName> "BRASSERIE FELIX" .
+<http://example.org/Restaurant/26> <http://example.org/hasAddress> "Chemin Nantais" .
+<http://example.org/Restaurant/26> <http://example.org/hasName> "LA CLOSERIE" .
+<http://example.org/Restaurant/190> <http://example.org/hasAddress> "2, avenue de la Noue" .
+<http://example.org/Restaurant/190> <http://example.org/hasName> "LE RUBAN BLEU" .
+<http://example.org/Restaurant/169> <http://example.org/hasAddress> "Le Haut Marland" .
+<http://example.org/Restaurant/169> <http://example.org/hasName> "AUBERGE DU HAUT MARLAND" .
+<http://example.org/Restaurant/97> <http://example.org/hasAddress> "5-7 rue de Gu\u00E9rande" .
+<http://example.org/Restaurant/97> <http://example.org/hasName> "Heb-Ken" .
+<http://example.org/Restaurant/148> <http://example.org/hasAddress> "Place du Petit Nice" .
+<http://example.org/Restaurant/148> <http://example.org/hasName> "L'ANA GRAM" .
+<http://example.org/Restaurant/76> <http://example.org/hasAddress> "4 rue des Trois Croissants" .
+<http://example.org/Restaurant/76> <http://example.org/hasName> "ENTRE AMIS" .
+<http://example.org/Restaurant/127> <http://example.org/hasAddress> "94 route de la Garenne" .
+<http://example.org/Restaurant/127> <http://example.org/hasName> "L'OREE DE BOIS" .
+<http://example.org/Restaurant/1> <http://example.org/hasAddress> "Le Grand Plessis" .
+<http://example.org/Restaurant/1> <http://example.org/hasName> "BENUREAU" .
+<http://example.org/Restaurant/55> <http://example.org/hasAddress> "40 bis, Rue Four\u00E9" .
+<http://example.org/Restaurant/55> <http://example.org/hasName> "GRESSIN (LE)" .
+<http://example.org/Restaurant/106> <http://example.org/hasAddress> "1, Place Aristide Briand" .
+<http://example.org/Restaurant/106> <http://example.org/hasName> "TEMPS CHANGENT (LES)" .
+<http://example.org/Restaurant/34> <http://example.org/hasAddress> "147 rue du grignon" .
+<http://example.org/Restaurant/34> <http://example.org/hasName> "RESTAURANT DU PONT" .
+<http://example.org/Restaurant/13> <http://example.org/hasAddress> "La Comti\u00E8re" .
+<http://example.org/Restaurant/13> <http://example.org/hasName> "Auberge de la Comti\u00E8re" .
+<http://example.org/Restaurant/206> <http://example.org/hasAddress> "11 quai du L\u00E9nigo" .
+<http://example.org/Restaurant/206> <http://example.org/hasName> "LE LENIGO" .
+<http://example.org/Restaurant/198> <http://example.org/hasAddress> "15 quai Jules-Sandeau" .
+<http://example.org/Restaurant/198> <http://example.org/hasName> "CAFE JULES" .
+<http://example.org/Restaurant/177> <http://example.org/hasAddress> "150 Boulevard des Oc\u00E9anides" .
+<http://example.org/Restaurant/177> <http://example.org/hasName> "LE REGENT" .
+<http://example.org/Restaurant/156> <http://example.org/hasAddress> "56 avenue de la Convention" .
+<http://example.org/Restaurant/156> <http://example.org/hasName> "LE BELEM" .
+<http://example.org/Restaurant/84> <http://example.org/hasAddress> "14 rue Saint-L\u00E9onard" .
+<http://example.org/Restaurant/84> <http://example.org/hasName> "La Pasta" .
+<http://example.org/Restaurant/135> <http://example.org/hasAddress> "Zone de Loisirs" .
+<http://example.org/Restaurant/135> <http://example.org/hasName> "AUBERGE DU PAYS DE RETZ" .
+<http://example.org/Restaurant/63> <http://example.org/hasAddress> "8 due de l'Emery" .
+<http://example.org/Restaurant/63> <http://example.org/hasName> "PATIO'NNEMENT" .
+<http://example.org/Restaurant/9> <http://example.org/hasAddress> "580 rue de l'Industrie " .
+<http://example.org/Restaurant/9> <http://example.org/hasName> "LE 7 DE TABLE" .
+<http://example.org/Restaurant/114> <http://example.org/hasAddress> "1 rue Montesquieu" .
+<http://example.org/Restaurant/114> <http://example.org/hasName> "Le Montesquieu" .
+<http://example.org/Restaurant/42> <http://example.org/hasAddress> "15 Rue des Pays de la Loire" .
+<http://example.org/Restaurant/42> <http://example.org/hasName> "BEAUJOIRE HOTEL Rest. LE JARDIN" .
+<http://example.org/Restaurant/21> <http://example.org/hasAddress> "30 bis, rue du 11 novembre" .
+<http://example.org/Restaurant/21> <http://example.org/hasName> "LE PO\u00CBLON D'OR" .
+<http://example.org/Restaurant/185> <http://example.org/hasAddress> "boulevard Darlu" .
+<http://example.org/Restaurant/185> <http://example.org/hasName> "NOSSY-BE" .
+<http://example.org/Restaurant/164> <http://example.org/hasAddress> "4 place St Pierre" .
+<http://example.org/Restaurant/164> <http://example.org/hasName> "BRASSERIE F" .
+<http://example.org/Restaurant/92> <http://example.org/hasAddress> "9 all\u00E9e Duquesne" .
+<http://example.org/Restaurant/92> <http://example.org/hasName> "Les Oliviers" .
+<http://example.org/Restaurant/143> <http://example.org/hasAddress> "Chemin des Noelles" .
+<http://example.org/Restaurant/143> <http://example.org/hasName> "AUBERGE LA FONTAINE AUX BRETONS" .
+<http://example.org/Restaurant/71> <http://example.org/hasAddress> "11 rue Bon secours" .
+<http://example.org/Restaurant/71> <http://example.org/hasName> "La Vache Nantaise" .
+<http://example.org/Restaurant/122> <http://example.org/hasAddress> "10 rue du Pays de Retz" .
+<http://example.org/Restaurant/122> <http://example.org/hasName> "RESTAURANT LA MAISON" .
+<http://example.org/Restaurant/50> <http://example.org/hasAddress> "14 rue de Jemmapes" .
+<http://example.org/Restaurant/50> <http://example.org/hasName> "SQUARE (LE)" .
+<http://example.org/Restaurant/101> <http://example.org/hasAddress> "4 Place Graslin" .
+<http://example.org/Restaurant/101> <http://example.org/hasName> "La Cigale" .
+<http://example.org/Restaurant/29> <http://example.org/hasAddress> "24 Lev\u00E9e de le Divatte" .
+<http://example.org/Restaurant/29> <http://example.org/hasName> "Le Bistrot Nantais" .
+<http://example.org/Restaurant/201> <http://example.org/hasAddress> "28, rue du Golf \u00AB\u00A0C\u00F4te Sauvage\u00A0\u00BB" .
+<http://example.org/Restaurant/201> <http://example.org/hasName> "LA ROCHE MATHIEU" .
+<http://example.org/Restaurant/193> <http://example.org/hasAddress> "15 boulevard du Nord" .
+<http://example.org/Restaurant/193> <http://example.org/hasName> "LES REMPARTS" .
+<http://example.org/Restaurant/172> <http://example.org/hasAddress> "Le N\u00E9zyl" .
+<http://example.org/Restaurant/172> <http://example.org/hasName> "AUBERGE LE NEZIL" .
+<http://example.org/Restaurant/151> <http://example.org/hasAddress> "13 Rue des Sablons" .
+<http://example.org/Restaurant/151> <http://example.org/hasName> "LES SABLONS" .
+<http://example.org/Restaurant/79> <http://example.org/hasAddress> "2, Rue Paul Bellamy" .
+<http://example.org/Restaurant/79> <http://example.org/hasName> "OCEANIDE (L')" .
+<http://example.org/Restaurant/130> <http://example.org/hasAddress> "Rue du Moulin de la Rousseli\u00E8re" .
+<http://example.org/Restaurant/130> <http://example.org/hasName> "Le Carr\u00E9 Blanc" .
+<http://example.org/Restaurant/4> <http://example.org/hasAddress> "RN23" .
+<http://example.org/Restaurant/4> <http://example.org/hasName> "LA P'TITE AUBERGE" .
+<http://example.org/Restaurant/58> <http://example.org/hasAddress> "2, Rue La\u00EBnnec" .
+<http://example.org/Restaurant/58> <http://example.org/hasName> "CHANTS D'AVRIL (LES)" .
+<http://example.org/Restaurant/109> <http://example.org/hasAddress> "2 rue Menou" .
+<http://example.org/Restaurant/109> <http://example.org/hasName> "Joyi" .
+<http://example.org/Restaurant/37> <http://example.org/hasAddress> "13, Place Georges Gaudet" .
+<http://example.org/Restaurant/37> <http://example.org/hasName> "LE PELICAN" .
+<http://example.org/Restaurant/16> <http://example.org/hasAddress> "34 rue de la Vall\u00E9e du Havre" .
+<http://example.org/Restaurant/16> <http://example.org/hasName> "AUBERGE DU TIRE BOUCHON" .
+<http://example.org/Restaurant/209> <http://example.org/hasAddress> "17 rue Keroman" .
+<http://example.org/Restaurant/209> <http://example.org/hasName> "Bodega Bay" .
+<http://example.org/Restaurant/180> <http://example.org/hasAddress> "Kermoureau" .
+<http://example.org/Restaurant/180> <http://example.org/hasName> "LA CHAUMIERE DES MARAIS" .
+<http://example.org/Restaurant/159> <http://example.org/hasAddress> "7 rue du Bois Savary" .
+<http://example.org/Restaurant/159> <http://example.org/hasName> "Di 20 WineBar" .
