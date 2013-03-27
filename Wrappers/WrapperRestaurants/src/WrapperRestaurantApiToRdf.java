@@ -24,7 +24,7 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 
 
-public class ApiToRdf {
+public class WrapperRestaurantApiToRdf {
 
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
 	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
@@ -33,7 +33,7 @@ public class ApiToRdf {
 	public Query reqVue;
 	public String vue = "";
 
-	public ApiToRdf(String pathFileView, String pathFileResult){
+	public WrapperRestaurantApiToRdf(String pathFileView, String pathFileResult){
 		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
 		System.setProperty("http.proxyPort", "3128");
 		InputStream file;
@@ -180,10 +180,10 @@ public class ApiToRdf {
 	}
 
 	public static void main(String[] args) {
-		ApiToRdf v1 = new ApiToRdf("src/view1.sparql","src/");
-		ApiToRdf v2 = new ApiToRdf("src/view2.sparql","src/");
-		ApiToRdf v3 = new ApiToRdf("src/view3.sparql","src/");
-		ApiToRdf v4 = new ApiToRdf("src/view4.sparql","src/");
+		WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/");
+		WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/");
+		WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/");
+		WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/");
 
 		try {
 			v1.parsingFile("view1.n3");
