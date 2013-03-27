@@ -65,7 +65,7 @@ public class WrapperRestaurantApiToRdf {
 
 		// Create the model of RDF-Graph
 		Model m = ModelFactory.createDefaultModel();
-		
+
 		// Create the URI
 		String ontoP = "http://example.org/";
 		String restaurantP = "http://example.org/Restaurant/";
@@ -100,7 +100,7 @@ public class WrapperRestaurantApiToRdf {
 			}
 		}
 
-//		FileInputStream file = new FileInputStream(apiFile);
+		//		FileInputStream file = new FileInputStream(apiFile);
 
 		URL url = new URL(api);
 		InputStream file = url.openStream();
@@ -180,20 +180,27 @@ public class WrapperRestaurantApiToRdf {
 	}
 
 	public static void main(String[] args) {
-		WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/view1.n3");
-		WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/view2.n3");
-		WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/view3.n3");
-		WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/view4.n3");
+		if (args.length == 2){
+			WrapperRestaurantApiToRdf v = new WrapperRestaurantApiToRdf(args[0], args[1]);
+			//			WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/view1.n3");
+			//			WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/view2.n3");
+			//			WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/view3.n3");
+			//			WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/view4.n3");
 
-		try {
-			v1.parsingFile();
-			v2.parsingFile();
-			v3.parsingFile();
-			v4.parsingFile();
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+			try {
+				v.parsingFile();
+				//				v1.parsingFile();
+				//				v2.parsingFile();
+				//				v3.parsingFile();
+				//				v4.parsingFile();
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		else{
+			System.out.println("Incorrect number of parameters");
 		}
 	}
 }
