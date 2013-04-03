@@ -1,0 +1,1 @@
+query1(lieu, name, address, postalCode, town, webSite, mail) :- hasname(lieu, name), hasaddress(lieu, address), haspostalcode(lieu, postalCode), hastown(lieu, town), haswebsite(lieu, webSite), hasmail(lieu, mail)

@@ -1,0 +1,4 @@
+# nameView = pathView:pathWrapper:pathViewOutput
+view1=GUNPATH/code/expfiles/berlinData/sparqlIndexes/view1.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/berlinData/viewsN3/view1.n3
+view2=GUNPATH/code/expfiles/berlinData/sparqlIndexes/view2.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/berlinData/viewsN3/view2.n3
+view3=GUNPATH/code/expfiles/berlinData/sparqlIndexes/view3.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/berlinData/viewsN3/view3.n3

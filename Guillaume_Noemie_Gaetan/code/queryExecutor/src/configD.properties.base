@@ -1,0 +1,11 @@
+cQueryPath=GUNPATH/code/expfiles/ter/conjunctiveQueries/query18
+mappingsPath=GUNPATH/code/expfiles/ter/mappings
+sQueryPath=GUNPATH/code/expfiles/ter/sparqlQueries/query18.sparql
+path=GUNPATH/code/expfiles/
+queryResults=ter/outputRelViewsquery18
+groundTruth=ter/answers/query18
+n3Dir=ter/viewsN3/
+sparqlDir=ter/viewsSparql/
+catalogpath=GUNPATH/code/expfiles/ter/catalog
+constants=GUNPATH/code/expfiles/ter/constantsFile
+contactsources=true

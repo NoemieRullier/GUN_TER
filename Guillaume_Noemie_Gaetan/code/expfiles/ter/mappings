@@ -1,0 +1,4 @@
+view1_0(x, ad, pc, town) :- hasaddress(x, ad), haspostalcode(x, pc), hastown(x, town)
+view2_0(x, mail, ws) :- hasmail(x, mail), haswebsite(x, ws)
+view3_0(x, vi, hi, town) :- acceptvisualimpairment(x, vi), accepthearingimpairment(x, hi)
+view4_0(x, ad, name) :- hasaddress(x, ad), hasname(x, name)
