@@ -1,3 +1,4 @@
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -227,10 +228,12 @@ public class WrapperV2 {
 
 	private void getData() throws IOException, JDOMException {
 		InputStream stream = null;
-		URL url = new URL(this.apiCall_);
-		URLConnection connection = url.openConnection();
-
-		stream = connection.getInputStream();
+//		URL url = new URL(this.apiCall_);
+//		URLConnection connection = url.openConnection();
+//
+//		stream = connection.getInputStream();
+		
+		stream = new FileInputStream("/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Wrappers/WrapperActivites/res/22440002800011_CG44_TOU_04812_activites_tourisme_et_handicap_STBL.xml");
 
 		this.apiData_ = new SAXBuilder().build(stream);
 	}
@@ -319,6 +322,8 @@ public class WrapperV2 {
 					+ "onto:hasPostalCode ?pc ; "
 					+ "onto:hasTown ?to }");
 			
+//			w2.query("prefix onto: <http://example.org/> SELECT ?s ?p ?o WHERE { ?s ?p ?o .}");
+			
 //			w2.query("prefix onto: <http://example.org/> SELECT ?x ?mail ?web "
 //					+ "WHERE{ ?x onto:hasMail ?mail ; "
 //					+ "onto:hasWebsite ?web }");
@@ -328,7 +333,7 @@ public class WrapperV2 {
 //					+ "onto:acceptHearingImpairment ?hi }");
 			
 			System.out.println("\nDBG result :");
-			w2.resModel_.write(System.out);
+			w2.resModel_.write(System.out, "N-TRIPLE");
 		}
 		
 		catch(UnknownHostException e) {
