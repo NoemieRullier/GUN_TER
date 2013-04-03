@@ -1,0 +1,8 @@
+PREFIX onto: <http://example.org/>
+
+SELECT ?x_2_2 ?mail_2_2 ?ws_2_2 
+WHERE
+{ 
+	?x_2_2 onto:hasMail ?mail_2_2.
+	?x_2_2 onto:hasWebSite ?ws_2_2.
+}

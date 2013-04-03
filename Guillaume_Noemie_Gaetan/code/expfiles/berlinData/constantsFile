@@ -1,0 +1,8 @@
+hastown	onto:hasTown
+hasname	onto:hasName
+acceptvisualimpairment	onto:acceptVisualImpairment
+haswebsite	onto:hasWebSite
+hasaddress	onto:hasAddress
+accepthearingimpairment	onto:acceptHearingImpairment
+haspostalcode	onto:hasPostalCode
+hasmail	onto:hasMail

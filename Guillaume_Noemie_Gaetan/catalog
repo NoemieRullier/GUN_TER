@@ -1,0 +1,4 @@
+# nameView = pathView:pathWrapper:pathViewOutput
+view1=berlinData/sparqlIndexes/view1:berlinData/wrappers/WrapperRestaurantApiToRdf.java:berlinData/viewsN3/view1.n3
+view2=berlinData/sparqlIndexes/view2:berlinData/wrappers/WrapperRestaurantApiToRdf.java:berlinData/viewsN3/view2.n3
+view3=berlinData/sparqlIndexes/view3:berlinData/wrappers/WrapperRestaurantApiToRdf.java:berlinData/viewsN3/view3.n3

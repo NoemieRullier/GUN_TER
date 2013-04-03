@@ -1,0 +1,8 @@
+PREFIX onto: <http://example.org/>
+
+SELECT ?x_3_3 ?vi_3_3 ?hi_3_3 ?town_3_3 
+WHERE
+{ 
+	?x_3_3 onto:acceptVisualImpairment ?vi_3_3.
+	?x_3_3 onto:acceptHearingImpairment ?hi_3_3.
+}

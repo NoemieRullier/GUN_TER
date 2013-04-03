@@ -1,0 +1,123 @@
+<http://example.org/121> <http://example.org/hasTown> "PONT-SAINT-MARTIN" .
+<http://example.org/121> <http://example.org/hasPostalCode> "44860" .
+<http://example.org/121> <http://example.org/hasAddress> "10 rue du Pays de Retz" .
+<http://example.org/190> <http://example.org/hasTown> "GUERANDE" .
+<http://example.org/190> <http://example.org/hasPostalCode> "44350" .
+<http://example.org/190> <http://example.org/hasAddress> "2 place du Vieux March\u00E9" .
+<http://example.org/134> <http://example.org/hasTown> "PORT-SAINT-PERE" .
+<http://example.org/134> <http://example.org/hasPostalCode> "44710" .
+<http://example.org/134> <http://example.org/hasAddress> "Zone de Loisirs" .
+<http://example.org/53> <http://example.org/hasTown> "NANTES" .
+<http://example.org/53> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/53> <http://example.org/hasAddress> "23 all\u00E9e du Commandant Charcot" .
+<http://example.org/4> <http://example.org/hasTown> "ANCENIS" .
+<http://example.org/4> <http://example.org/hasPostalCode> "44150" .
+<http://example.org/4> <http://example.org/hasAddress> "Lieu dit Bel Air" .
+<http://example.org/119> <http://example.org/hasTown> "NANTES" .
+<http://example.org/119> <http://example.org/hasPostalCode> "44470" .
+<http://example.org/119> <http://example.org/hasAddress> "Golf Nantes Erdre" .
+<http://example.org/188> <http://example.org/hasTown> "LA BAULE" .
+<http://example.org/188> <http://example.org/hasPostalCode> "44500" .
+<http://example.org/188> <http://example.org/hasAddress> "1 avenue Andrieu" .
+<http://example.org/113> <http://example.org/hasTown> "NANTES" .
+<http://example.org/113> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/113> <http://example.org/hasAddress> "1 rue Montesquieu" .
+<http://example.org/167> <http://example.org/hasTown> "PREFAILLES" .
+<http://example.org/167> <http://example.org/hasPostalCode> "44770" .
+<http://example.org/167> <http://example.org/hasAddress> "Pointe Saint Gildas" .
+<http://example.org/205> <http://example.org/hasTown> "LE CROISIC" .
+<http://example.org/205> <http://example.org/hasPostalCode> "44490" .
+<http://example.org/205> <http://example.org/hasAddress> "11 quai du L\u00E9nigo" .
+<http://example.org/159> <http://example.org/hasTown> "LA PLAINE-SUR-MER" .
+<http://example.org/159> <http://example.org/hasPostalCode> "44770" .
+<http://example.org/159> <http://example.org/hasAddress> "Port de la Gravette" .
+<http://example.org/181> <http://example.org/hasTown> "LA BAULE" .
+<http://example.org/181> <http://example.org/hasPostalCode> "44500" .
+<http://example.org/181> <http://example.org/hasAddress> "138 avenue des Ondines" .
+<http://example.org/72> <http://example.org/hasTown> "NANTES" .
+<http://example.org/72> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/72> <http://example.org/hasAddress> "25 rue Adolphe Moiti\u00E9" .
+<http://example.org/138> <http://example.org/hasTown> "ARTHON-EN-RETZ " .
+<http://example.org/138> <http://example.org/hasPostalCode> "44320" .
+<http://example.org/138> <http://example.org/hasAddress> "La Sicaudais" .
+<http://example.org/8> <http://example.org/hasTown> "MESANGER" .
+<http://example.org/8> <http://example.org/hasPostalCode> "44522" .
+<http://example.org/8> <http://example.org/hasAddress> "580 rue de l'Industrie " .
+<http://example.org/10> <http://example.org/hasTown> "VALLET" .
+<http://example.org/10> <http://example.org/hasPostalCode> "44330" .
+<http://example.org/10> <http://example.org/hasAddress> "20 Place Charles de Gaulle" .
+<http://example.org/36> <http://example.org/hasTown> "GENESTON" .
+<http://example.org/36> <http://example.org/hasPostalCode> "44140" .
+<http://example.org/36> <http://example.org/hasAddress> "13, Place Georges Gaudet" .
+<http://example.org/180> <http://example.org/hasTown> "LA BAULE" .
+<http://example.org/180> <http://example.org/hasPostalCode> "44500" .
+<http://example.org/180> <http://example.org/hasAddress> "27, boulevard de l'Oc\u00E9an" .
+<http://example.org/178> <http://example.org/hasTown> "LA BAULE" .
+<http://example.org/178> <http://example.org/hasPostalCode> "44500" .
+<http://example.org/178> <http://example.org/hasAddress> "29, avenue Jean Boutroux" .
+<http://example.org/28> <http://example.org/hasTown> "SAINT-JULIEN-DE-CONCELLES" .
+<http://example.org/28> <http://example.org/hasPostalCode> "44450" .
+<http://example.org/28> <http://example.org/hasAddress> "24 Lev\u00E9e de le Divatte" .
+<http://example.org/1> <http://example.org/hasTown> "VARADES" .
+<http://example.org/1> <http://example.org/hasPostalCode> "44370" .
+<http://example.org/1> <http://example.org/hasAddress> "455 la Haute Meillerais" .
+<http://example.org/129> <http://example.org/hasTown> "SAINT-HERBLAIN" .
+<http://example.org/129> <http://example.org/hasPostalCode> "44800" .
+<http://example.org/129> <http://example.org/hasAddress> "Rue du Moulin de la Rousseli\u00E8re" .
+<http://example.org/76> <http://example.org/hasTown> "NANTES" .
+<http://example.org/76> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/76> <http://example.org/hasAddress> "4 cours Olivier de Clisson" .
+<http://example.org/48> <http://example.org/hasTown> "NANTES" .
+<http://example.org/48> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/48> <http://example.org/hasAddress> "33, Rue de Rieux" .
+<http://example.org/110> <http://example.org/hasTown> "NANTES" .
+<http://example.org/110> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/110> <http://example.org/hasAddress> "6 rue Racine" .
+<http://example.org/123> <http://example.org/hasTown> "SAINT-HERBLAIN" .
+<http://example.org/123> <http://example.org/hasPostalCode> "44800" .
+<http://example.org/123> <http://example.org/hasAddress> "229 Route de Vannes" .
+<http://example.org/192> <http://example.org/hasTown> "GUERANDE" .
+<http://example.org/192> <http://example.org/hasPostalCode> "44350" .
+<http://example.org/192> <http://example.org/hasAddress> "15 boulevard du Nord" .
+<http://example.org/177> <http://example.org/hasTown> "PORNICHET" .
+<http://example.org/177> <http://example.org/hasPostalCode> "44380" .
+<http://example.org/177> <http://example.org/hasAddress> "150, boulevard des Oc\u00E9anides" .
+<http://example.org/6> <http://example.org/hasTown> "ANCENIS" .
+<http://example.org/6> <http://example.org/hasPostalCode> "44150" .
+<http://example.org/6> <http://example.org/hasAddress> "82 rue St Pierre" .
+<http://example.org/96> <http://example.org/hasTown> "NANTES" .
+<http://example.org/96> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/96> <http://example.org/hasAddress> "5-7 rue de Gu\u00E9rande" .
+<http://example.org/68> <http://example.org/hasTown> "NANTES" .
+<http://example.org/68> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/68> <http://example.org/hasAddress> "4, Rue L\u00E9on Maitre" .
+<http://example.org/102> <http://example.org/hasTown> "NANTES" .
+<http://example.org/102> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/102> <http://example.org/hasAddress> "14 rue Jean-Jacques Rousseau" .
+<http://example.org/62> <http://example.org/hasTown> "NANTES" .
+<http://example.org/62> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/62> <http://example.org/hasAddress> "8 due de l'Emery" .
+<http://example.org/128> <http://example.org/hasTown> "SAINT-PHILBERT-DE-GRAND-LIEU" .
+<http://example.org/128> <http://example.org/hasPostalCode> "44310" .
+<http://example.org/128> <http://example.org/hasAddress> "8 Rue du Port" .
+<http://example.org/207> <http://example.org/hasTown> "LE CROISIC" .
+<http://example.org/207> <http://example.org/hasPostalCode> "44490" .
+<http://example.org/207> <http://example.org/hasAddress> "La Pointe du Croisic" .
+<http://example.org/191> <http://example.org/hasTown> "LE POULIGUEN" .
+<http://example.org/191> <http://example.org/hasPostalCode> "44510" .
+<http://example.org/191> <http://example.org/hasAddress> "1 Promenade du port" .
+<http://example.org/176> <http://example.org/hasTown> "PORNICHET" .
+<http://example.org/176> <http://example.org/hasPostalCode> "44380" .
+<http://example.org/176> <http://example.org/hasAddress> "150 Boulevard des Oc\u00E9anides" .
+<http://example.org/54> <http://example.org/hasTown> "NANTES" .
+<http://example.org/54> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/54> <http://example.org/hasAddress> "40 bis, Rue Four\u00E9" .
+<http://example.org/67> <http://example.org/hasTown> "NANTES" .
+<http://example.org/67> <http://example.org/hasPostalCode> "44000" .
+<http://example.org/67> <http://example.org/hasAddress> "3 rue de la Tour d\u2019Auvergne" .
+<http://example.org/170> <http://example.org/hasTown> "HERBIGNAC" .
+<http://example.org/170> <http://example.org/hasPostalCode> "44410" .
+<http://example.org/170> <http://example.org/hasAddress> "Route de F\u00E9rel" .
+<http://example.org/142> <http://example.org/hasTown> "PORNIC" .
+<http://example.org/142> <http://example.org/hasPostalCode> "44210" .
+<http://example.org/142> <http://example.org/hasAddress> "Chemin des Noelles" .
