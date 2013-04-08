@@ -34,6 +34,7 @@ public class evaluateQueryThreaded {
         //relViewsTimer.start();
         
         //relViewsTimer.stop();
+        
         String sparqlQuery = config.getProperty("sQueryPath");
         String path = config.getProperty("path");
         String queryResults = config.getProperty("queryResults");		
@@ -49,6 +50,10 @@ public class evaluateQueryThreaded {
         HashMap<String, String> constants
                                = Main.loadConstants(config.getProperty("constants"));
         //BufferedWriter timetable = new BufferedWriter(new FileWriter(tt, true));
+        //path : GUNPATH/code/expfiles/ : needed
+        //n3Dir : berlinData/restaurant/75views/viewsN3/ : needed but to change
+        //sparqlDir : berlinData/restaurant/75views/viewsSparql/ : needed but to change
+        //contactSource : contactsources=true : 
         Catalog catalog = Main.loadCatalog(config, path, n3Dir, sparqlDir, contactSources);
         execute(sparqlQuery, path, queryResultsPath, n3Dir, 
                 /*timetable, */groundTruthPath, /*, relViewsTimer*/q, ms, constants, 

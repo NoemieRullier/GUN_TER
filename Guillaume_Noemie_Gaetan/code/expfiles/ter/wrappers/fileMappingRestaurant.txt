@@ -1,8 +1,0 @@
-hasName = 2
-hasAddress = 3
-hasPostalCode = 5
-hasTown = 6
-hasWebSite = 12
-hasMail = 11
-acceptVisualImpairment = 28
-acceptHearingImpairment = 27

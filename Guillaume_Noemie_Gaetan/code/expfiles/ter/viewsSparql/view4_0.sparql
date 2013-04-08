@@ -1,7 +1,0 @@
-PREFIX onto: <http://example.org/>
-SELECT ?x ?ad ?name 
-WHERE
-{ 
-	?x onto:hasAddress ?ad.
-	?x onto:hasName ?name. 
-}

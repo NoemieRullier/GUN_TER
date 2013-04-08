@@ -1,12 +1,137 @@
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/sparqlIndexes/view4.sparql
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
 WrapperRestaurantApiToRdf
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/viewsN3/view4_0.n3
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/sparqlIndexes/view4.sparql
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
 WrapperRestaurantApiToRdf
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/viewsN3/view4_0.n3
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/sparqlIndexes/view4.sparql
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
 WrapperRestaurantApiToRdf
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/viewsN3/view4_0.n3
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/sparqlIndexes/view4.sparql
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
 WrapperRestaurantApiToRdf
-/home/nomyx/Public/2012-2013_M1/2eme_Semestre/Initiation_a_la_recherche/gun2012/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view4.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view4_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?name 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasName ?name. 
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view2.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view2_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?mail ?ws 
+WHERE
+{ 
+	?x onto:hasMail ?mail.
+	?x onto:hasWebSite ?ws.
+}
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/sparqlIndexes/view1.sparql
+WrapperRestaurantApiToRdf
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/viewsN3/view1_0.n3
+/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
+PREFIX onto: <http://example.org/>
+SELECT ?x ?ad ?pc ?town 
+WHERE
+{ 
+	?x onto:hasAddress ?ad.
+	?x onto:hasPostalCode ?pc. 
+	?x onto:hasTown ?town.
+}

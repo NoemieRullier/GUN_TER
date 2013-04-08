@@ -83,12 +83,10 @@ public class Catalog {
 			stringList.add(this.scriptDir+"createresultview.sh");
 			for(int i=0; i<parameters.length;++i){
 				stringList.add(parameters[i]);
-				System.out.println(parameters[i]);
 			}
 			ProcessBuilder pb = new ProcessBuilder(stringList);
-			File log = new File(this.execDir+"catalog.log");
-			//System.out.println(this.execDir);
-			pb.redirectOutput(ProcessBuilder.Redirect.appendTo(log));
+//			File log = new File(this.execDir+"catalog.log");
+//			pb.redirectOutput(ProcessBuilder.Redirect.appendTo(log));
             pb.directory(new File (this.execDir));
             try {
                 Process p = pb.start();
@@ -121,8 +119,8 @@ public class Catalog {
             }
         }
         String name = p.getName();
-		//        System.out.println("name: "+name);
-        //System.out.println("none: "+none);
+//		System.out.println("name: "+name);
+//        System.out.println("none: "+none);
         if (!none) {
             name = name+end;
         }

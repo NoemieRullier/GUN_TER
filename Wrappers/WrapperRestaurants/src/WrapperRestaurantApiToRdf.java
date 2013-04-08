@@ -28,14 +28,14 @@ public class WrapperRestaurantApiToRdf {
 
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
 	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
-	public String fichierMapping = "src/fileMappingRestaurant.txt";
+	public String fichierMapping = "fileMappingRestaurant.txt";
 	public String pathFileResult;
 	public Query reqVue;
 	public String vue = "";
 
 	public WrapperRestaurantApiToRdf(String pathFileView, String pathFileResult){
-		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
-		System.setProperty("http.proxyPort", "3128");
+//		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
+//		System.setProperty("http.proxyPort", "3128");
 		InputStream file;
 		try {
 			file = new FileInputStream(pathFileView);
@@ -88,7 +88,7 @@ public class WrapperRestaurantApiToRdf {
 		// Loading of mapping
 
 		Properties map = new Properties();
-		map.load(new FileReader(fichierMapping));
+		map.load(getClass().getResourceAsStream(fichierMapping));
 		HashMap<Property, Integer> mapping = new HashMap<Property, Integer>();
 		HashMap<Integer, Property> mappingI = new HashMap<Integer, Property>();
 		for (Property p : propertyOntologieGlobale){

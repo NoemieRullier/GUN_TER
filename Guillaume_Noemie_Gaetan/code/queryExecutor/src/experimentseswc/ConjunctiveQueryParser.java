@@ -189,7 +189,6 @@ public class ConjunctiveQueryParser implements ConjunctiveQueryParserConstants {
     if ((oldToken = token).next != null) token = token.next;
     else token = token.next = token_source.getNextToken();
     jj_ntk = -1;
-    System.out.println("token : " + token.kind + ", " + token);
     if (token.kind == kind) {
       jj_gen++;
       return token;

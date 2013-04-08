@@ -1,8 +1,6 @@
 hastown	onto:hasTown
 hasname	onto:hasName
-acceptvisualimpairment	onto:acceptVisualImpairment
-haswebsite	onto:hasWebSite
 hasaddress	onto:hasAddress
-accepthearingimpairment	onto:acceptHearingImpairment
+haswebsite	onto:hasWebSite
 haspostalcode	onto:hasPostalCode
 hasmail	onto:hasMail

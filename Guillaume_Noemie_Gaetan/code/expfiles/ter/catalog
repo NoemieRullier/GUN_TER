@@ -1,5 +1,5 @@
 # nameView = pathView:pathWrapper:pathViewOutput
-view1_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view1.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view1_0.n3
-view2_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view2.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view2_0.n3
-view3_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view3.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view3_0.n3
-view4_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view4.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view4_0.n3
+view1_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view1.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view1_0.n3:GUNPATH/code/expfiles/ter/wrappers/
+view2_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view2.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view2_0.n3:GUNPATH/code/expfiles/ter/wrappers/
+view3_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view3.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view3_0.n3:GUNPATH/code/expfiles/ter/wrappers/
+view4_0=GUNPATH/code/expfiles/ter/sparqlIndexes/view4.sparql:WrapperRestaurantApiToRdf:GUNPATH/code/expfiles/ter/viewsN3/view4_0.n3:GUNPATH/code/expfiles/ter/wrappers/
