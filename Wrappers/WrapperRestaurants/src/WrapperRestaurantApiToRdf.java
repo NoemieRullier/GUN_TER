@@ -88,7 +88,7 @@ public class WrapperRestaurantApiToRdf {
 		// Loading of mapping
 
 		Properties map = new Properties();
-		map.load(new FileReader(fichierMapping));
+		map.load(getClass().getResourceAsStream(fichierMapping));
 		HashMap<Property, Integer> mapping = new HashMap<Property, Integer>();
 		HashMap<Integer, Property> mappingI = new HashMap<Integer, Property>();
 		for (Property p : propertyOntologieGlobale){
