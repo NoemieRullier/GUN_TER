@@ -28,7 +28,7 @@ public class WrapperRestaurantApiToRdf {
 
 	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
 	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
-	public String fichierMapping = "src/fileMappingRestaurant.txt";
+	public String fichierMapping = "fileMappingRestaurant.txt";
 	public String pathFileResult;
 	public Query reqVue;
 	public String vue = "";
