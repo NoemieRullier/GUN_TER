@@ -1,8 +1,9 @@
 #!/bin/bash
-# $2 : path of wrapper
-# $1 : path of view in sparql
+
+# $1 : path of the wrapper
+# $2 : path of the sparql view
 # $3 : path of the result
-# $1 and $3 are the arguments of wrapper constructor
+# $2 and $3 are the arguments of wrapper constructor
 # Must be in the wrapper directory
 #/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Guillaume_Noemie_Gaetan/code/expfiles/ter/wrappers/
 
@@ -14,18 +15,18 @@
 #echo $GUNPATH2
 #echo "youpi"
 
-vs=`echo $1 | sed "s|GUNPATH|$GUNPATH|"`
-w=`echo $2 | sed "s|GUNPATH|$GUNPATH|"`
-vo=`echo $3 | sed "s|GUNPATH|$GUNPATH|"`
-source=`echo $4 | sed "s|GUNPATH|$GUNPATH|"`
+wrapperPath=`echo $1 | sed "s|GUNPATH|$GUNPATH|"`
+sparqlViewPath=`echo $2 | sed "s|GUNPATH|$GUNPATH|"`
+resultPath=`echo $3 | sed "s|GUNPATH|$GUNPATH|"`
+#source=`echo $4 | sed "s|GUNPATH|$GUNPATH|"`
 
-echo $vs
-echo $w
-echo $vo
-echo $source
+echo $wrapperPath
+echo $sparqlViewPath
+echo $resultPath
+#echo $source
 #libpath="$GUNPATH""/code/queryExecutor/lib2/"
 #echo $libpath
 
 #javac -cp ".:../../../queryExecutor/lib2/*" -sourcepath "$source" $w.java
 #java -cp ".:../../../queryExecutor/lib2/*:$source*" $w $vs $vo
-java -jar $source$w.jar $vs $vo
+java -jar $wrapperPath $sparqlViewPath $resultPath

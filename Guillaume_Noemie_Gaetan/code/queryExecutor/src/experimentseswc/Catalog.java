@@ -24,7 +24,7 @@ public class Catalog {
 	//HashMap<String,String> catalog;
 	Properties catalog;
 	String execDir;
-	String scriptDir;
+//	String scriptDir;
     String sparqlDir;
     boolean contactSource=false;
 
@@ -33,7 +33,7 @@ public class Catalog {
 		this.catalog = new Properties();
 		this.execDir = "";
         this.sparqlDir = "";
-		this.scriptDir = "";
+//		this.scriptDir = "";
 	}
 
 	public Catalog(Properties cat){
@@ -46,7 +46,7 @@ public class Catalog {
 		this.catalog = cat;
 		this.execDir = p;
         this.sparqlDir = q;
-		this.scriptDir = "";
+//		this.scriptDir = "";
 	}
 	
 	public Catalog(Properties cat, String p, String q, boolean c){
@@ -55,17 +55,17 @@ public class Catalog {
 		this.execDir = p;
         this.sparqlDir = q;
         this.contactSource = c;
-		this.scriptDir = "";
+//		this.scriptDir = "";
 	}
 	
-	public Catalog(Properties cat, String p, String q, String r, boolean c){
-		
-		this.catalog = cat;
-		this.execDir = p;
-        this.sparqlDir = q;
-        this.contactSource = c;
-		this.scriptDir = r;
-	}
+//	public Catalog(Properties cat, String p, String q, String r, boolean c){
+//		
+//		this.catalog = cat;
+//		this.execDir = p;
+//        this.sparqlDir = q;
+//        this.contactSource = c;
+//		this.scriptDir = r;
+//	}
 	
 	
 
@@ -78,10 +78,11 @@ public class Catalog {
 //                                                   this.catalog.getProperty(str), str);
 //			ProcessBuilder pb = new ProcessBuilder(this.execDir + str + ".n3",
 //                                                   this.catalog.getProperty(str), str);
-			String[] parameters = this.catalog.getProperty(str).split(":");
+			String[] parameters = this.catalog.getProperty(str).split(",");
 			List<String> stringList = new ArrayList<String>();
-			stringList.add(this.scriptDir+"createresultview.sh");
+			stringList.add(this.execDir+"createresultview.sh");
 			for(int i=0; i<parameters.length;++i){
+//				System.out.println("[" + i + "] : " + parameters[i]);
 				stringList.add(parameters[i]);
 			}
 			ProcessBuilder pb = new ProcessBuilder(stringList);

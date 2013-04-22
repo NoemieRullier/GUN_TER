@@ -61,8 +61,9 @@ public class Main {
                                              config.getProperty("catalogpath"));
         Catalog.load(fileinput);
         fileinput.close();
-														//TODO A ajouter dans un fichier properties
-        Catalog catalog = new Catalog(Catalog, PATH + N3, PATH + SPARQL, PATH+"ter/wrappers/" ,contactSources);
+//														//TODO A ajouter dans un fichier properties
+//        Catalog catalog = new Catalog(Catalog, PATH + N3, PATH + SPARQL, PATH+"ter/wrappers/" ,contactSources);
+		Catalog catalog = new Catalog(Catalog, PATH + N3, PATH + SPARQL, contactSources);
         return catalog;
     }
 
