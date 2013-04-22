@@ -1,0 +1,1530 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ant="http://example.org/Gares/" > 
+  <rdf:Description rdf:about="http://example.org/Gares/44">
+    <ant:uicCode>481366</ant:uicCode>
+    <ant:hasPostalCode>44270</ant:hasPostalCode>
+    <ant:trainStationName>Machecoul</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Machecoul</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/96">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>481416</ant:uicCode>
+    <ant:hasPostalCode>44690</ant:hasPostalCode>
+    <ant:trainStationName>La Haye-Fouassière</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>La Haye-Fouassière</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/114">
+    <ant:trainStationName>Ste Pazanne</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare de Ste Pazanne</ant:bikePlaceName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:uicCode>481226</ant:uicCode>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Ste Pazanne</ant:hasName>
+    <ant:hasPostalCode>44680</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Avenue du Général de Gaulle</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/77">
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+    <ant:hasName>Vivoin-Beaumont</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Vivoin-Beaumont</ant:bikePlaceName>
+    <ant:trainStationName>Vivoin</ant:trainStationName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:numberBikePlace>34</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>396077</ant:uicCode>
+    <ant:hasPostalCode>72170</ant:hasPostalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/101">
+    <ant:hasAdress>Rue de l'arcade</ant:hasAdress>
+    <ant:hasName>Saint-Mathurin-sur-Loire</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>49250</ant:hasPostalCode>
+    <ant:uicCode>487892</ant:uicCode>
+    <ant:trainStationName>St-Mathurin</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Mathurin</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/63">
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:trainStationName>Sévérac</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare de Sévérac</ant:bikePlaceName>
+    <ant:numberBikePlace>9</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Sévérac</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>44530</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>476754</ant:uicCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/34">
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:uicCode>484337</ant:uicCode>
+    <ant:hasPostalCode>49170</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>La Possonnière</ant:hasName>
+    <ant:trainStationName>La Possonnière</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de La Possonnière</ant:bikePlaceName>
+    <ant:numberBikePlace>14</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/13">
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Conlie</ant:bikePlaceName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Conlie</ant:hasName>
+    <ant:uicCode>396218</ant:uicCode>
+    <ant:hasAdress>La Gare</ant:hasAdress>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:trainStationName>Conlie</ant:trainStationName>
+    <ant:hasPostalCode>72240</ant:hasPostalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/120">
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:hasAdress>Rue de l'Ouche Quinet</ant:hasAdress>
+    <ant:uicCode>354597</ant:uicCode>
+    <ant:hasPostalCode>44230</ant:hasPostalCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Sébastien - Frêne Rond</ant:bikePlaceName>
+    <ant:trainStationName>St-Sébastien - Frêne Rond</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>St-Sébastien</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/7">
+    <ant:uicCode>484352</ant:uicCode>
+    <ant:hasPostalCode>49123</ant:hasPostalCode>
+    <ant:trainStationName>Champtocé-sur-Loire</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Champtocé-sur-Loire</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/109">
+    <ant:uicCode>484386</ant:uicCode>
+    <ant:hasName>Saint-Florent-le-Vieil</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Varades St-Florent-le-Vieil</ant:bikePlaceName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>44370</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Varades St-Florent-le-Vieil</ant:trainStationName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/83">
+    <ant:uicCode>481754</ant:uicCode>
+    <ant:hasPostalCode>44500</ant:hasPostalCode>
+    <ant:trainStationName>La Baule-Escoublac</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>La Baule-Escoublac</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/57">
+    <ant:uicCode>321745</ant:uicCode>
+    <ant:hasPostalCode>44600</ant:hasPostalCode>
+    <ant:trainStationName>Penhoët</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Saint-Nazaire</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/97">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Laigné-St-Gervais</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Laigné-St-Gervais</ant:bikePlaceName>
+    <ant:hasAdress>Rue de Touraine</ant:hasAdress>
+    <ant:hasName>Laigné-en-Belin</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>72220</ant:hasPostalCode>
+    <ant:uicCode>396556</ant:uicCode>
+    <ant:numberBikePlace>18</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/45">
+    <ant:bikePlaceName>Parking vélo de la gare de Mauves-sur-Loire</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasName>Mauves-sur-Loire</ant:hasName>
+    <ant:bikePlaceType>appuis-vélos</ant:bikePlaceType>
+    <ant:trainStationName>Mauves-sur-Loire</ant:trainStationName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:uicCode>481150</ant:uicCode>
+    <ant:hasPostalCode>44470</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationType>Halte</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/115">
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de Rezé - Pont-Rousseau</ant:bikePlaceName>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:numberBikePlace>14</ant:numberBikePlace>
+    <ant:hasName>Rezé</ant:hasName>
+    <ant:bikePlaceType>appuis-vélos</ant:bikePlaceType>
+    <ant:hasPostalCode>44400</ant:hasPostalCode>
+    <ant:trainStationName>Rezé - Pont-Rousseau</ant:trainStationName>
+    <ant:uicCode>481036</ant:uicCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/76">
+    <ant:uicCode>396598</ant:uicCode>
+    <ant:hasPostalCode>72500</ant:hasPostalCode>
+    <ant:trainStationName>Vaas</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Vaas</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/100">
+    <ant:uicCode>487314</ant:uicCode>
+    <ant:hasPostalCode>85700</ant:hasPostalCode>
+    <ant:trainStationName>Pouzauges</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Pouzauges</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/0">
+    <ant:bikePlaceType>appuis-vélos</ant:bikePlaceType>
+    <ant:numberBikePlace>2</ant:numberBikePlace>
+    <ant:hasPostalCode>72230</ant:hasPostalCode>
+    <ant:uicCode>396549</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare d'Arnage</ant:bikePlaceName>
+    <ant:trainStationName>Arnage</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Arnage</ant:hasName>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/35">
+    <ant:hasAdress>Rue de la Halle</ant:hasAdress>
+    <ant:trainStationName>La Suze</ant:trainStationName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceName>Parking vélo de la gare de La Suze</ant:bikePlaceName>
+    <ant:hasPostalCode>72210</ant:hasPostalCode>
+    <ant:hasName>La Suze sur Sarthe</ant:hasName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:numberBikePlace>66</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>396366</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/12">
+    <ant:uicCode>484303</ant:uicCode>
+    <ant:hasName>Cholet</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:trainStationName>Cholet</ant:trainStationName>
+    <ant:hasPostalCode>49300</ant:hasPostalCode>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Cholet</ant:bikePlaceName>
+    <ant:hasAdress>Bd du général Faidherbe</ant:hasAdress>
+    <ant:numberBikePlace>18</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/62">
+    <ant:uicCode>484329</ant:uicCode>
+    <ant:hasPostalCode>49170</ant:hasPostalCode>
+    <ant:trainStationName>Savennières-Béhuard</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Savennières</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/108">
+    <ant:hasPostalCode>44370</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Varades</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Varades St-Florent-le-Vieil</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Varades St-Florent-le-Vieil</ant:bikePlaceName>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:uicCode>484386</ant:uicCode>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasAdress>La gare</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/8">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Chantenay</ant:bikePlaceName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>481051</ant:uicCode>
+    <ant:hasAdress>Rue de la gare de Chantenay</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Chantenay</ant:trainStationName>
+    <ant:hasPostalCode>44000</ant:hasPostalCode>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+    <ant:hasName>Nantes</ant:hasName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/82">
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:hasAdress>Bd de Kisslegg</ant:hasAdress>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare du Pouligen</ant:bikePlaceName>
+    <ant:hasPostalCode>44510</ant:hasPostalCode>
+    <ant:trainStationName>Le Pouligen</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>481762</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Le Pouligen</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/121">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de Vertou</ant:bikePlaceName>
+    <ant:hasPostalCode>44120</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>481408</ant:uicCode>
+    <ant:hasName>Vertou</ant:hasName>
+    <ant:trainStationName>Vertou</ant:trainStationName>
+    <ant:hasAdress>Impasse de la gare</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/56">
+    <ant:uicCode>481184</ant:uicCode>
+    <ant:hasPostalCode>44521</ant:hasPostalCode>
+    <ant:trainStationName>Oudon</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Oudon</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/79">
+    <ant:bikePlaceName>Parking vélo de la gare de Voutré</ant:bikePlaceName>
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:trainStationName>Voutré</ant:trainStationName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Voutré</ant:hasName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:hasPostalCode>53600</ant:hasPostalCode>
+    <ant:uicCode>478560</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/29">
+    <ant:hasName>La Ferté-Bernard</ant:hasName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:uicCode>396325</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>La Ferté-Bernard</ant:trainStationName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de La Ferté-Bernard</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>16</ant:numberBikePlace>
+    <ant:hasPostalCode>72400</ant:hasPostalCode>
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/116">
+    <ant:uicCode>481036</ant:uicCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasPostalCode>44400</ant:hasPostalCode>
+    <ant:bikePlaceType>Abris-vélos sécurisé</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Rezé - Pont-Rousseau</ant:trainStationName>
+    <ant:bikePlacePrice>Caution à déposer</ant:bikePlacePrice>
+    <ant:hasName>Rezé</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Rezé - Pont-Rousseau</ant:bikePlaceName>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:bikePlaceUse>Accès sécurisé</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/46">
+    <ant:hasAdress>Avenue de la Liberté</ant:hasAdress>
+    <ant:uicCode>396580</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Mayet</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasPostalCode>72360</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:trainStationName>Mayet</ant:trainStationName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:numberBikePlace>18</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Mayet</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/51">
+    <ant:trainStationName>Morannes</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasPostalCode>49640</ant:hasPostalCode>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:hasName>Morannes</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Morannes</ant:bikePlaceName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>484170</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/126">
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de La Ferté-Bernard</ant:bikePlaceName>
+    <ant:bikePlaceType>appuis-vélos</ant:bikePlaceType>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>La Ferté-Bernard</ant:hasName>
+    <ant:trainStationName>La Ferté-Bernard</ant:trainStationName>
+    <ant:hasPostalCode>72400</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>396325</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/98">
+    <ant:uicCode>396317</ant:uicCode>
+    <ant:hasPostalCode>72400</ant:hasPostalCode>
+    <ant:trainStationName>Sceaux-Boëssé</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Sceaux-sur-Huisne</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/32">
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de La Ménitré</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>La Ménitré</ant:hasName>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:trainStationName>La Ménitré</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>487884</ant:uicCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>49250</ant:hasPostalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/61">
+    <ant:uicCode>396259</ant:uicCode>
+    <ant:hasPostalCode>72140</ant:hasPostalCode>
+    <ant:trainStationName>Rouessé-Vassé</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Rouessé-Vassé</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/15">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Couëron</ant:hasName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:hasPostalCode>44220</ant:hasPostalCode>
+    <ant:hasAdress>Rue Alexandre Olivier</ant:hasAdress>
+    <ant:uicCode>481820</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Couëron</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Couëron</ant:bikePlaceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/89">
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>44190</ant:hasPostalCode>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:trainStationName>Boussay</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>481176</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Boussay-la-Bruffière</ant:bikePlaceName>
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+    <ant:hasName>Boussay-la-Bruffière</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/69">
+    <ant:hasName>Saint-Hilaire-de-Chaléons</ant:hasName>
+    <ant:hasPostalCode>44680</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+    <ant:trainStationName>St-Hilaire-de-Chaleons</ant:trainStationName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>481284</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Hilaire-de-Chaléons</ant:bikePlaceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/5">
+    <ant:uicCode>486324</ant:uicCode>
+    <ant:hasPostalCode>85480</ant:hasPostalCode>
+    <ant:trainStationName>Bournezeau</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Bournezeau</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/91">
+    <ant:hasPostalCode>49350</ant:hasPostalCode>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Les-Rosiers-sur-Loire</ant:hasName>
+    <ant:hasAdress>Route de Longué</ant:hasAdress>
+    <ant:trainStationName>Les-Rosiers-sur-Loire</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare des-Rosiers-sur-Loire</ant:bikePlaceName>
+    <ant:uicCode>487876</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/107">
+    <ant:uicCode>481192</ant:uicCode>
+    <ant:hasPostalCode>44150</ant:hasPostalCode>
+    <ant:trainStationName>Ancenis</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Ancenis</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/81">
+    <ant:bikePlaceName>Parking vélo de la gare de Varades St-Florent-le-Vieil</ant:bikePlaceName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:uicCode>484386</ant:uicCode>
+    <ant:hasPostalCode>44370</ant:hasPostalCode>
+    <ant:trainStationName>Varades St-Florent-le-Vieil</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Varades</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/71">
+    <ant:hasName>St-Pierre-la-Cour</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasAdress>Rue des Provinces
+</ant:hasAdress>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>St-Pierre-la-Cour</ant:trainStationName>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:uicCode>478768</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Pierre-la-Cour</ant:bikePlaceName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>53410</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/59">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Pornichet</ant:hasName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasPostalCode>44380</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Pornichet</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>481747</ant:uicCode>
+    <ant:hasAdress>Avenue du Général de Gaulle</ant:hasAdress>
+    <ant:trainStationName>Pornichet</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/117">
+    <ant:bikePlaceName>Parking vélo de la gare de St-Sébastien-Pas Enchantés</ant:bikePlaceName>
+    <ant:bikePlaceType>appuis-vélos abrités sécurisés</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlacePrice>Caution à déposer</ant:bikePlacePrice>
+    <ant:numberBikePlace>20</ant:numberBikePlace>
+    <ant:hasName>St-Sébastien</ant:hasName>
+    <ant:uicCode>354589</ant:uicCode>
+    <ant:trainStationName>St-Sébastien-Pas Enchantés</ant:trainStationName>
+    <ant:hasPostalCode>44230</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès sécurisé</ant:bikePlaceUse>
+    <ant:hasAdress>Rue du Docteur Paul Michaux</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/78">
+    <ant:uicCode>396358</ant:uicCode>
+    <ant:hasPostalCode>72210</ant:hasPostalCode>
+    <ant:trainStationName>Voivres</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Voivres-lès-le-Mans</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/47">
+    <ant:uicCode>481465</ant:uicCode>
+    <ant:hasName>Montaigu</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Montaigu</ant:trainStationName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de Montaigu</ant:bikePlaceName>
+    <ant:hasPostalCode>85600</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasAdress>Bd Alex Auvinet</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/50">
+    <ant:uicCode>481713</ant:uicCode>
+    <ant:hasPostalCode>44550</ant:hasPostalCode>
+    <ant:trainStationName>Montoir-de-Bretagne</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Montoir-de-Bretagne</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/99">
+    <ant:uicCode>486407</ant:uicCode>
+    <ant:hasPostalCode>85190</ant:hasPostalCode>
+    <ant:trainStationName>Les Clouzeaux</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Les Clouzeaux</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/33">
+    <ant:uicCode>486423</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasPostalCode>85150</ant:hasPostalCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de La Mothe-Achard</ant:bikePlaceName>
+    <ant:trainStationName>La Mothe-Achard</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>La Mothe-Achard</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/127">
+    <ant:hasPostalCode>72210</ant:hasPostalCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Place du champ de plaisir</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de La Suze</ant:bikePlaceName>
+    <ant:uicCode>396366</ant:uicCode>
+    <ant:numberBikePlace>66</ant:numberBikePlace>
+    <ant:hasName>La Suze-sur-Sarthe</ant:hasName>
+    <ant:trainStationName>La Suze</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/14">
+    <ant:hasAdress>La Forgerie</ant:hasAdress>
+    <ant:hasName>Cordemais</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:trainStationName>Cordemais</ant:trainStationName>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>44360</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Cordemais</ant:bikePlaceName>
+    <ant:uicCode>481820</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/88">
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:trainStationName>Bourgneuf</ant:trainStationName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Bourgneuf</ant:bikePlaceName>
+    <ant:uicCode>481242</ant:uicCode>
+    <ant:hasPostalCode>44580</ant:hasPostalCode>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Bourgneuf-en-Retz</ant:hasName>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/60">
+    <ant:uicCode>478750</ant:uicCode>
+    <ant:hasPostalCode>53410</ant:hasPostalCode>
+    <ant:trainStationName>Port-Brillet</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Port-Brillet</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/6">
+    <ant:uicCode>396275</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Champagné</ant:trainStationName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>72470</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Champagné</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Champagné</ant:bikePlaceName>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:hasAdress>Rue de Saint-Exupéry</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/80">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>481846</ant:uicCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:numberBikePlace>18</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de Pontchâteau</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Pontchâteau</ant:trainStationName>
+    <ant:hasName>Pontchâteau</ant:hasName>
+    <ant:hasPostalCode>44160</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Rue de Verdun</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/68">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasPostalCode>85800</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>St-Gilles-Croix-de-Vie</ant:trainStationName>
+    <ant:bikePlaceType>pinces-roues et appuis-vélos abrités</ant:bikePlaceType>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:numberBikePlace>38</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Gilles-Croix-de-Vie</ant:bikePlaceName>
+    <ant:hasName>St-Gilles-Croix-de-Vie</ant:hasName>
+    <ant:uicCode>486571</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/106">
+    <ant:uicCode>481002</ant:uicCode>
+    <ant:hasPostalCode>44000</ant:hasPostalCode>
+    <ant:trainStationName>Nantes</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Nantes</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/90">
+    <ant:uicCode>484048</ant:uicCode>
+    <ant:hasPostalCode>49000</ant:hasPostalCode>
+    <ant:trainStationName>Angers-Maître Ecole</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Angers</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/28">
+    <ant:uicCode>486308</ant:uicCode>
+    <ant:hasPostalCode>85310</ant:hasPostalCode>
+    <ant:trainStationName>La Chaize-le-Vicomte</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>La Chaize-le-Vicomte</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/70">
+    <ant:hasName>St-Hilaire-de-Riez</ant:hasName>
+    <ant:hasAdress>Allée de la gare</ant:hasAdress>
+    <ant:trainStationName>St-Hilaire-de-Riez</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Hilaire-de-Riez</ant:bikePlaceName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:uicCode>486563</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasPostalCode>85270</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>28</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/58">
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:uicCode>481283</ant:uicCode>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasPostalCode>44210</ant:hasPostalCode>
+    <ant:trainStationName>Pornic</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>16</ant:numberBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Pornic</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/17">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>481457</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Cugand</ant:bikePlaceName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>85610</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Rue du beau soleil</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:trainStationName>Cugand</ant:trainStationName>
+    <ant:hasName>Cugand</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/48">
+    <ant:bikePlaceName>Parking vélo de la gare de Montbizot</ant:bikePlaceName>
+    <ant:hasName>Montbizot</ant:hasName>
+    <ant:hasAdress>Rue Paillard Duclère</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:hasPostalCode>72380</ant:hasPostalCode>
+    <ant:uicCode>396044</ant:uicCode>
+    <ant:trainStationName>Montbizot</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/40">
+    <ant:uicCode>484139</ant:uicCode>
+    <ant:hasPostalCode>49125</ant:hasPostalCode>
+    <ant:trainStationName>Le Vieux-Briollay</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Briollay</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/30">
+    <ant:uicCode>396036</ant:uicCode>
+    <ant:hasPostalCode>72380</ant:hasPostalCode>
+    <ant:trainStationName>La Guierche</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>La Guierche</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/92">
+    <ant:uicCode>484204</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasPostalCode>49290</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasAdress>Avenue du Layon</ant:hasAdress>
+    <ant:trainStationName>Chalonnes-sur-Loire</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Chalonnes-sur-Loire</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Chalonnes-sur-Loire</ant:bikePlaceName>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/118">
+    <ant:hasName>St-Sébastien</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>44230</ant:hasPostalCode>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:trainStationName>St-Sébastien-Pas Enchantés</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Rue du Docteur Paul Michaux</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>354589</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Sébastien-Pas Enchantés</ant:bikePlaceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/87">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Avenue du Général de Gaulle</ant:hasAdress>
+    <ant:hasPostalCode>44680</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Ste Pazanne</ant:bikePlaceName>
+    <ant:uicCode>481226</ant:uicCode>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:hasName>Ste Pazanne</ant:hasName>
+    <ant:trainStationName>Ste Pazanne</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/73">
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Thouaré-sur-Loire</ant:hasName>
+    <ant:hasAdress>La gare</ant:hasAdress>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:hasPostalCode>44470</ant:hasPostalCode>
+    <ant:trainStationName>Thouaré</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare de Thouaré</ant:bikePlaceName>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>481143</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/110">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:trainStationName>La Roche-sur-Yon</ant:trainStationName>
+    <ant:bikePlaceUse>Accès sécurisé</ant:bikePlaceUse>
+    <ant:hasPostalCode>85000</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de La Roche-sur-Yon</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>La Roche-sur-Yon</ant:hasName>
+    <ant:uicCode>486019</ant:uicCode>
+    <ant:bikePlacePrice>Service payant</ant:bikePlacePrice>
+    <ant:hasAdress>Place d'Estienne d'Orves</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/124">
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de La Haie-Fouassière</ant:bikePlaceName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasAdress>Rue des Encloses</ant:hasAdress>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>La Haye-Fouassière</ant:trainStationName>
+    <ant:uicCode>481416</ant:uicCode>
+    <ant:hasName>La Haye-Fouassière</ant:hasName>
+    <ant:hasPostalCode>44690</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/27">
+    <ant:hasPostalCode>49800</ant:hasPostalCode>
+    <ant:trainStationName>La Bohalle</ant:trainStationName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceName>Parking vélo de la gare de La Bohalle</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:uicCode>487843</ant:uicCode>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>La Bohalle</ant:hasName>
+    <ant:hasAdress>Impasse de la gare</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/37">
+    <ant:bikePlaceName>Parking vélo de la gare de Le Croisic</ant:bikePlaceName>
+    <ant:hasPostalCode>44490</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>481788</ant:uicCode>
+    <ant:trainStationName>Le Croisic</ant:trainStationName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>11</ant:numberBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Le Croisic</ant:hasName>
+    <ant:hasAdress>Rue des Poilus</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/53">
+    <ant:uicCode>396028</ant:uicCode>
+    <ant:hasPostalCode>72190</ant:hasPostalCode>
+    <ant:trainStationName>Neuville-sur-Sarthe</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Neuville-sur-Sarthe</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/67">
+    <ant:uicCode>396283</ant:uicCode>
+    <ant:hasPostalCode>72470</ant:hasPostalCode>
+    <ant:trainStationName>St-Mars-la-Brière</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Saint-Mars-la-Brière</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/10">
+    <ant:bikePlaceName>Parking vélo de la gare de Château-du-Loir</ant:bikePlaceName>
+    <ant:hasPostalCode>72500</ant:hasPostalCode>
+    <ant:uicCode>396606</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationName>Château-du-Loir</ant:trainStationName>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:hasName>Château-du-Loir</ant:hasName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:hasAdress>Rue du Val de Loir</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/105">
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:trainStationName>Savenay</ant:trainStationName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasPostalCode>44260</ant:hasPostalCode>
+    <ant:hasName>Savenay</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Savenay</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Bd Branly</ant:hasAdress>
+    <ant:uicCode>481838</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/20">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>396564</ant:uicCode>
+    <ant:hasName>Ecommoy</ant:hasName>
+    <ant:hasPostalCode>72220</ant:hasPostalCode>
+    <ant:trainStationName>Ecommoy</ant:trainStationName>
+    <ant:hasAdress>Rue du Général Leclerc</ant:hasAdress>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare d'Ecommoy</ant:bikePlaceName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/3">
+    <ant:uicCode>486142</ant:uicCode>
+    <ant:hasPostalCode>85170</ant:hasPostalCode>
+    <ant:trainStationName>Belleville</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Belleville-sur-Vie</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/16">
+    <ant:uicCode>396226</ant:uicCode>
+    <ant:hasPostalCode>72140</ant:hasPostalCode>
+    <ant:trainStationName>Crissé</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Crissé</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/41">
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasName>Les Sables-d'Olonne</ant:hasName>
+    <ant:trainStationName>Les Sables-d'Olonne</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:numberBikePlace>35</ant:numberBikePlace>
+    <ant:hasPostalCode>85100</ant:hasPostalCode>
+    <ant:uicCode>486449</ant:uicCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues et pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare des Sables-d'Olonne</ant:bikePlaceName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/49">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>72450</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Montfort-Le-Gesnois</ant:trainStationName>
+    <ant:hasName>Montfort-Le-Gesnois</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de Montfort-Le-Gesnois</ant:bikePlaceName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>396291</ant:uicCode>
+    <ant:numberBikePlace>15</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasAdress>Rue de la marine</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/31">
+    <ant:uicCode>396093</ant:uicCode>
+    <ant:hasPostalCode>72130</ant:hasPostalCode>
+    <ant:trainStationName>La Hutte-Coulombiers</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Coulombiers</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/93">
+    <ant:hasPostalCode>72240</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+    <ant:uicCode>396200</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceName>Parking vélo de la gare de Domfront-en-Champagne</ant:bikePlaceName>
+    <ant:trainStationName>Domfront-en-Champagne</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Impasse de la Pelterie</ant:hasAdress>
+    <ant:numberBikePlace>5</ant:numberBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Domfront-en-Champagne</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/119">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>appuis-vélos abrités sécurisés</ant:bikePlaceType>
+    <ant:uicCode>354597</ant:uicCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:trainStationName>St-Sébastien - Frêne Rond</ant:trainStationName>
+    <ant:bikePlacePrice>Caution à déposer</ant:bikePlacePrice>
+    <ant:hasName>St-Sébastien</ant:hasName>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Sébastien - Frêne Rond</ant:bikePlaceName>
+    <ant:hasAdress>Rue de l'Ouche Quinet</ant:hasAdress>
+    <ant:hasPostalCode>44230</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès sécurisé</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/72">
+    <ant:uicCode>396051</ant:uicCode>
+    <ant:hasPostalCode>72290</ant:hasPostalCode>
+    <ant:trainStationName>Teillé</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Teillé</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/21">
+    <ant:uicCode>484113</ant:uicCode>
+    <ant:hasPostalCode>49000</ant:hasPostalCode>
+    <ant:trainStationName>Ecouflant</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Ecouflant</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/111">
+    <ant:hasPostalCode>85100</ant:hasPostalCode>
+    <ant:hasName>Les Sables-d'Olonne</ant:hasName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:trainStationName>Les Sables-d'Olonne</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare des Sables-d'Olonne</ant:bikePlaceName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>486449</ant:uicCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/125">
+    <ant:hasName>La Haye-Fouassière</ant:hasName>
+    <ant:hasPostalCode>44690</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>La Haye-Fouassière</ant:trainStationName>
+    <ant:uicCode>481416</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de La Haie-Fouassière</ant:bikePlaceName>
+    <ant:hasAdress>Rue des Encloses</ant:hasAdress>
+    <ant:trainStationType>Halte</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/26">
+    <ant:bikePlaceName>Parking vélo de la gare de l'Herbergement-les-Brouzils</ant:bikePlaceName>
+    <ant:hasName>L'Herbergement</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasPostalCode>85260</ant:hasPostalCode>
+    <ant:uicCode>486126</ant:uicCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:hasAdress>Rue de la clairière</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+    <ant:trainStationName>L'Herbergement-les-Brouzils</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/52">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Neau</ant:hasName>
+    <ant:numberBikePlace>5</ant:numberBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de Neau</ant:bikePlaceName>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>478545</ant:uicCode>
+    <ant:trainStationName>Neau</ant:trainStationName>
+    <ant:hasPostalCode>53150</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/36">
+    <ant:uicCode>481168</ant:uicCode>
+    <ant:hasPostalCode>44850</ant:hasPostalCode>
+    <ant:trainStationName>Le Cellier</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Le Cellier</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/66">
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationName>St-Gildas-des-Bois</ant:trainStationName>
+    <ant:uicCode>476762</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Gildas-des-Bois</ant:bikePlaceName>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:hasName>St-Gildas-des-Bois</ant:hasName>
+    <ant:hasPostalCode>44530</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/4">
+    <ant:trainStationName>Bouaye</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de Bouaye</ant:bikePlaceName>
+    <ant:hasPostalCode>44830</ant:hasPostalCode>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:uicCode>481200</ant:uicCode>
+    <ant:hasAdress>Allée Louis Armand</ant:hasAdress>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasName>Bouaye</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/104">
+    <ant:uicCode>481689</ant:uicCode>
+    <ant:hasPostalCode>44570</ant:hasPostalCode>
+    <ant:trainStationName>La Croix-de-Méan</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Trignac</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/11">
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Chemillé</ant:hasName>
+    <ant:trainStationName>Chemillé</ant:trainStationName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>484246</ant:uicCode>
+    <ant:numberBikePlace>11</ant:numberBikePlace>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Chemillé</ant:bikePlaceName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasPostalCode>49120</ant:hasPostalCode>
+    <ant:hasAdress>Rue Maurice Godefroy</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/86">
+    <ant:uicCode>481218</ant:uicCode>
+    <ant:hasPostalCode>44710</ant:hasPostalCode>
+    <ant:trainStationName>Port St-Père</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Port St-Père</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/42">
+    <ant:uicCode>478511</ant:uicCode>
+    <ant:hasPostalCode>53950</ant:hasPostalCode>
+    <ant:trainStationName>Louverné</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Louverné</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/94">
+    <ant:hasAdress>Chemin le breton</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasPostalCode>44580</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:trainStationName>Les Moutiers en Retz</ant:trainStationName>
+    <ant:uicCode>481259</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare des Moutiers en Retz</ant:bikePlaceName>
+    <ant:hasName>Les Moutiers en Retz</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/55">
+    <ant:uicCode>486431</ant:uicCode>
+    <ant:hasPostalCode>85340</ant:hasPostalCode>
+    <ant:trainStationName>Olonne-sur-Mer</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Olonne-sur-Mer</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/25">
+    <ant:uicCode>484360</ant:uicCode>
+    <ant:hasPostalCode>49123</ant:hasPostalCode>
+    <ant:trainStationName>Ingrandes-sur-Loire</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Ingrandes-sur-Loire</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/112">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>St-Gilles-Croix-de-Vie</ant:trainStationName>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Gilles-Croix-de-Vie</ant:bikePlaceName>
+    <ant:hasName>St-Gilles-Croix-de-Vie</ant:hasName>
+    <ant:uicCode>486571</ant:uicCode>
+    <ant:hasPostalCode>85800</ant:hasPostalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/22">
+    <ant:uicCode>484154</ant:uicCode>
+    <ant:hasPostalCode>49330</ant:hasPostalCode>
+    <ant:trainStationName>Etriché-Châteauneuf</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Etriché</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/1">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Aubigné-Racan</ant:trainStationName>
+    <ant:hasPostalCode>72800</ant:hasPostalCode>
+    <ant:bikePlaceType>appuis-vélos</ant:bikePlaceType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:uicCode>396572</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare d'Aubigné-Racan</ant:bikePlaceName>
+    <ant:hasName>Aubigné-Racan</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/75">
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasPostalCode>49660</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceName>Parking vélo de la gare de Torfou</ant:bikePlaceName>
+    <ant:trainStationName>Torfou</ant:trainStationName>
+    <ant:uicCode>486894</ant:uicCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasName>Torfou</ant:hasName>
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/85">
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasAdress>Rue des Maures</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>44800</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Basse-Indre St-Herblain</ant:bikePlaceName>
+    <ant:uicCode>481069</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasName>Saint-Herblain</ant:hasName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>Basse-Indre St-Herblain</ant:trainStationName>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/103">
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>72160</ant:hasPostalCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Connerré</ant:hasName>
+    <ant:hasAdress>La Gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de Connerré-Beillé</ant:bikePlaceName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationName>Connerré-Beillé</ant:trainStationName>
+    <ant:uicCode>396309</ant:uicCode>
+    <ant:numberBikePlace>36</ant:numberBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/19">
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasPostalCode>44530</ant:hasPostalCode>
+    <ant:uicCode>476770</ant:uicCode>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Drefféac</ant:bikePlaceName>
+    <ant:hasName>Drefféac</ant:hasName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasAdress>La gare</ant:hasAdress>
+    <ant:trainStationName>Drefféac</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/65">
+    <ant:numberBikePlace>10</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Saint-Etienne-de-Montluc</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Etienne-de-Montluc</ant:bikePlaceName>
+    <ant:uicCode>481812</ant:uicCode>
+    <ant:hasPostalCode>44360</ant:hasPostalCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Rue de la gare</ant:hasAdress>
+    <ant:trainStationName>St-Etienne-de-Montluc</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/122">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Rue du bois Rigaud</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de Vertou</ant:bikePlaceName>
+    <ant:uicCode>481408</ant:uicCode>
+    <ant:hasName>Vertou</ant:hasName>
+    <ant:hasPostalCode>44120</ant:hasPostalCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationName>Vertou</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/39">
+    <ant:hasPostalCode>44330</ant:hasPostalCode>
+    <ant:hasName>Le Pallet</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasAdress>Rue de l'Amiral de la Galissonnière</ant:hasAdress>
+    <ant:uicCode>481424</ant:uicCode>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:trainStationName>Le Pallet</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de Le Pallet</ant:bikePlaceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/9">
+    <ant:bikePlaceType>pinces-roues</ant:bikePlaceType>
+    <ant:hasName>Chantonnay</ant:hasName>
+    <ant:uicCode>486332</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:trainStationName>Chantonnay</ant:trainStationName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:numberBikePlace>5</ant:numberBikePlace>
+    <ant:hasPostalCode>85110</ant:hasPostalCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Chantonay</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/43">
+    <ant:hasAdress>Av Emile Beaussire</ant:hasAdress>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Luçon</ant:hasName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasPostalCode>85400</ant:hasPostalCode>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:uicCode>486258</ant:uicCode>
+    <ant:trainStationName>Luçon</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Luçon</ant:bikePlaceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/95">
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceName>Parking vélo de la gare de La Bernerie</ant:bikePlaceName>
+    <ant:hasPostalCode>44760</ant:hasPostalCode>
+    <ant:uicCode>481267</ant:uicCode>
+    <ant:trainStationName>La Bernerie</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Pas de la gare</ant:hasAdress>
+    <ant:hasName>La Bernerie</ant:hasName>
+    <ant:numberBikePlace>8</ant:numberBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceType>appuis-vélos abrités</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/64">
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:uicCode>396234</ant:uicCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlaceName>Parking vélo de la gare de Sillé-le-Guillaume</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Sillé-le-Guillaume</ant:hasName>
+    <ant:numberBikePlace>6</ant:numberBikePlace>
+    <ant:trainStationName>Sillé-le-Guillaume</ant:trainStationName>
+    <ant:hasPostalCode>72140</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/54">
+    <ant:bikePlaceName>Parking vélo de la gare de Noyen</ant:bikePlaceName>
+    <ant:hasAdress>Rue de Verdun</ant:hasAdress>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>72430</ant:hasPostalCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Noyen-sur-Sarthe</ant:hasName>
+    <ant:numberBikePlace>16</ant:numberBikePlace>
+    <ant:uicCode>396374</ant:uicCode>
+    <ant:trainStationName>Noyen</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/24">
+    <ant:uicCode>486316</ant:uicCode>
+    <ant:hasPostalCode>85480</ant:hasPostalCode>
+    <ant:trainStationName>Fougeré</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Fougeré</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/23">
+    <ant:trainStationName>Evron</ant:trainStationName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:numberBikePlace>24</ant:numberBikePlace>
+    <ant:hasPostalCode>53600</ant:hasPostalCode>
+    <ant:hasAdress>Place de la Gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare d' Evron</ant:bikePlaceName>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasName>Evron</ant:hasName>
+    <ant:uicCode>478552</ant:uicCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/2">
+    <ant:uicCode>481770</ant:uicCode>
+    <ant:hasPostalCode>44740</ant:hasPostalCode>
+    <ant:trainStationName>Batz-sur-Mer</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Batz-sur-Mer</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/74">
+    <ant:uicCode>484147</ant:uicCode>
+    <ant:hasAdress>Avenue de la gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de Tiercé</ant:bikePlaceName>
+    <ant:hasPostalCode>49125</ant:hasPostalCode>
+    <ant:numberBikePlace>12</ant:numberBikePlace>
+    <ant:trainStationName>Tiercé</ant:trainStationName>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasName>Tiercé</ant:hasName>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/84">
+    <ant:uicCode>481705</ant:uicCode>
+    <ant:hasPostalCode>44600</ant:hasPostalCode>
+    <ant:trainStationName>Saint-Nazaire</ant:trainStationName>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Saint-Nazaire</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/18">
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Donges</ant:hasName>
+    <ant:trainStationName>Donges</ant:trainStationName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:numberBikePlace>5</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:uicCode>481721</ant:uicCode>
+    <ant:bikePlaceName>Parking vélo de la gare de Donges</ant:bikePlaceName>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:hasPostalCode>44480</ant:hasPostalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/102">
+    <ant:hasName>Montsûrs</ant:hasName>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:uicCode>478537</ant:uicCode>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:hasAdress>Place de la gare de Montsûrs</ant:hasAdress>
+    <ant:numberBikePlace>16</ant:numberBikePlace>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:hasPostalCode>53150</ant:hasPostalCode>
+    <ant:bikePlaceType>pinces-roues abrités</ant:bikePlaceType>
+    <ant:bikePlaceName>Parking vélo de la gare de Montsurs</ant:bikePlaceName>
+    <ant:trainStationName>Montsurs</ant:trainStationName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/123">
+    <ant:bikePlaceUse>Accès sécurisé</ant:bikePlaceUse>
+    <ant:bikePlaceName>Parking vélo de la gare de Vertou</ant:bikePlaceName>
+    <ant:uicCode>481408</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationName>Vertou</ant:trainStationName>
+    <ant:hasName>Vertou</ant:hasName>
+    <ant:hasPostalCode>44120</ant:hasPostalCode>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:bikePlacePrice>Caution à déposer</ant:bikePlacePrice>
+    <ant:bikePlaceType>appuis-vélos abrités sécurisés</ant:bikePlaceType>
+    <ant:hasAdress>Rue du bois Rigaud</ant:hasAdress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/38">
+    <ant:uicCode>478743</ant:uicCode>
+    <ant:hasPostalCode>53940</ant:hasPostalCode>
+    <ant:trainStationName>Le Genest</ant:trainStationName>
+    <ant:hasBikePlace>non</ant:hasBikePlace>
+    <ant:trainStationType>Halte</ant:trainStationType>
+    <ant:hasName>Le Genest-Saint-Isle</ant:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Gares/113">
+    <ant:uicCode>486571</ant:uicCode>
+    <ant:hasBikePlace>oui</ant:hasBikePlace>
+    <ant:trainStationType>Gare</ant:trainStationType>
+    <ant:hasPostalCode>85800</ant:hasPostalCode>
+    <ant:bikePlacePrice>Service gratuit</ant:bikePlacePrice>
+    <ant:bikePlaceUse>Accès libre</ant:bikePlaceUse>
+    <ant:trainStationName>St-Gilles-Croix-de-Vie</ant:trainStationName>
+    <ant:hasAdress>Place de la gare</ant:hasAdress>
+    <ant:bikePlaceName>Parking vélo de la gare de St-Gilles-Croix-de-Vie</ant:bikePlaceName>
+    <ant:hasName>St-Gilles-Croix-de-Vie</ant:hasName>
+  </rdf:Description>
+</rdf:RDF>
