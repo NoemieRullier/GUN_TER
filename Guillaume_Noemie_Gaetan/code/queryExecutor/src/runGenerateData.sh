@@ -2,7 +2,7 @@
 
 GUNPATH=`pwd | rev | cut -d"/" -f 4- | rev`
 FACTOR="5"
-DATASET=restaurant
+DATASET=FiveThousand
 DATASETFILE=$GUNPATH/code/expfiles/berlinData/datasets/dataset${DATASET}.nt
 
 for f in $FACTOR ;do

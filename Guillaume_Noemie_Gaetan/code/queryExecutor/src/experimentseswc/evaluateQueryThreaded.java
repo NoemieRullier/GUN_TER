@@ -34,7 +34,6 @@ public class evaluateQueryThreaded {
         //relViewsTimer.start();
         
         //relViewsTimer.stop();
-        
         String sparqlQuery = config.getProperty("sQueryPath");
         String path = config.getProperty("path");
         String queryResults = config.getProperty("queryResults");		
@@ -50,10 +49,6 @@ public class evaluateQueryThreaded {
         HashMap<String, String> constants
                                = Main.loadConstants(config.getProperty("constants"));
         //BufferedWriter timetable = new BufferedWriter(new FileWriter(tt, true));
-        //path : GUNPATH/code/expfiles/ : needed
-        //n3Dir : berlinData/restaurant/75views/viewsN3/ : needed but to change
-        //sparqlDir : berlinData/restaurant/75views/viewsSparql/ : needed but to change
-        //contactSource : contactsources=true : 
         Catalog catalog = Main.loadCatalog(config, path, n3Dir, sparqlDir, contactSources);
         execute(sparqlQuery, path, queryResultsPath, n3Dir, 
                 /*timetable, */groundTruthPath, /*, relViewsTimer*/q, ms, constants, 
@@ -72,32 +67,52 @@ public class evaluateQueryThreaded {
         String dir = PATH + QUERY_RESULTS_PATH +"NOTHING";
         Main.makeNewDir(dir);
         Query q = Main.readQuery(sparqlQuery);
+        int n = q.getTriples().size();
         BufferedWriter info = new BufferedWriter(new FileWriter(dir + "/throughput", true));
-        info.write("# Time (milliseconds)\t Number of answers \t Number of views considered");
+        info.write("# File Id\tNumber of views considered\tWrapper Time (milliseconds)\tGraph Creation Time (milliseconds)\tExecution Time (milliseconds)\tTotal Time (milliseconds)\tGraph Size (statements)");
         info.newLine();
         info.flush();
+        BufferedWriter info2 = new BufferedWriter(new FileWriter(dir + "/newRVi", true));
+        info2.write("# File Id\tNumber of views considered\tWrapper Time (milliseconds)\tGraph Creation Time (milliseconds)\tExecution Time (milliseconds)\tTotal Time (milliseconds)\tGraph Size (statements)");
+        info2.newLine();
+        info2.flush();
         Timer numberTimer = new Timer();
+        Timer wrapperTimer = new Timer();
+        Timer graphCreationTimer = new Timer();
+        Timer executionTimer = new Timer();
+        Counter ids = new Counter();
         numberTimer.start();
 
-        final PipedOutputStream out = new PipedOutputStream();  
-        final PipedInputStream in = new PipedInputStream(out);
-        Thread tRelViews = new RelevantViewsSelector2(out, cq, ms, constants);
+        final PipedOutputStream[] outArray = new PipedOutputStream[n];
+        final PipedInputStream[] inArray = new PipedInputStream[n];
+        for (int i = 0; i < n; i++) {
+
+            outArray[i] = new PipedOutputStream();
+            inArray[i] = new PipedInputStream(outArray[i]);
+        }
+        Thread tRelViews = new RelevantViewsSelector2(outArray, cq, ms, constants);
         tRelViews.start();
         Counter includedViews = new Counter();
         //Thread tinput = new IncludingStreamV(in, graphUnion, includedViews, PATH+n3Dir, ".n3");
-        Thread tinput = new IncludingStreamV2(in, graphUnion, includedViews, catalog, constants);
+        Thread tinput = new IncludingStreamV2(inArray, graphUnion, includedViews, catalog, constants, wrapperTimer, graphCreationTimer, executionTimer, numberTimer, info2, ids);
         tinput.start();
 
         Thread tquery = new QueryingStream(graphUnion, null, q, 
-                            solutionsGathered, numberTimer, includedViews, info);
+                            solutionsGathered, executionTimer, numberTimer, includedViews, info, dir, wrapperTimer, graphCreationTimer, ids);
         tquery.start();
+
         tRelViews.join();
         tinput.join();
+        //System.out.println(includedViews.getValue()+" views have been included");
         tquery.interrupt();
         tquery.join();
-        in.close();
+        for (int i = 0; i < n; i++) {
+            inArray[i].close();
+        }
         info.flush();
         info.close();
+        info2.flush();
+        info2.close();
         numberTimer.stop();
     }
 
@@ -146,66 +161,131 @@ public class evaluateQueryThreaded {
     // the covering of views
     private static class RelevantViewsSelector2 extends Thread {
 
-        OutputStream os;
+        OutputStream[] oss;
         ConjunctiveQuery q;
         ArrayList<ConjunctiveQuery> ms;
         HashMap<String, String> cs;
 
-        public RelevantViewsSelector2(OutputStream os, ConjunctiveQuery q, 
+        public RelevantViewsSelector2(OutputStream[] oss, ConjunctiveQuery q, 
                                      ArrayList<ConjunctiveQuery> ms, HashMap<String, String> cs) {
-            this.os = os;
+            this.oss = oss;
             this.q = q;
             this.ms = ms;
             this.cs = cs;
         }
 
-        public void run () {
-          try {          
-            OutputStreamWriter osw = new OutputStreamWriter(os);
-            BufferedWriter bw = new BufferedWriter(osw);
+        private static boolean ready(int[] array, int n) {
 
+            boolean r = true;
+            for (int i = 0; i < array.length && r; i++) {
+                r = array[i] >= n;
+            }
+            return r;
+        }
+
+        public void run () {
+          try {     
+            int n = oss.length;     
+            OutputStreamWriter[] osws = new OutputStreamWriter[n];//= new OutputStreamWriter(os);
+            BufferedWriter[] bws = new BufferedWriter[n];//= new BufferedWriter(osw);
+            for (int i = 0; i < n; i++) {
+                osws[i] = new OutputStreamWriter(oss[i]);
+                bws[i] = new BufferedWriter(osws[i]);
+            }
+            int[] currentMapping = new int[n];
+            for (int i = 0; i < n; i++) {
+                currentMapping[i] = 0;
+            }
             HashMap<Predicate,ArrayList<Predicate>> buckets = new HashMap<Predicate, ArrayList<Predicate>>();
             for (Predicate p : q.getBody()) {
                 ArrayList<Predicate> b = new ArrayList<Predicate>();
-                for (ConjunctiveQuery v : ms) {
-                    ArrayList<String> mapping = getMapping(v, p, cs);
-                    if (mapping != null) {
-                        b.add(v.getHead().replace(mapping));
+                buckets.put(p, b);
+            }
+            int selectedViews = 0;
+            while (!ready(currentMapping, ms.size())) {
+                ArrayList<Predicate> body = q.getBody();
+                for (int i = 0; i < body.size(); i++) { //Predicate p : q.getBody()) {
+                    Predicate p = body.get(i);
+                    ArrayList<Predicate> b = buckets.get(p);
+                    int ncm = currentMapping[i];
+                    for (int j = currentMapping[i]; j < ms.size(); j++) {
+                        ConjunctiveQuery v = ms.get(j);
+                        ncm = j + 1;
+                        ArrayList<String> mapping = getMapping(v, p, cs);
+                        if (mapping != null) { // is it possible to cover this subgoal using this view?
+                            Predicate vi = v.getHead().replace(mapping);
+                            Predicate toInclude = include(b, vi, cs);
+                            if ( toInclude != null ) {
+                                selectedViews++;
+                                bws[i].write(vi+"\n");
+                                bws[i].flush();
+                                break;
+                            }
+                        }
                     }
+                    currentMapping[i] = ncm;
                 }
-                if (!b.isEmpty()) {
-                    buckets.put(p, b);
-                }
+                //System.out.println(selectedViews+" views had been selected!");
+            }
+            for (int i = 0; i < n; i++) {
+                Predicate vi = new Predicate("end()");
+                bws[i].write(vi+"\n");
+                bws[i].flush();
+                bws[i].close();
+                osws[i].close();
+                oss[i].close();
             }
             //System.out.println("buckets: " + buckets);
-            ArrayList<Predicate> res = new ArrayList<Predicate>();
+/*
+            ArrayList<ArrayList<Predicate>> res = new ArrayList<ArrayList<Predicate>>();
+            for (int i = 0; i < n; i++) {
+                res.add(new ArrayList<Predicate>());
+            }
             boolean ready = allEmpty(buckets);
             while (!ready) {
+       
                 HashSet<Predicate> toRemove = new HashSet<Predicate>();
                 //System.out.println("buckets: " + buckets);
                 for (Predicate g : buckets.keySet()) {
+                    int k = q.getBody().indexOf(g);
                     ArrayList<Predicate> views = buckets.get(g);
                     if (views.size() == 1) {
                         toRemove.add(g);
                     }
                     Predicate v = views.remove(0);
 
-                    include(res, v, cs);
+                    include(res.get(k), v, cs);
                 }
                 //System.out.println("toRemove: "+toRemove);
                 for (Predicate v : toRemove) {
                     buckets.remove(v);
                 }
+
+
                 ready = buckets.isEmpty();
             }
-            //System.out.println("res: "+res);
-            for (Predicate v : res) {
-                bw.write(v+"\n");
-                bw.flush();
-            }
-            bw.close();
-            osw.close();
-            os.close();
+            //for (int i = 0; i < n; i++) {
+            //    System.out.println("res "+i+": "+res.get(i));
+            //}
+            for (int i = 0; i < n; i++) {
+                ArrayList<Predicate> r = res.get(i);
+                //System.out.println("Going to include "+r.size()+" views");
+                int j = 0;
+                for (Predicate v : r) {
+                    //System.out.println("Including..l:224");
+                    bws[i].write(v+"\n");
+                    //System.out.println("Including..l:226");
+                    bws[i].flush();
+                    //System.out.println("Having included "+(++j)+" views");
+                }
+                //System.out.println("Including..l:229");
+                bws[i].close();
+                //System.out.println("Including..l:231");
+                osws[i].close();
+                //System.out.println("Including..l:233");
+                oss[i].close();
+                //System.out.println("finish view selection. "+res.get(i).size()+" views for subgoal "+i);
+            }*/
           } catch (IOException ioe) {
             ioe.printStackTrace();
           }
@@ -217,7 +297,7 @@ public class evaluateQueryThreaded {
     	return cs.containsKey(argA) && (!cs.containsKey(argB) || !argA.equals(argB));
     }
     
-    private static void include(ArrayList<Predicate> res, Predicate v, HashMap<String, String> cs) {
+    private static Predicate include(ArrayList<Predicate> res, Predicate v, HashMap<String, String> cs) {
     
     	int vsize = v.getArguments().size();
     	ArrayList<String> argsV = v.getArguments();
@@ -226,8 +306,8 @@ public class evaluateQueryThreaded {
     		Predicate iv = res.get(i);
         	ArrayList<String> argsIV = iv.getArguments();
     		if (iv.getName().equals(v.getName()) && (iv.getArguments().size() == vsize)) {
-    		    boolean coversIVV = true;
-    		    boolean coversVIV = true;
+    		    boolean coversIVV = true; // the included view covers view?
+    		    boolean coversVIV = true; // the view covers included view?
     		    for (int j = 0; j < vsize; j++) {
     		    	
     		    	if (weaker(argsV.get(j), argsIV.get(j), cs)) {
@@ -238,7 +318,7 @@ public class evaluateQueryThreaded {
     		    	}
     		    }
     		    if (coversIVV) {
-    		    	return;
+    		    	return null;
     		    } else if (coversVIV && !included) {
     		    	res.set(i, v);
     		    	included = true;
@@ -251,6 +331,7 @@ public class evaluateQueryThreaded {
         if (!included) {
         	res.add(v);
         }
+        return v;
     }
 
     private static class RelevantViewsSelector extends Thread {

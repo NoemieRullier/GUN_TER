@@ -1,6 +1,1 @@
 # File Id	Number of views considered	Wrapper Time (milliseconds)	Graph Creation Time (milliseconds)	Execution Time (milliseconds)	Total Time (milliseconds)	Graph Size (statements)
-0	0	3473	36	590	4120	417
-1	1	6548	49	597	11337	837
-2	2	9535	54	620	14434	1063	1
-2	2	9535	54	683	17516	1063
-3	3	9535	54	745	17649	1063

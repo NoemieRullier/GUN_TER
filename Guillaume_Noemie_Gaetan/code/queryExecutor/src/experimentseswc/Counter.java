@@ -14,4 +14,9 @@ public class Counter {
     public int getValue() {
         return this.c;
     }
+
+    public void reset() {
+
+        this.c = 0;
+    }
 }

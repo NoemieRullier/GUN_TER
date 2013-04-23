@@ -1,7 +1,7 @@
 PREFIX onto: <http://example.org/>
-SELECT ?x ?vi ?hi ?town 
+SELECT ?X ?Vi ?Hi ?Town 
 WHERE
 { 
-	?x onto:acceptVisualImpairment ?vi.
-	?x onto:acceptHearingImpairment ?hi.
+	?X onto:acceptVisualImpairment ?Vi.
+	?X onto:acceptHearingImpairment ?Hi.
 }

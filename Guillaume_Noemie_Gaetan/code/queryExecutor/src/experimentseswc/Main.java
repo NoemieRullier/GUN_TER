@@ -321,6 +321,10 @@ public class Main {
         HashSet<String> loadedViews = new HashSet<String>();
         Model graphUnion = ModelFactory.createDefaultModel();
         Timer numberTimer = new Timer();
+        Timer executionTimer = new Timer();
+        Timer wrapperTimer = new Timer();
+        Timer graphCreationTimer = new Timer();
+        Counter ids = new Counter();
         numberTimer.start();
         List<String> l = new ArrayList<String>();
         l.add("timeout");
@@ -345,7 +349,7 @@ public class Main {
         tinput.start();
         terror.start();
         Thread tquery = new QueryingStream(graphUnion, reasoner, query, 
-                            solutionsGathered, numberTimer, executedRewritings, info);
+                            solutionsGathered, executionTimer, numberTimer, executedRewritings, info, dir, wrapperTimer, graphCreationTimer, ids);
         tquery.setPriority(Thread.MAX_PRIORITY);
         tquery.start();
         //System.out.println("priority of tquery: "+tquery.getPriority());
@@ -409,7 +413,6 @@ public class Main {
                 QueryExecution result = null;
                 boolean answered = false;
                 graphCreationTimer.start();
-
                 for (Rewrite rew : toAnalyze) {
                     graphCreationTimer.stop();
                     System.out.println("Executing Rewriting: " + rew.toString());
@@ -423,7 +426,9 @@ public class Main {
                             	graphCreationTimer.stop();
                             	wrapperTimer.resume();
                             	Model m = catalog.getModel(p, constants);
-                            	wrapperTimer.stop();
+                                wrapperTimer.stop();
+                            	//long t = wrapperTimer.stop();
+                                //System.out.println("(GUN) Loading time of "+p+" is "+TimeUnit.MILLISECONDS.toSeconds(t));
                             	graphCreationTimer.resume();
                                 graphUnion.add(m);
                             }
@@ -563,6 +568,8 @@ public class Main {
             wrapperTimer.resume();
             Model m = catalog.getModel(p, constants);
             wrapperTimer.stop();
+            //long t = wrapperTimer.stop();
+            //System.out.println("(Jena) Loading time of "+p+" is "+TimeUnit.MILLISECONDS.toSeconds(t));
             graphCreationTimer.resume();
             if (reasoner != null) {
                 m = ModelFactory.createInfModel (reasoner, m);

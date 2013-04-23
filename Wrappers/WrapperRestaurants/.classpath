@@ -15,5 +15,10 @@
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/slf4j-log4j12-1.6.4.jar"/>
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/xercesImpl-2.10.0.jar"/>
 	<classpathentry kind="lib" path="../libs/apache-jena-2.7.4/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="/home/guillaume/Documents/projet git/GUN_TER/Wrappers/libs/jdom-2.0.4/jdom-2.0.4.jar" sourcepath="/home/guillaume/Documents/projet git/GUN_TER/Wrappers/libs/jdom-2.0.4/jdom-2.0.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Wrappers/libs/jdom-2.0.4/jdom-2.0.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

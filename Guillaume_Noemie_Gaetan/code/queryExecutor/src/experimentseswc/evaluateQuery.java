@@ -24,6 +24,7 @@ public class evaluateQuery {
         Timer relViewsTimer = new Timer();
         relViewsTimer.start();
         ArrayList<String> relevantViews = obtainRelevantViews(q, ms);
+        //System.out.println(" "+relevantViews.size()+" relevant views..");
         relViewsTimer.stop();
         String sparqlQuery = config.getProperty("sQueryPath");
         String path = config.getProperty("path");

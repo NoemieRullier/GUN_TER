@@ -1,206 +1,409 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
+import java.io.PrintStream;
 import java.net.URL;
+import java.net.URLConnection;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
-import java.util.regex.Pattern;
+import java.util.Set;
 
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
+
+import com.hp.hpl.jena.graph.Node;
+import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-
+import com.hp.hpl.jena.shared.PrefixMapping;
+import com.hp.hpl.jena.sparql.core.TriplePath;
+import com.hp.hpl.jena.sparql.syntax.ElementGroup;
+import com.hp.hpl.jena.sparql.syntax.ElementPathBlock;
 
 public class WrapperRestaurantApiToRdf {
 
-	public String api = "http://data.nantes.fr/api/publication/22440002800011_CG44_TOU_04820/restaurants_STBL/content?format=csv";
-	public String apiFile = "../../DataSets/22440002800011_CG44_TOU_04820_restaurants_STBL.csv";
-	public String fichierMapping = "fileMappingRestaurant.txt";
-	public String pathFileResult;
-	public Query reqVue;
-	public String vue = "";
+	public class UnknownProperty extends Exception {
+		
+		private static final long serialVersionUID = -2154805128624019618L;
 
-	public WrapperRestaurantApiToRdf(String pathFileView, String pathFileResult){
-//		System.setProperty("http.proxyHost", "cache.etu.univ-nantes.fr");
-//		System.setProperty("http.proxyPort", "3128");
-		InputStream file;
-		try {
-			file = new FileInputStream(pathFileView);
-			Reader reader = new InputStreamReader(file, "utf-8");
-			BufferedReader readView = new BufferedReader(reader);
-			String ligne;
-			while ((ligne=readView.readLine())!=null){
-				System.out.println(ligne);
-				vue+=ligne/*+"\n"*/;
-			}
-			reader.close(); 
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		public UnknownProperty(String name) {
+			System.err.println("Unknown property (" + name + ")");
 		}
-		reqVue = QueryFactory.create(vue);
-		this.pathFileResult = pathFileResult;  
+	}
+	
+	/**
+	 * 
+	 */
+	private static final String LOCAL_DATA = "res/restaurants.xml";
+	
+	/**
+	 * Our namespace prefix.
+	 */
+	private static final String ONTO_PREFIX = "onto";
+
+	/**
+	 * Our namespace.
+	 */
+	private static final String ONTO_URL = "http://example.org/";
+
+	/**
+	 * API URL.
+	 */
+	private static final String API_URL = "https://data.nantes.fr/api/publication/"
+			+ "22440002800011_CG44_TOU_04820/"
+			+ "restaurants_STBL/content";
+
+	/**
+	 * Ontology / XML data mapping file path.
+	 */
+	private static final String MAPPING_FILE = "res/mapping.properties";
+
+	/**
+	 * Ontology / API mapping file path.
+	 */
+	private static final String MAPPING_API_FILE = "res/mapping_api.properties";
+
+	/**
+	 * Ontology / XML data mapping.
+	 */
+	private HashMap<String, String> mapping_ = new HashMap<String, String>();
+
+	/**
+	 * Ontology / API mapping.
+	 */
+	private HashMap<String, String> mappingAPI_ = new HashMap<String, String>();
+
+	/**
+	 * Filters to add to API call
+	 */
+	private HashMap<String, String> filters_ = new HashMap<String, String>();
+	
+	/**
+	 * Query triples which do not contain literal.
+	 * 
+	 * <p>Triples that will be evaluated on the data returned by the API.</p> 
+	 */
+	private LinkedList<Triple> triples_ = new LinkedList<Triple>();
+
+	/**
+	 * HTTP Request to the API
+	 */
+	private String apiCall_ = new String(API_URL);
+
+	/**
+	 * XML data returned by the API.
+	 */
+	private Document apiData_;
+
+	private Model resModel_ = ModelFactory.createDefaultModel();
+
+	/**
+	 * Loads mappings files.
+	 * 
+	 * @throws FileNotFoundException
+	 *             Whether a mapping file is missing
+	 * @throws IOException
+	 *             Whether reading files fails
+	 */
+	private void loadMappings() throws FileNotFoundException, IOException {
+		Properties prop = new Properties();
+		
+		prop.load(getClass().getResourceAsStream(MAPPING_FILE));
+
+		for (Object key : prop.keySet()) {
+			this.mapping_.put(key.toString(), prop.getProperty(key.toString()));
+		}
+
+		prop = new Properties();
+		prop.load(getClass().getResourceAsStream(MAPPING_API_FILE));
+
+		for (Object key : prop.keySet()) {
+			this.mappingAPI_.put(key.toString(),
+					prop.getProperty(key.toString()));
+		}
 	}
 
-	public void parsingFile() throws MalformedURLException, IOException{
+	/**
+	 * Extracts triples from query.
+	 * 
+	 * @param path
+	 *            Path of the query file
+	 * @throws IOException 
+	 */
+	private void loadQuery(String path) throws IOException {
+		String qString = new String();
+		
+		BufferedReader reader = new BufferedReader(new FileReader(path));
+		String line = new String();
+		
+		while((line = reader.readLine()) != null) {
+			qString += line;
+		}
+		
+		Query query = QueryFactory.create(qString);
+		
+		PrefixMapping pm = query.getPrefixMapping();
+		Map<String, String> truc = pm.getNsPrefixMap();
 
-		// Create the model of RDF-Graph
-		Model m = ModelFactory.createDefaultModel();
-
-		// Create the URI
-		String ontoP = "http://example.org/";
-		String restaurantP = "http://example.org/Restaurant/";
-
-		// Define prefix
-		m.setNsPrefix("onto", ontoP);
-		m.setNsPrefix("res", restaurantP);
-
-		// Define property
-		ArrayList<Property> propertyOntologieGlobale = new ArrayList<Property>();
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasName" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasAddress" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasPostalCode" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasTown" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasWebSite" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "hasMail" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "acceptVisualImpairment" ));
-		propertyOntologieGlobale.add(m.createProperty(ontoP + "acceptHearingImpairment" ));
-
-		// Loading of mapping
-
-		Properties map = new Properties();
-		map.load(getClass().getResourceAsStream(fichierMapping));
-		HashMap<Property, Integer> mapping = new HashMap<Property, Integer>();
-		HashMap<Integer, Property> mappingI = new HashMap<Integer, Property>();
-		for (Property p : propertyOntologieGlobale){
-			for (Object o : map.keySet()){
-				if (o.toString().equals(p.getLocalName())){
-					mapping.put(p, Integer.parseInt(map.getProperty(o.toString()))-1);
-					mappingI.put(Integer.parseInt(map.getProperty(o.toString()))-1, p);
-				}
-			}
+		for (String key : truc.keySet()) {
+			this.resModel_.setNsPrefix(key, truc.get(key));
 		}
 
-		//		FileInputStream file = new FileInputStream(apiFile);
+		ElementGroup eltGroup = (ElementGroup) query.getQueryPattern();
+		ElementPathBlock pathBlock = (ElementPathBlock) eltGroup.getElements()
+				.get(0);
 
-		URL url = new URL(api);
-		InputStream file = url.openStream();
-		Reader reader = new InputStreamReader(file, "utf-8");
-		BufferedReader br = new BufferedReader(reader);
+		Iterator<TriplePath> triplesIt = pathBlock.patternElts();
 
-		// Loading the columns we need and the value they must respect
-		HashMap<Integer, String> req = new HashMap<Integer, String>();
-		// Pas tres propre --> A revoir si on peut pas recuperer les proprietes de la query un peu mieux
-		for(String s: reqVue.getQueryPattern().toString().replace("{", " ").replace("}", "").replace("\n", "").split(" \\.")){
-			req.put(mapping.get(m.getProperty(s.split(" ")[3].replace("<","").replace(">", ""))), s.split(" ")[4]);
-		}
+		while (triplesIt.hasNext()) {
+			TriplePath tp = triplesIt.next();
+			Node object = tp.getObject();
 
-		// Ligne interressante de la Query
-		//System.out.println(reqVue.getPrefixMapping());
-		//System.out.println(reqVue.getProjectVars());
-		//System.out.println(reqVue.getResultVars());
-		//System.out.println(reqVue.getQueryPattern());
+			if (object.isLiteral()) {
+				Node property = tp.getPredicate();
 
-		String row = null;
-		String[] data = {};
-
-		// Separator
-		Pattern p = Pattern.compile(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-
-		row = br.readLine();
-		while ((row = br.readLine()) != null)
-		{
-			// We put the row in the tab
-			data = p.split(row);
-
-			// Create the resource correspond to the row
-			Resource resource = null;
-
-			// Add the different traitement of the special column --> Mais �a marche pour le moment
-
-			// The number of the column
-			boolean ajouter = true;
-			for(Integer i : req.keySet()){
-				if ((req.get(i).contains("?") && data[i].equals("\"\"")) || (data[i] == req.get(i)) ){
-					ajouter = false;
-				}
+				this.filters_.put(property.getLocalName(), object.getLiteral()
+						.toString());
 			}
-			for(Integer i : req.keySet()){
-				if (ajouter){
-					resource = m.createResource(restaurantP+data[0].substring(1, data[0].length()-1));
-					m.add(resource, mappingI.get(i), data[i].substring(1, data[i].length()-1));
-				}
+
+			else {
+				this.triples_.push(tp.asTriple());
 			}
 		}
+	}
 
-		// If the column is the [latitude, longitude]
-		/*if(i == 33){
+	private void buildApiCall() {
+		Boolean filter = false;
 
-					// We get the latitude and longitude
-					val = val.split("]")[0].substring(2);
-					// Add the property to the latitude
-					m.add(coord, propertyGeoCoordinates.get(0), val.split(",")[0]);
-					// Add the property to the longitude
-					m.add(coord, propertyGeoCoordinates.get(1), val.split(",")[1]);
+		if (this.filters_.isEmpty() == false) {
+			filter = true;
+			this.apiCall_ += "?filter={"; // Filter start
 
-					// Add the property of coordinates
-					m.add(resource, relation.get(i), coord);
-				}*/
-		// If the column is the payment accepted
-		/*else if (i % nbProperty == 19){
-					// TODO: revoir multiligne
-					// TODO: A revoir pour le formattage des moyen de paiements car c'est du n'importe quoi !!! 
-					// Carte Bancaire ou CB Majuscule ou non --> Pb Rsp�ce
-					// Separateur --> Ils sont diff�rents !!!!!
-					for(String pa: val.substring(1, val.length()-1).replace(" ","").split("[.,\\-]")){
-						m.add(resource, relation.get(i), pa.toUpperCase());
+			Set<String> keys = this.filters_.keySet();
+
+			if (keys.size() > 1) {
+				this.apiCall_ += "\"$and\":[";
+
+				Boolean first = true;
+
+				for (String key : keys) {
+					String apiField = this.mappingAPI_.get(key);
+					String value = this.filters_.get(key);
+
+					if (first == false) {
+						this.apiCall_ += ",";
 					}
-				}*/
-		br.close();
-		m.write(new FileOutputStream(pathFileResult),"N-TRIPLE");
+
+					else {
+						first = false;
+					}
+
+					this.apiCall_ += "{\"" + apiField + "\":{";
+					this.apiCall_ += "\"$eq\":\"" + value + "\"";
+					this.apiCall_ += "}}";
+				}
+
+				this.apiCall_ += "]";
+			}
+
+			else {
+				String key = keys.iterator().next();
+				String apiField = mappingAPI_.get(key);
+				String value = filters_.get(key);
+
+				this.apiCall_ += "\"" + apiField + "\":{";
+				this.apiCall_ += "\"$eq\":\"" + value + "\"";
+				this.apiCall_ += "}";
+			}
+
+			this.apiCall_ += "}"; // Filter end
+		}
+
+		if (filter == true) {
+			this.apiCall_ += "&format=xml";
+		}
+
+		else {
+			this.apiCall_ += "?format=xml";
+		}
 	}
 
-	public static void main(String[] args) {
-		if (args.length == 2){
-			WrapperRestaurantApiToRdf v = new WrapperRestaurantApiToRdf(args[0], args[1]);
-			//			WrapperRestaurantApiToRdf v1 = new WrapperRestaurantApiToRdf("src/view1.sparql","src/view1.n3");
-			//			WrapperRestaurantApiToRdf v2 = new WrapperRestaurantApiToRdf("src/view2.sparql","src/view2.n3");
-			//			WrapperRestaurantApiToRdf v3 = new WrapperRestaurantApiToRdf("src/view3.sparql","src/view3.n3");
-			//			WrapperRestaurantApiToRdf v4 = new WrapperRestaurantApiToRdf("src/view4.sparql","src/view4.n3");
+	private void getData() throws IOException, JDOMException {
+//		InputStream stream = null;
+//		URL url = new URL(this.apiCall_);
+//		URLConnection connection = url.openConnection();
+//		stream = connection.getInputStream();
+		
+		InputStream stream = getClass().getResourceAsStream(LOCAL_DATA);
+		
+		this.apiData_ = new SAXBuilder().build(stream);
+	}
 
-			try {
-				v.parsingFile();
-				//				v1.parsingFile();
-				//				v2.parsingFile();
-				//				v3.parsingFile();
-				//				v4.parsingFile();
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
+	private void processQuery()
+			throws IOException, JDOMException, UnknownProperty {
+		
+		this.getData();
+
+		for (Triple triple : this.triples_) {
+			Node s = triple.getSubject();
+			Node p = triple.getPredicate();
+			Node o = triple.getObject();
+			
+			Element root = this.apiData_.getRootElement();
+			
+			List<Element> listeActi =
+					root.getChild("data").getChildren("element");
+
+			List<Pair<String, String>> mappings =
+					new ArrayList<Pair<String, String>>();
+			
+			if (p.isVariable() == true) {
+				Set<String> keys = mapping_.keySet();
+				
+				for(String key : keys) {
+					mappings.add(
+							new Pair<String, String>(key, mapping_.get(key)));
+				}
+			}
+			
+			else {
+				mappings.add(new Pair<String, String>(p.getLocalName(),
+						mapping_.get(p.getLocalName())));
+			}
+			
+			if(mappings.isEmpty()) {
+				throw new UnknownProperty(p.getLocalName() + ")");
+			}
+			
+			for(Pair<String, String> mapping : mappings) {
+				String value = mapping.getSecond();
+				String[] paths = value.split(",");
+	
+				Iterator<Element> actiIt = listeActi.iterator();
+	
+				int cnt = 0;
+	
+				while (actiIt.hasNext()) {
+					Element current = actiIt.next();
+					cnt++;
+					
+					for (int idxPath = 0; idxPath < paths.length; idxPath++) {
+						String path = paths[idxPath];
+						String[] elements = path.split("\\.");
+	
+						for (int idxElement = 0 ; idxElement < elements.length
+								&& current != null ; ++idxElement) {
+							
+							current = current.getChild(elements[idxElement]);
+						}
+	
+						if ((current != null)
+								&& (current.getValue().equals("null") == false)) {
+							
+							Resource res = resModel_.createResource(ONTO_URL
+									+ "activityLocation" + cnt);
+							
+							Property prop = resModel_.createProperty(ONTO_URL
+									+ mapping.getFirst());
+							
+							res.addProperty(prop, current.getValue());
+						}
+					}
+				}
 			}
 		}
-		else{
-			System.out.println("Incorrect number of parameters");
+	}
+	
+	/**
+	 * @param path Path of the query file
+	 * @throws IOException
+	 * @throws JDOMException
+	 * @throws UnknownProperty
+	 */
+	public void query(String path)
+			throws IOException, JDOMException, UnknownProperty {
+		
+		this.loadQuery(path);
+		this.buildApiCall();
+		this.processQuery();
+	}
+	
+	public static void main(String[] args) {
+		System.setProperty("http.proxyHost", "cache.sciences.univ-nantes.fr");
+		System.setProperty("http.proxyPort", "3128");
+
+		WrapperRestaurantApiToRdf w2 = new WrapperRestaurantApiToRdf();
+		String queryPath = new String();
+		String outputPath = new String();
+		
+		if(args.length < 2) {
+			System.err.println("Error : argument(s) missing.");
+			return;
+//			System.out.println("dfhvdjf");
+//			queryPath = "src/view1.sparql";
+//			outputPath = "src/view1.n3";
+		} else {
+			queryPath = args[0];
+			outputPath = args[1];
+		}
+		
+		try {
+			w2.loadMappings();
+		}
+
+		catch (FileNotFoundException e) {
+			System.err.println("Error : mapping file not found.");
+		}
+
+		catch (IOException e) {
+			System.err.println("Error : reading mapping file failed.");
+		}
+
+		try {
+			w2.query(queryPath);
+			
+			FileOutputStream outputStream = new FileOutputStream(outputPath);
+			w2.resModel_.write(outputStream, "N-TRIPLE");
+//			w2.resModel_.write(System.out, "N-TRIPLE");
+//			w2.resModel_.write(System.out, "N3-TRIPLE");
+		}
+		
+		catch(UnknownHostException e) {
+			System.err.println("Erreur : connection au webservice echouee. "
+					+ "Nom d'hote inconnu. Veuillez verifier "
+					+ "votre connexion.");
+		}
+		
+		catch(FileNotFoundException e) {
+			e.printStackTrace(System.err);
+		}
+		
+		catch (IOException e) {
+			e.printStackTrace(System.err);
+		}
+
+		catch (JDOMException e) {
+			e.printStackTrace(System.err);
+		}
+		
+		catch (UnknownProperty e) {
+			e.printStackTrace(System.err);
 		}
 	}
 }

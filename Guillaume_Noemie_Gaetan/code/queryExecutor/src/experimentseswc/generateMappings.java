@@ -29,7 +29,7 @@ class generateMappings {
         HashMap<String, String> vars = new HashMap<String, String>();
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < factor; j++) {
-                String viewName = sparqlViewsFolder+"/view"+i+"_"+j+".sparql";
+                String viewName = sparqlViewsFolder+"/view"+i+/*"_"+j+*/".sparql";
                 File g = new File(viewName);
                 if (g.exists()) {
                     String m = getMapping(g, vars);

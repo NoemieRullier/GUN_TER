@@ -1,7 +1,7 @@
 PREFIX onto: <http://example.org/>
-SELECT ?x ?ad ?name 
+SELECT ?X ?Ad ?Name 
 WHERE
 { 
-	?x onto:hasAddress ?ad.
-	?x onto:hasName ?name. 
+	?X onto:hasAddress ?Ad.
+	?X onto:hasName ?Name. 
 }

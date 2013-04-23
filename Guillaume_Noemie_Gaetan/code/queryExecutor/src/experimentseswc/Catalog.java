@@ -5,6 +5,8 @@
 
 package experimentseswc;
 
+//import com.hp.hpl.jena.n3.turtle.TurtleParseException;
+
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.util.FileManager;
 import java.io.File;
@@ -24,7 +26,6 @@ public class Catalog {
 	//HashMap<String,String> catalog;
 	Properties catalog;
 	String execDir;
-//	String scriptDir;
     String sparqlDir;
     boolean contactSource=false;
 
@@ -33,7 +34,6 @@ public class Catalog {
 		this.catalog = new Properties();
 		this.execDir = "";
         this.sparqlDir = "";
-//		this.scriptDir = "";
 	}
 
 	public Catalog(Properties cat){
@@ -46,7 +46,6 @@ public class Catalog {
 		this.catalog = cat;
 		this.execDir = p;
         this.sparqlDir = q;
-//		this.scriptDir = "";
 	}
 	
 	public Catalog(Properties cat, String p, String q, boolean c){
@@ -55,23 +54,11 @@ public class Catalog {
 		this.execDir = p;
         this.sparqlDir = q;
         this.contactSource = c;
-//		this.scriptDir = "";
 	}
-	
-//	public Catalog(Properties cat, String p, String q, String r, boolean c){
-//		
-//		this.catalog = cat;
-//		this.execDir = p;
-//        this.sparqlDir = q;
-//        this.contactSource = c;
-//		this.scriptDir = r;
-//	}
-	
-	
 
 	// Be aware that this method doesn't take into account the view arguments.
 	// If you want that, use the next one
-	public Model getModel(String str){
+	public Model getModel(String str) {
 
 	    if (this.contactSource) {
 //            ProcessBuilder pb = new ProcessBuilder(this.execDir + "downloadresult.sh", 
@@ -102,11 +89,18 @@ public class Catalog {
                 return null;
             }
         }
-        Model res = FileManager.get().loadModel(this.execDir+str+".n3");
+        Model res = null;
+        //try {
+        res = FileManager.get().loadModel(this.execDir+str+".n3");
+        //} catch (com.hp.hpl.jena.n3.turtle.TurtleParseException e) {
+        //    System.err.println("error while reading: "+str);
+        //    e.printStackTrace();
+            //throw e;
+        //}
         return res;
     }
 	
-	public Model getModel(Predicate p, HashMap<String, String> constants){
+	public Model getModel(Predicate p, HashMap<String, String> constants) {
 		
 		String end = "";
 		boolean none = true;
@@ -120,8 +114,8 @@ public class Catalog {
             }
         }
         String name = p.getName();
-//		System.out.println("name: "+name);
-//        System.out.println("none: "+none);
+        //System.out.println("name: "+name);
+        //System.out.println("none: "+none);
         if (!none) {
             name = name+end;
         }

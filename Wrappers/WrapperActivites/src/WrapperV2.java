@@ -1,11 +1,14 @@
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -42,6 +45,11 @@ public class WrapperV2 {
 			System.err.println("Unknown property (" + name + ")");
 		}
 	}
+	
+	/**
+	 * 
+	 */
+	private static final String LOCAL_DATA = "res/activities.xml";
 	
 	/**
 	 * Our namespace prefix.
@@ -132,12 +140,22 @@ public class WrapperV2 {
 	/**
 	 * Extracts triples from query.
 	 * 
-	 * @param qString
-	 *            A conjunctive SPARQL query
+	 * @param path
+	 *            Path of the query file
+	 * @throws IOException 
 	 */
-	private void loadQuery(String qString) {
+	private void loadQuery(String path) throws IOException {
+		String qString = new String();
+		
+		BufferedReader reader = new BufferedReader(new FileReader(path));
+		String line = new String();
+		
+		while((line = reader.readLine()) != null) {
+			qString += line;
+		}
+		
 		Query query = QueryFactory.create(qString);
-
+		
 		PrefixMapping pm = query.getPrefixMapping();
 		Map<String, String> truc = pm.getNsPrefixMap();
 
@@ -222,19 +240,16 @@ public class WrapperV2 {
 		else {
 			this.apiCall_ += "?format=xml";
 		}
-
-		System.out.println("DBG API call : " + this.apiCall_);
 	}
 
 	private void getData() throws IOException, JDOMException {
-		InputStream stream = null;
+//		InputStream stream = null;
 //		URL url = new URL(this.apiCall_);
 //		URLConnection connection = url.openConnection();
-//
 //		stream = connection.getInputStream();
-		
-		stream = new FileInputStream("/home/guillaume/Bureau/M1Sem2/recherche/GUN_TER_git/Wrappers/WrapperActivites/res/22440002800011_CG44_TOU_04812_activites_tourisme_et_handicap_STBL.xml");
 
+		FileInputStream stream = new FileInputStream(LOCAL_DATA);
+		
 		this.apiData_ = new SAXBuilder().build(stream);
 	}
 
@@ -249,51 +264,80 @@ public class WrapperV2 {
 			Node o = triple.getObject();
 			
 			Element root = this.apiData_.getRootElement();
-			List<Element> listeActi = root.getChild("data").getChildren("element");
-
-			String truc = mapping_.get(p.getLocalName());
 			
-			if(truc == null) {
+			List<Element> listeActi =
+					root.getChild("data").getChildren("element");
+
+			List<Pair<String, String>> mappings =
+					new ArrayList<Pair<String, String>>();
+			
+			if (p.isVariable() == true) {
+				Set<String> keys = mapping_.keySet();
+				
+				for(String key : keys) {
+					mappings.add(
+							new Pair<String, String>(key, mapping_.get(key)));
+				}
+			}
+			
+			else {
+				mappings.add(new Pair<String, String>(p.getLocalName(),
+						mapping_.get(p.getLocalName())));
+			}
+			
+			if(mappings.isEmpty()) {
 				throw new UnknownProperty(p.getLocalName() + ")");
 			}
 			
-			String[] paths = truc.split(",");
-
-			Iterator<Element> actiIt = listeActi.iterator();
-
-			int cnt = 0;
-
-			while (actiIt.hasNext()) {
-				Element current = actiIt.next();
-				cnt++;
-				
-				for (int idxPath = 0; idxPath < paths.length; idxPath++) {
-					String path = paths[idxPath];
-					String[] elements = path.split("\\.");
-
-					for (int idxElement = 0; idxElement < elements.length
-							&& current != null; idxElement++) {
-						current = current.getChild(elements[idxElement]);
-					}
-
-					if ((current != null)
-							&& (current.getValue().equals("null") == false)) {
-						
-						Resource res = resModel_.createResource(
-										ONTO_URL + "activityLocation" + cnt);
-						Property prop = resModel_.createProperty(p.getURI());
-						
-						res.addProperty(prop, current.getValue());
+			for(Pair<String, String> mapping : mappings) {
+				String value = mapping.getSecond();
+				String[] paths = value.split(",");
+	
+				Iterator<Element> actiIt = listeActi.iterator();
+	
+				int cnt = 0;
+	
+				while (actiIt.hasNext()) {
+					Element current = actiIt.next();
+					cnt++;
+					
+					for (int idxPath = 0; idxPath < paths.length; idxPath++) {
+						String path = paths[idxPath];
+						String[] elements = path.split("\\.");
+	
+						for (int idxElement = 0 ; idxElement < elements.length
+								&& current != null ; ++idxElement) {
+							
+							current = current.getChild(elements[idxElement]);
+						}
+	
+						if ((current != null)
+								&& (current.getValue().equals("null") == false)) {
+							
+							Resource res = resModel_.createResource(ONTO_URL
+									+ "activityLocation" + cnt);
+							
+							Property prop = resModel_.createProperty(ONTO_URL
+									+ mapping.getFirst());
+							
+							res.addProperty(prop, current.getValue());
+						}
 					}
 				}
 			}
 		}
 	}
 	
-	public void query(String qString)
+	/**
+	 * @param path Path of the query file
+	 * @throws IOException
+	 * @throws JDOMException
+	 * @throws UnknownProperty
+	 */
+	public void query(String path)
 			throws IOException, JDOMException, UnknownProperty {
 		
-		this.loadQuery(qString);
+		this.loadQuery(path);
 		this.buildApiCall();
 		this.processQuery();
 	}
@@ -303,7 +347,17 @@ public class WrapperV2 {
 		System.setProperty("http.proxyPort", "3128");
 
 		WrapperV2 w2 = new WrapperV2();
-
+		String queryPath = new String();
+		String outputPath = new String();
+		
+		if(args.length < 2) {
+			System.err.println("Error : argument(s) missing.");
+			return;
+		}
+		
+		queryPath = args[0];
+		outputPath = args[1];
+		
 		try {
 			w2.loadMappings();
 		}
@@ -317,23 +371,10 @@ public class WrapperV2 {
 		}
 
 		try {
-			w2.query("prefix onto: <http://example.org/> SELECT ?x ?ad ?pc ?to "
-					+ "WHERE{ ?x onto:hasAddress ?ad ; "
-					+ "onto:hasPostalCode ?pc ; "
-					+ "onto:hasTown ?to }");
+			w2.query(queryPath);
 			
-//			w2.query("prefix onto: <http://example.org/> SELECT ?s ?p ?o WHERE { ?s ?p ?o .}");
-			
-//			w2.query("prefix onto: <http://example.org/> SELECT ?x ?mail ?web "
-//					+ "WHERE{ ?x onto:hasMail ?mail ; "
-//					+ "onto:hasWebsite ?web }");
-			
-//			w2.query("prefix onto: <http://example.org/> SELECT ?x ?vi ?hi "
-//					+ "WHERE{ ?x onto:acceptVisualImpairment ?vi ; "
-//					+ "onto:acceptHearingImpairment ?hi }");
-			
-			System.out.println("\nDBG result :");
-			w2.resModel_.write(System.out, "N-TRIPLE");
+			FileOutputStream outputStream = new FileOutputStream(outputPath);
+			w2.resModel_.write(outputStream, "N3");
 		}
 		
 		catch(UnknownHostException e) {
@@ -342,10 +383,20 @@ public class WrapperV2 {
 					+ "votre connexion.");
 		}
 		
-		catch (IOException e) {}
-
-		catch (JDOMException e) {}
+		catch(FileNotFoundException e) {
+			e.printStackTrace(System.err);
+		}
 		
-		catch (UnknownProperty e) {}
+		catch (IOException e) {
+			e.printStackTrace(System.err);
+		}
+
+		catch (JDOMException e) {
+			e.printStackTrace(System.err);
+		}
+		
+		catch (UnknownProperty e) {
+			e.printStackTrace(System.err);
+		}
 	}
 }

@@ -65,12 +65,12 @@ public class generateViewsInstantiated {
                 QueryExecution qem = QueryExecutionFactory.create(qConstruct, res);
                 qem.execConstruct(result);
             }
-            if (result.size()> 0) {
+            //if (result.size()> 0) {
                 OutputStream out = new FileOutputStream(n3ViewsFolder+"/"+outputName+".n3");
                 result.write(out, "N-TRIPLE");
                 out.close();
                 create(sparqlViewsFolder, outputName, q);
-            }
+            //}
         }
     }
 

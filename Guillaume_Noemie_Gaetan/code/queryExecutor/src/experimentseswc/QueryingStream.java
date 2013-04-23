@@ -14,28 +14,44 @@ import java.util.HashSet;
 import java.util.ArrayList;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.io.FileOutputStream;
+import java.io.File;
 
 public class QueryingStream extends Thread {
 
     private Model graphUnion;
     private Reasoner reasoner;
     private Query query;
-    private HashSet<ArrayList<String>> solutionsGathered;
+    //private HashSet<ArrayList<String>> solutionsGathered;
     private Timer timer;
+    private Timer executionTimer;
     private Counter counter;
     private BufferedWriter info;
     private int time = 1000;
+    private int lastValue = -1;
+    private String dir;
+    private boolean queried = false;
+    private Counter ids;
+    Timer wrapperTimer;
+    Timer graphCreationTimer;
 
     public QueryingStream (Model gu, Reasoner r, Query q, 
-                           HashSet<ArrayList<String>> sgs, Timer t, 
-                           Counter c, BufferedWriter i) {
+                           HashSet<ArrayList<String>> sgs, Timer et, Timer t, 
+                           Counter c, BufferedWriter i, String dir, Timer wrapperTimer, Timer graphCreationTimer, Counter ids) {
         this.graphUnion = gu;
         this.reasoner = r;
         this.query = q;
-        this.solutionsGathered = sgs;
+        //this.solutionsGathered = sgs;
+        this.executionTimer = et;
         this.timer = t;
         this.counter = c;
         this.info = i;
+        this.dir = dir;
+        this.wrapperTimer = wrapperTimer;
+        this.graphCreationTimer = graphCreationTimer;
+        this.ids = ids;
     }
 
     private void evaluateQuery() {
@@ -44,25 +60,63 @@ public class QueryingStream extends Thread {
         if (reasoner != null) {
             m = ModelFactory.createInfModel (reasoner, m);
         }
-        m.enterCriticalSection(Lock.READ);
-        QueryExecution result = QueryExecutionFactory.create(query.toString(), m);
-        for (ResultSet rs = result.execSelect(); rs.hasNext();) {
-            QuerySolution binding = rs.nextSolution();
-            ArrayList<String> s = new ArrayList<String>();
-            for (String var : query.getVars()) {
-                String val = binding.get(var).toString();
-                s.add(val);
+        if (this.counter.getValue() != this.lastValue) {
+            int tempValue = this.counter.getValue();
+            int id = this.ids.getValue();
+            this.ids.increase();
+            String fileName = this.dir + "/solution"+id;
+            try {
+            BufferedWriter output = new BufferedWriter(new OutputStreamWriter(
+                                               new FileOutputStream(fileName), "UTF-8"));
+            m.enterCriticalSection(Lock.READ);
+            //this.lastValue = this.counter.getValue();
+            //fileName = this.dir + "/solution"+this.lastValue;
+            executionTimer.resume();
+            QueryExecution result = QueryExecutionFactory.create(query.toString(), m);
+            for (ResultSet rs = result.execSelect(); rs.hasNext();) {
+                QuerySolution binding = rs.nextSolution();
+                ArrayList<String> s = new ArrayList<String>();
+                for (String var : query.getVars()) {
+                    String val = binding.get(var).toString();
+                    s.add(val);
+                }
+                executionTimer.stop();
+                if (!queried) {
+                    message(id + "\t" + tempValue + "\t" + TimeUnit.MILLISECONDS.toMillis(wrapperTimer.getTotalTime())
+                            + "\t" + TimeUnit.MILLISECONDS.toMillis(graphCreationTimer.getTotalTime())
+                            + "\t" + TimeUnit.MILLISECONDS.toMillis(executionTimer.getTotalTime())
+                            + "\t" + TimeUnit.MILLISECONDS.toMillis(timer.getTotalTime())
+                            + "\t" + graphUnion.size()
+                            + "\t1");
+                    time = 10;
+                    queried = true;
+                }
+                //timer.stop();
+                output.write(s.toString());
+                output.newLine();
+                executionTimer.resume();
+                //solutionsGathered.add(s);
             }
-            if (solutionsGathered.size() == 0) {
-                message(TimeUnit.MILLISECONDS.toMillis(timer.getTotalTime())
-                       + "\t1\t" + this.counter.getValue());
-                time = 10;
+            executionTimer.stop();
+            m.leaveCriticalSection();
+            timer.stop();
+            output.flush();
+            output.close();
+            message(id + "\t" + tempValue + "\t" + TimeUnit.MILLISECONDS.toMillis(wrapperTimer.getTotalTime()) 
+                                            + "\t" + TimeUnit.MILLISECONDS.toMillis(graphCreationTimer.getTotalTime())
+                                            + "\t" + TimeUnit.MILLISECONDS.toMillis(executionTimer.getTotalTime())
+                                            + "\t" +  TimeUnit.MILLISECONDS.toMillis(timer.getTotalTime())
+                                            + "\t" + graphUnion.size());
+            timer.resume();
+            this.lastValue = tempValue;
+            } catch (java.io.IOException ioe) {
+                System.err.println("problems writing to "+fileName);
+            } catch (java.lang.OutOfMemoryError oome) {
+                Main.deleteDir(new File(fileName));
+                System.out.println("out of memory while querying");
+                //evaluateQuery();
             }
-            solutionsGathered.add(s);
         }
-        m.leaveCriticalSection();
-        message(TimeUnit.MILLISECONDS.toMillis(timer.getTotalTime()) + "\t"
-                + solutionsGathered.size() + "\t" + this.counter.getValue());
     }
 
     private void message(String s) {

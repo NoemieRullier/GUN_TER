@@ -116,6 +116,7 @@ public class calculateRelevantViews {
             }
             output.flush();
             output.close();
+            //Main.deleteDir(new File(path+mappings+end));
         }  catch (Exception e) {
 			e.printStackTrace(System.out);
         }

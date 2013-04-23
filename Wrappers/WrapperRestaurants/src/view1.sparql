@@ -1,8 +1,8 @@
 PREFIX onto: <http://example.org/>
-SELECT ?x ?ad ?pc ?town 
+SELECT ?X ?Ad ?Pc ?Town 
 WHERE
 { 
-	?x onto:hasAddress ?ad.
-	?x onto:hasPostalCode ?pc. 
-	?x onto:hasTown ?town.
+	?X onto:hasAddress ?Ad.
+	?X onto:hasPostalCode ?Pc. 
+	?X onto:hasTown ?Town.
 }

@@ -1,15 +1,17 @@
 #!/bin/bash
 
-SETUPS="75views"
-QUERIES=`seq 2 18`
-MAXRWNUMBER=10000
+SETUPS="300views"
+QUERIES=`seq 1 1`
+MAXRWNUMBER=500
 GUNPATH=`pwd | rev | cut -d"/" -f 4- | rev`
 PH=$GUNPATH/code/expfiles/berlinOutput
+DATASET=FiveMillions
 
 sed -i".bkp" "s|GUNPATH|$GUNPATH|" $GUNPATH/code/ssdsat/options.py
 sed -i".bkp" "s/max_models = [0-9][0-9]*/max_models = $MAXRWNUMBER/" $GUNPATH/code/ssdsat/options.py
 cp configC.properties.base configC.properties
 sed -i".bkp" "s|GUNPATH|$GUNPATH|" configC.properties
+sed -i".bkp" "s|DATASET|$DATASET|" configC.properties
 sed -i".bkp" "s/maxnumberrewritings=[0-9][0-9]*/maxnumberrewritings=$MAXRWNUMBER/" configC.properties
 
 sed -i".bkp" "s/jointype=[A-Z]*/jointype=GUN/" configC.properties
@@ -21,7 +23,7 @@ for setup in $SETUPS ;do
     sed -i".bkp" "s/numberviews=[0-9][0-9]*/numberviews=$nv/" configC.properties
     for i in $QUERIES ;do
         sed -i".bkp" "s/query[0-9][0-9]*/query$i/" configC.properties
-        timeout 35m java -XX:MaxHeapSize=2048m -cp ".:../lib2/*" experimentseswc/calculateRelevantViews > $PH/$setup/relevantViews_query${i}_${setup}_2
+        timeout 35m java -XX:MaxHeapSize=2048m -cp ".:../lib2/*" experimentseswc/calculateRelevantViews > $PH/$DATASET/$setup/relevantViews_query${i}
         #java processFile $PH/$setup/outputquery${i}GUN/FULL/modelSize $PH/$setup/outputquery${i}GUN/FULL/modelSizes
         #rm $PH/$setup/outputquery${i}GUN/FULL/modelSize
         #java processAnswers $PH/${setup}/ outputquery${i}GUN

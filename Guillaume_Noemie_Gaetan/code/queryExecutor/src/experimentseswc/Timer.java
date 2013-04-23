@@ -23,6 +23,9 @@ public class Timer {
 
   public void stop() {
     this.endTime   = System.currentTimeMillis();
+    //long et = this.endTime - this.startTime;
+    //this.elapsedTime += et;
+    //return et;
 	this.elapsedTime += this.endTime - this.startTime;
   }
 

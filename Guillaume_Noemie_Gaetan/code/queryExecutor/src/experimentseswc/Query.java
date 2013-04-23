@@ -23,10 +23,9 @@ public class Query  {
             this.vars = this.getVars();
         }
     }
-    
+
     public void makeBT() {
-    	
-    	
+
     }
 
     public void addBGP(BasicGraphPattern bgp) {

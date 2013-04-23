@@ -1,4 +1,4 @@
-view1_0(x, ad, pc, town) :- hasaddress(x, ad), haspostalcode(x, pc), hastown(x, town)
-view2_0(x, mail, ws) :- hasmail(x, mail), haswebsite(x, ws)
-view3_0(x, vi, hi, town) :- acceptvisualimpairment(x, vi), accepthearingimpairment(x, hi)
-view4_0(x, ad, name) :- hasaddress(x, ad), hasname(x, name)
+view1_0(X, Ad, Pc, Town) :- hasaddress(X, Ad), haspostalcode(X, Pc), hastown(X, Town)
+view2_0(X, Mail, Ws) :- hasmail(X, Mail), haswebsite(X, Ws)
+view3_0(X, Vi, Hi, Town) :- acceptvisualimpairment(X, Vi), accepthearingimpairment(X, Hi)
+view4_0(X, Ad, Name) :- hasaddress(X, Ad), hasname(X, Name)
