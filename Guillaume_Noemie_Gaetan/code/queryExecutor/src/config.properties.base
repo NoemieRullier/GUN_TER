@@ -1,0 +1,20 @@
+path=/Users/luisdanielibanesgonzalez/Documents/Travaille/ArticlesEcrit/gun2012/code/expfiles/
+querypath=/Users/luisdanielibanesgonzalez/Documents/Travaille/ArticlesEcrit/gun2012/code/expfiles/query6.sparql
+mappingsn3=n3mappings/
+mappingssparql=sparqlmappings/
+catalogpath=/Users/luisdanielibanesgonzalez/Documents/Travaille/ArticlesEcrit/gun2012/code/expfiles/catalog
+# GUN or LLP
+jointype=LLP
+# deep or shallow
+ontology=ontologyshallow.n3
+groundTruth=answers_smw_shallow
+# MIN, MAX
+sorttypes=MIN
+# NOTHING,FILTERDUPS,EQUIVALENCECLASS,EQUIVALENCECLASSSORT,SEMANTICFILTER
+#experiments=NOTHING,EQUIVALENCECLASSSORT,SEMANTICFILTER
+experiments=EQUIVALENCECLASSSORT
+rew.startnumber=1
+rew.hop=1
+rew.endnumber=35
+rewritings=query6Resultsshallow
+queryresults=query6Resultsshallow

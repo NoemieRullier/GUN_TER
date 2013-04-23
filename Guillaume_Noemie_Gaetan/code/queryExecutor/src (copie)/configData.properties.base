@@ -1,0 +1,16 @@
+# input
+#dataSetFile=GUNPATH/code/expfiles/berlinData/datasets/dataset1.nt
+#indexesFolder=GUNPATH/code/expfiles/ter/sparqlIndexes
+queriesFolder=GUNPATH/code/expfiles/ter/sparqlQueries
+factor=5
+n=15
+# output data
+sparqlViewsFolder=GUNPATH/code/expfiles/ter/viewsSparql
+n3ViewsFolder=GUNPATH/code/expfiles/ter/viewsN3
+answersFolder=GUNPATH/code/expfiles/ter/answers
+# output mappings
+mappingsFile=GUNPATH/code/expfiles/ter/mappings
+conjunctiveQueriesFolder=GUNPATH/code/expfiles/ter/conjunctiveQueries
+constantsFile=GUNPATH/code/expfiles/ter/constantsFile
+#n3OntologyFile=GUNPATH/code/expfiles/berlinData/ontology.n3
+#ontologyFile=GUNPATH/code/expfiles/berlinData/ontology

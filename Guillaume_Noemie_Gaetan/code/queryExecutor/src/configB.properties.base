@@ -1,0 +1,20 @@
+path=/home/gabriela/gun2012/code/expfiles/
+querypath=/home/gabriela/gun2012/code/expfiles/berlinDataSet/queries/query1.sparql
+mappingsn3=berlinDataSet/viewsDataset3/
+mappingssparql=berlinDataSet/views/
+catalogpath=/home/gabriela/gun2012/code/expfiles/catalog
+# GUN or LLP
+jointype=GUN
+# ontology File in path
+ontology=berlinDataSet/ontologyDataset3.n3
+groundTruth=berlinDataSet/groundTruthDataset3/query1
+# MIN, MAX
+sorttypes=MIN
+# NOTHING,FILTERDUPS,EQUIVALENCECLASS,EQUIVALENCECLASSSORT,SEMANTICFILTER
+#experiments=NOTHING,EQUIVALENCECLASSSORT,SEMANTICFILTER
+experiments=EQUIVALENCECLASSSORT
+rew.startnumber=1
+rew.hop=1
+rew.endnumber=35
+queryresults=berlinDataSet/outputDataset3Query1
+rewritings=berlinDataSet/rewritingsDataset3
