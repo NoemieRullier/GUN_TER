@@ -73,14 +73,13 @@
 \framesubtitle{Warehousing}
 \begin{center}
 \begin{itemize}
-\item The data sources are aggregated into a global basis
+\item The data sources are aggregated into a global database (warehouse)
 \item The sources are not interviewed in a query
 \end{itemize}
 \uncover<2>{\begin{block}{Difficulties}
 \begin{itemize}
 \item Effectively detect and perform the update of data
 \item Not applicable to a large number of sources
-\item Add new source
 \end{itemize}
 \end{block}}
 \end{center}
@@ -98,7 +97,7 @@ The mediator asks necessary data sources to the query and assembles the sub-resu
 \frametitle{Data integration}
 \framesubtitle{Mediation Global-As-View}
 \begin{center}
-The global schema was expressed according with the data sources.
+The global schema is expressed according with the data sources.
 \begin{example}
 \begin{equation}
 Product = Source 1 \cup Source 2
@@ -117,7 +116,7 @@ Product = Source 1 \cup Source 2
 \end{itemize}
 \begin{example}
 \begin{equation}
-Source 1 <\text{include or equal}> Products <\text{join}> Vendors
+Source 1 $\subseteq$ Products $\bowtie$ Vendors
 \end{equation}
 \end{example}
 \end{center}
